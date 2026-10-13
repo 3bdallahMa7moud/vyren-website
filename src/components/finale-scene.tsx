@@ -17,17 +17,19 @@ function FinaleArrow() {
 export function FinaleScene() {
   const section = useRef<HTMLElement>(null);
   const [frame, setFrame] = useState(count - 1);
-  const [litFramePresented, setLitFramePresented] = useState(true);
+  const [litFramePresented, setLitFramePresented] = useState(false);
+  const [motionActive, setMotionActive] = useState(false);
   // The scroll asks for the camera pose before the network may have delivered
   // it. Keep the closing copy together with a genuinely presented lit frame.
   const copyFrame = Math.ceil(.66 / revealLength * (count - 1));
   const presented = useCallback((index: number) => setLitFramePresented(index >= copyFrame), [copyFrame]);
-  const copyWaiting = frame >= copyFrame && !litFramePresented;
+  const copyWaiting = motionActive && frame >= copyFrame && !litFramePresented;
   useEffect(() => {
     if (!section.current) return;
     const media = gsap.matchMedia();
     media.add({ motion: '(prefers-reduced-motion: no-preference)', reduced: '(prefers-reduced-motion: reduce)', desktop: '(min-width: 769px)', short: '(max-height: 650px)' }, context => {
       const element = section.current!;
+      setMotionActive(!!context.conditions?.motion);
       if (!context.conditions?.motion) { setFrame(count - 1); return; }
       element.dataset.motion = 'true';
       const play = { frame: 0 };
@@ -40,7 +42,7 @@ export function FinaleScene() {
         .fromTo('.final-copy .button', { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: .1 }, .82)
         .fromTo('.final-footer', { opacity: .35, borderColor: 'rgba(241,238,232,0)' }, { opacity: 1, borderColor: 'rgba(241,238,232,.18)', duration: .12 }, .8)
         .to({}, { duration: .08 }, .92);
-      return () => { delete element.dataset.motion; setFrame(count - 1); };
+      return () => { delete element.dataset.motion; setFrame(count - 1); setMotionActive(false); };
     }, section);
     return () => media.revert();
   }, []);
