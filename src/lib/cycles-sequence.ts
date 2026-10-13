@@ -93,7 +93,8 @@ export class CyclesSequence {
     if(!this.variant||!this.warming||this.disposed)return;
     const candidates=[0,1,-1,2,-2,3,-3,4,-4].map(n=>this.desired+n*(this.coarseFrames?2:1)).filter(n=>n>=0&&n<this.manifest!.frameCount);
     const wanted=[...new Set(candidates.map(i=>this.variant!.urls[i]))];
-    for(const [url,pending] of this.pending)if(!wanted.includes(url))pending.controller.abort();
+    // Keep the few in-flight frames so the film can advance while scrolling
+    // over a slower connection. Retarget only the queue; section exit aborts.
     this.queue=wanted.filter(url=>!this.cache.has(url)&&!this.pending.has(url)&&(this.retry.get(url)??0)<=performance.now());
     this.pump();
   }

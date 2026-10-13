@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Front",
+    "frame": "66",
+    "pressed": [
+      "Front"
+    ],
+    "status": "Your angle. Your perspective."
+  },
+  {
+    "name": "Side",
+    "frame": "12",
+    "pressed": [
+      "Side"
+    ],
+    "status": "Your angle. Your perspective."
+  },
+  {
+    "name": "Back",
+    "frame": "24",
+    "pressed": [
+      "Back"
+    ],
+    "status": "Your angle. Your perspective."
+  },
+  {
+    "name": "3/4 View",
+    "frame": "0",
+    "pressed": [
+      "3/4 View"
+    ],
+    "status": "Your angle. Your perspective."
+  }
+]

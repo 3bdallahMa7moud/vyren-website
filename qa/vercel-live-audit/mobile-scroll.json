@@ -1,0 +1,4526 @@
+[
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "watch",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": 0
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "0.0000",
+        "top": 844
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "0.0000",
+        "top": 1634
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "0.0000",
+        "top": 2625
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 4144
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 6128
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 8792
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 10091
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 11356
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": 2580,
+        "canvasWidth": 300,
+        "class": "light-inspection ",
+        "section": "craftsmanship",
+        "top": 1898
+      },
+      {
+        "bottom": 3524,
+        "canvasWidth": 300,
+        "class": "story-film story-movement",
+        "section": "movement",
+        "top": 2894
+      },
+      {
+        "bottom": 6689,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 6293
+      },
+      {
+        "bottom": 7275,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 6925
+      },
+      {
+        "bottom": 7882,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 7532
+      },
+      {
+        "bottom": 8489,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 8139
+      },
+      {
+        "bottom": 9664,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 9154
+      },
+      {
+        "bottom": 11911,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 11471
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 0
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "watch",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": 0
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "0.0000",
+        "top": 844
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "0.0000",
+        "top": 1634
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "0.0000",
+        "top": 2625
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 4144
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 6128
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 8792
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 10091
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 11356
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": 2580,
+        "canvasWidth": 300,
+        "class": "light-inspection ",
+        "section": "craftsmanship",
+        "top": 1898
+      },
+      {
+        "bottom": 3524,
+        "canvasWidth": 300,
+        "class": "story-film story-movement",
+        "section": "movement",
+        "top": 2894
+      },
+      {
+        "bottom": 6689,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 6293
+      },
+      {
+        "bottom": 7275,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 6925
+      },
+      {
+        "bottom": 7882,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 7532
+      },
+      {
+        "bottom": 8489,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 8139
+      },
+      {
+        "bottom": 9664,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 9154
+      },
+      {
+        "bottom": 11911,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 11471
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 0
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "manifesto",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -464
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "0.9615",
+        "top": 380
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "0.0000",
+        "top": 1170
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "0.0000",
+        "top": 2161
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 3680
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 5664
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 8328
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 9627
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 10892
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": 2116,
+        "canvasWidth": 300,
+        "class": "light-inspection ",
+        "section": "craftsmanship",
+        "top": 1434
+      },
+      {
+        "bottom": 3060,
+        "canvasWidth": 300,
+        "class": "story-film story-movement",
+        "section": "movement",
+        "top": 2430
+      },
+      {
+        "bottom": 6225,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 5829
+      },
+      {
+        "bottom": 6811,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 6461
+      },
+      {
+        "bottom": 7418,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 7068
+      },
+      {
+        "bottom": 8025,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 7675
+      },
+      {
+        "bottom": 9200,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 8690
+      },
+      {
+        "bottom": 11447,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 11007
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 464
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "manifesto",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -929
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -85
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "0.0000",
+        "top": 705
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "0.0000",
+        "top": 1696
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 3215
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 5199
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 7863
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 9163
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 10428
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": 1651,
+        "canvasWidth": 492,
+        "class": "light-inspection ",
+        "frame": "0",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": 969
+      },
+      {
+        "bottom": 2595,
+        "canvasWidth": 300,
+        "class": "story-film story-movement",
+        "section": "movement",
+        "top": 1966
+      },
+      {
+        "bottom": 5760,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 5364
+      },
+      {
+        "bottom": 6346,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 5996
+      },
+      {
+        "bottom": 6953,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 6603
+      },
+      {
+        "bottom": 7560,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 7210
+      },
+      {
+        "bottom": 8735,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 8225
+      },
+      {
+        "bottom": 10982,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 10543
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 929
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "craftsmanship",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [
+      "https://vyren-website-eight.vercel.app/assets/crown-1600.webp"
+    ],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -1393
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -549
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "0.5483",
+        "top": 241
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "0.0000",
+        "top": 1232
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 2751
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 4735
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 7399
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 8699
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 9964
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": 1153,
+        "canvasWidth": 445,
+        "class": "light-inspection ",
+        "frame": "1",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": 536
+      },
+      {
+        "bottom": 2131,
+        "canvasWidth": 300,
+        "class": "story-film story-movement",
+        "section": "movement",
+        "top": 1502
+      },
+      {
+        "bottom": 5296,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 4900
+      },
+      {
+        "bottom": 5882,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 5532
+      },
+      {
+        "bottom": 6489,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 6139
+      },
+      {
+        "bottom": 7096,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 6746
+      },
+      {
+        "bottom": 8271,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 7761
+      },
+      {
+        "bottom": 10518,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 10079
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 1393
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "craftsmanship",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -1857
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -1013
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -223
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "0.0000",
+        "top": 768
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 2287
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 4271
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 6935
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 8235
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 9500
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": 624,
+        "canvasWidth": 393,
+        "class": "light-inspection ",
+        "frame": "7",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": 79
+      },
+      {
+        "bottom": 1667,
+        "canvasWidth": 526,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": 1038
+      },
+      {
+        "bottom": 4832,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 4436
+      },
+      {
+        "bottom": 5418,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 5068
+      },
+      {
+        "bottom": 6025,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 5675
+      },
+      {
+        "bottom": 6632,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 6282
+      },
+      {
+        "bottom": 7807,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 7297
+      },
+      {
+        "bottom": 10054,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 9615
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 1857
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "movement",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -2321
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -1477
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -687
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "0.9994",
+        "top": 304
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 1823
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 3807
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 6471
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 7771
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 9036
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": 174,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -410
+      },
+      {
+        "bottom": 1148,
+        "canvasWidth": 526,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": 591
+      },
+      {
+        "bottom": 4368,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 3972
+      },
+      {
+        "bottom": 4954,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 4604
+      },
+      {
+        "bottom": 5561,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 5211
+      },
+      {
+        "bottom": 6168,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 5818
+      },
+      {
+        "bottom": 7343,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 6833
+      },
+      {
+        "bottom": 9590,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 9151
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 2321
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "movement",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -2786
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -1942
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -1152
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -161
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 1359
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 3342
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 6006
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 7306
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 8571
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -294,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -879
+      },
+      {
+        "bottom": 844,
+        "canvasWidth": 465,
+        "class": "story-film story-movement",
+        "frame": "11",
+        "ready": "true",
+        "section": "movement",
+        "top": 287
+      },
+      {
+        "bottom": 3903,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 3508
+      },
+      {
+        "bottom": 4489,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 4139
+      },
+      {
+        "bottom": 5096,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 4746
+      },
+      {
+        "bottom": 5703,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 5353
+      },
+      {
+        "bottom": 6878,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 6368
+      },
+      {
+        "bottom": 9125,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 8686
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 2786
+  },
+  {
+    "assembly": [
+      {}
+    ],
+    "center": "movement",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -3250
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -2406
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -1616
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -625
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "0.0000",
+        "top": 895
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 2878
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 5542
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 6842
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 8107
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -759,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -1343
+      },
+      {
+        "bottom": 844,
+        "canvasWidth": 465,
+        "class": "story-film story-movement",
+        "frame": "43",
+        "ready": "true",
+        "section": "movement",
+        "top": 287
+      },
+      {
+        "bottom": 3439,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 3044
+      },
+      {
+        "bottom": 4025,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 3675
+      },
+      {
+        "bottom": 4632,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 4282
+      },
+      {
+        "bottom": 5239,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 4889
+      },
+      {
+        "bottom": 6414,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 5904
+      },
+      {
+        "bottom": 8661,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 8222
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 3250
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "assembly",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -4178
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -3334
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -2544
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -1553
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -33
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 1950
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 4614
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 5914
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 7179
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -1687,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -2271
+      },
+      {
+        "bottom": -48,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -572
+      },
+      {
+        "bottom": 2511,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 2116
+      },
+      {
+        "bottom": 3097,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 2747
+      },
+      {
+        "bottom": 3704,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 3354
+      },
+      {
+        "bottom": 4311,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 3961
+      },
+      {
+        "bottom": 5486,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 4976
+      },
+      {
+        "bottom": 7733,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 7294
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 4178
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "assembly",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -4178
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -3334
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -2544
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -1553
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -33
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 1950
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 4614
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 5914
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 7179
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -1687,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -2271
+      },
+      {
+        "bottom": -48,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -572
+      },
+      {
+        "bottom": 2511,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 2116
+      },
+      {
+        "bottom": 3097,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 2747
+      },
+      {
+        "bottom": 3704,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 3354
+      },
+      {
+        "bottom": 4311,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 3961
+      },
+      {
+        "bottom": 5486,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 4976
+      },
+      {
+        "bottom": 7733,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 7294
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 4178
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "assembly",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -5106
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -4262
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -3472
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -2481
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -962
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 1021
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 3685
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 4985
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 6250
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -2616,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -3200
+      },
+      {
+        "bottom": -977,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -1501
+      },
+      {
+        "bottom": 1582,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 1187
+      },
+      {
+        "bottom": 2169,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 1819
+      },
+      {
+        "bottom": 2775,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 2425
+      },
+      {
+        "bottom": 3382,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 3032
+      },
+      {
+        "bottom": 4557,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 4047
+      },
+      {
+        "bottom": 6804,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 6365
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 5106
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "assembly",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -5106
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -4262
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -3472
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -2481
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -962
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.0000",
+        "top": 1021
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 3685
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 4985
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 6250
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -2616,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -3200
+      },
+      {
+        "bottom": -977,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -1501
+      },
+      {
+        "bottom": 1582,
+        "canvasWidth": 300,
+        "class": "light-inspection light-inspection-compact",
+        "section": "materials",
+        "top": 1187
+      },
+      {
+        "bottom": 2169,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 1819
+      },
+      {
+        "bottom": 2775,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 2425
+      },
+      {
+        "bottom": 3382,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 3032
+      },
+      {
+        "bottom": 4557,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 4047
+      },
+      {
+        "bottom": 6804,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 6365
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 5106
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "assembly",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -5570
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -4726
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -3936
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -2945
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -1426
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.2136",
+        "top": 557
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 3221
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 4521
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 5786
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -3080,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -3664
+      },
+      {
+        "bottom": -1441,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -1965
+      },
+      {
+        "bottom": 1117,
+        "canvasWidth": 422,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "0",
+        "ready": "true",
+        "section": "materials",
+        "top": 724
+      },
+      {
+        "bottom": 1705,
+        "canvasWidth": 300,
+        "class": "story-film story-sapphire",
+        "section": "materials",
+        "top": 1355
+      },
+      {
+        "bottom": 2311,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 1961
+      },
+      {
+        "bottom": 2918,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 2568
+      },
+      {
+        "bottom": 4093,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 3583
+      },
+      {
+        "bottom": 6340,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 5901
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 5570
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "materials",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -6034
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -5190
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -4400
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -3409
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -1890
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "0.9995",
+        "top": 93
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 2757
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 4057
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 5322
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -3544,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -4128
+      },
+      {
+        "bottom": -1905,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -2429
+      },
+      {
+        "bottom": 634,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "3",
+        "ready": "true",
+        "section": "materials",
+        "top": 284
+      },
+      {
+        "bottom": 1241,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "0",
+        "ready": "true",
+        "section": "materials",
+        "top": 891
+      },
+      {
+        "bottom": 1847,
+        "canvasWidth": 300,
+        "class": "story-film story-anthracite",
+        "section": "materials",
+        "top": 1497
+      },
+      {
+        "bottom": 2454,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 2104
+      },
+      {
+        "bottom": 3629,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 3119
+      },
+      {
+        "bottom": 5876,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 5437
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 6034
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "materials",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -6499
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -5655
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -4865
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -3874
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -2355
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -372
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 2292
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 3592
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 4857
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -4009,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -4593
+      },
+      {
+        "bottom": -2370,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -2894
+      },
+      {
+        "bottom": 169,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -181
+      },
+      {
+        "bottom": 776,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "4",
+        "ready": "true",
+        "section": "materials",
+        "top": 426
+      },
+      {
+        "bottom": 1383,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "0",
+        "ready": "true",
+        "section": "materials",
+        "top": 1033
+      },
+      {
+        "bottom": 1989,
+        "canvasWidth": 300,
+        "class": "story-film story-rubber",
+        "section": "materials",
+        "top": 1639
+      },
+      {
+        "bottom": 3164,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 2654
+      },
+      {
+        "bottom": 5412,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 4972
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 6499
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "materials",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -7427
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -6583
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -5793
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -4802
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -3283
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -1300
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 1364
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 2664
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 3929
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -4937,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -5521
+      },
+      {
+        "bottom": -3298,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -3822
+      },
+      {
+        "bottom": -759,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -1109
+      },
+      {
+        "bottom": -152,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -502
+      },
+      {
+        "bottom": 455,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "11",
+        "ready": "true",
+        "section": "materials",
+        "top": 105
+      },
+      {
+        "bottom": 1061,
+        "canvasWidth": 375,
+        "class": "story-film story-rubber",
+        "frame": "0",
+        "ready": "true",
+        "section": "materials",
+        "top": 711
+      },
+      {
+        "bottom": 2236,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 1726
+      },
+      {
+        "bottom": 4484,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 4044
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 7427
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "materials",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -7891
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -7047
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -6257
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -5266
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -3747
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -1764
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.0000",
+        "top": 900
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 2200
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 3465
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -5401,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -5985
+      },
+      {
+        "bottom": -3762,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -4286
+      },
+      {
+        "bottom": -1223,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -1573
+      },
+      {
+        "bottom": -616,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -966
+      },
+      {
+        "bottom": -9,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "13",
+        "ready": "true",
+        "section": "materials",
+        "top": -359
+      },
+      {
+        "bottom": 597,
+        "canvasWidth": 375,
+        "class": "story-film story-rubber",
+        "frame": "2",
+        "ready": "true",
+        "section": "materials",
+        "top": 247
+      },
+      {
+        "bottom": 1772,
+        "canvasWidth": 300,
+        "class": "studio-orbit",
+        "section": "experience",
+        "top": 1262
+      },
+      {
+        "bottom": 4020,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 3580
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 7891
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "materials",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -8356
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -7512
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -6722
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -5731
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -4212
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -2228
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "0.7288",
+        "top": 436
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 1735
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 3000
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -5865,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -6449
+      },
+      {
+        "bottom": -4227,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -4750
+      },
+      {
+        "bottom": -1688,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -2038
+      },
+      {
+        "bottom": -1081,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -1431
+      },
+      {
+        "bottom": -474,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -824
+      },
+      {
+        "bottom": 127,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -210
+      },
+      {
+        "bottom": 1294,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": 811
+      },
+      {
+        "bottom": 3555,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 3115
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 8356
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "experience",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -8820
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -7976
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -7186
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -6195
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -4676
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -2692
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -28
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 1271
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 2536
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -6329,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -6913
+      },
+      {
+        "bottom": -4691,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -5214
+      },
+      {
+        "bottom": -2152,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -2502
+      },
+      {
+        "bottom": -1545,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -1895
+      },
+      {
+        "bottom": -938,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -1288
+      },
+      {
+        "bottom": -338,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -674
+      },
+      {
+        "bottom": 829,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": 348
+      },
+      {
+        "bottom": 3091,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 2651
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 8820
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "experience",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -9284
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -8440
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -7650
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -6659
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -5140
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -3156
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -492
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.0000",
+        "top": 807
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 2072
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -6793,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -7377
+      },
+      {
+        "bottom": -5155,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -5678
+      },
+      {
+        "bottom": -2616,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -2966
+      },
+      {
+        "bottom": -2009,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2359
+      },
+      {
+        "bottom": -1402,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -1752
+      },
+      {
+        "bottom": -802,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -1138
+      },
+      {
+        "bottom": 365,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -116
+      },
+      {
+        "bottom": 2627,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 2187
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 9284
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "details",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -9748
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -8904
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -8114
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -7123
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -5604
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -3620
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -956
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0.7226",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.3178",
+        "top": 343
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 1608
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -7257,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -7841
+      },
+      {
+        "bottom": -5619,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -6142
+      },
+      {
+        "bottom": -3080,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -3430
+      },
+      {
+        "bottom": -2473,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2823
+      },
+      {
+        "bottom": -1866,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2216
+      },
+      {
+        "bottom": -1266,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -1602
+      },
+      {
+        "bottom": -99,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -580
+      },
+      {
+        "bottom": 2163,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 1723
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 9748
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "details",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -9748
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -8904
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -8114
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -7123
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -5604
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -3620
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -956
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0.8835",
+        "height": 1265,
+        "id": "details",
+        "progress": "0.3178",
+        "top": 343
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 1608
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -7257,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -7841
+      },
+      {
+        "bottom": -5619,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -6142
+      },
+      {
+        "bottom": -3080,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -3430
+      },
+      {
+        "bottom": -2473,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2823
+      },
+      {
+        "bottom": -1866,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2216
+      },
+      {
+        "bottom": -1266,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -1602
+      },
+      {
+        "bottom": -99,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -580
+      },
+      {
+        "bottom": 2163,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 1723
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 9748
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "details",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -10213
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -9369
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -8579
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -7588
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -6069
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -4085
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -1421
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "0.9974",
+        "height": 1265,
+        "id": "details",
+        "progress": "1.0000",
+        "top": -121
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.0000",
+        "top": 1144
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -7722,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -8306
+      },
+      {
+        "bottom": -6084,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -6607
+      },
+      {
+        "bottom": -3545,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -3895
+      },
+      {
+        "bottom": -2938,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -3288
+      },
+      {
+        "bottom": -2331,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2681
+      },
+      {
+        "bottom": -1730,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2066
+      },
+      {
+        "bottom": -564,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -1045
+      },
+      {
+        "bottom": 1698,
+        "canvasWidth": 300,
+        "class": "final-product",
+        "section": "moment",
+        "top": 1259
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 10213
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "moment",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -11141
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -10297
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -9507
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -8516
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -6997
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -5013
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -2349
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "1",
+        "height": 1265,
+        "id": "details",
+        "progress": "1.0000",
+        "top": -1049
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "0.8523",
+        "top": 216
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -8650,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -9234
+      },
+      {
+        "bottom": -7012,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -7535
+      },
+      {
+        "bottom": -4473,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -4823
+      },
+      {
+        "bottom": -3866,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4216
+      },
+      {
+        "bottom": -3259,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -3609
+      },
+      {
+        "bottom": -2658,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -2994
+      },
+      {
+        "bottom": -1492,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -1973
+      },
+      {
+        "bottom": 760,
+        "canvasWidth": 327,
+        "class": "final-product",
+        "frame": "0",
+        "ready": "true",
+        "section": "moment",
+        "top": 321
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 11141
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "moment",
+    "final": {
+      "action": "hidden",
+      "opacity": "0"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -11605
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -10761
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -9971
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -8980
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -7461
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -5477
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -2813
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "1",
+        "height": 1265,
+        "id": "details",
+        "progress": "1.0000",
+        "top": -1513
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "0",
+        "height": 1350,
+        "id": "moment",
+        "progress": "1.0000",
+        "top": -248
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -9114,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -9698
+      },
+      {
+        "bottom": -7476,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -7999
+      },
+      {
+        "bottom": -4937,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -5287
+      },
+      {
+        "bottom": -4330,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4680
+      },
+      {
+        "bottom": -3723,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4073
+      },
+      {
+        "bottom": -3122,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -3458
+      },
+      {
+        "bottom": -1956,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -2437
+      },
+      {
+        "bottom": 544,
+        "canvasWidth": 327,
+        "class": "final-product",
+        "frame": "33",
+        "ready": "true",
+        "section": "moment",
+        "top": 105
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 11605
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "moment",
+    "final": {
+      "action": "visible",
+      "opacity": "1"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -11922
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -11078
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -10288
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -9297
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -7778
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -5795
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -3131
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "1",
+        "height": 1265,
+        "id": "details",
+        "progress": "1.0000",
+        "top": -1831
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "1",
+        "height": 1350,
+        "id": "moment",
+        "progress": "1.0000",
+        "top": -566
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -9432,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -10016
+      },
+      {
+        "bottom": -7793,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -8317
+      },
+      {
+        "bottom": -5254,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -5604
+      },
+      {
+        "bottom": -4647,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4997
+      },
+      {
+        "bottom": -4041,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4391
+      },
+      {
+        "bottom": -3440,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -3776
+      },
+      {
+        "bottom": -2273,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -2754
+      },
+      {
+        "bottom": 485,
+        "canvasWidth": 327,
+        "class": "final-product",
+        "frame": "46",
+        "ready": "true",
+        "section": "moment",
+        "top": 45
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 11922
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "moment",
+    "final": {
+      "action": "visible",
+      "opacity": "1"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -11922
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -11078
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -10288
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -9297
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -7778
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -5795
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -3131
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "1",
+        "height": 1265,
+        "id": "details",
+        "progress": "1.0000",
+        "top": -1831
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "1",
+        "height": 1350,
+        "id": "moment",
+        "progress": "1.0000",
+        "top": -566
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -9432,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -10016
+      },
+      {
+        "bottom": -7793,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -8317
+      },
+      {
+        "bottom": -5254,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -5604
+      },
+      {
+        "bottom": -4647,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4997
+      },
+      {
+        "bottom": -4041,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4391
+      },
+      {
+        "bottom": -3440,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -3776
+      },
+      {
+        "bottom": -2273,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -2754
+      },
+      {
+        "bottom": 485,
+        "canvasWidth": 327,
+        "class": "final-product",
+        "frame": "71",
+        "ready": "true",
+        "section": "moment",
+        "top": 45
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 11922
+  },
+  {
+    "assembly": [
+      {
+        "sequenceReady": "true"
+      }
+    ],
+    "center": "moment",
+    "final": {
+      "action": "visible",
+      "opacity": "1"
+    },
+    "height": 844,
+    "overflow": false,
+    "pendingVisibleImages": [],
+    "sections": [
+      {
+        "headingOpacity": "1",
+        "height": 844,
+        "id": "watch",
+        "top": -11922
+      },
+      {
+        "handoff": "01-02",
+        "headingOpacity": "1",
+        "height": 790,
+        "id": "manifesto",
+        "progress": "1.0000",
+        "top": -11078
+      },
+      {
+        "handoff": "02-03",
+        "headingOpacity": "1",
+        "height": 991,
+        "id": "craftsmanship",
+        "progress": "1.0000",
+        "top": -10288
+      },
+      {
+        "handoff": "03-04",
+        "headingOpacity": "1",
+        "height": 1519,
+        "id": "movement",
+        "progress": "1.0000",
+        "top": -9297
+      },
+      {
+        "handoff": "04-05",
+        "headingOpacity": "1",
+        "height": 1983,
+        "id": "assembly",
+        "progress": "1.0000",
+        "top": -7778
+      },
+      {
+        "handoff": "05-06",
+        "headingOpacity": "1",
+        "height": 2664,
+        "id": "materials",
+        "progress": "1.0000",
+        "top": -5795
+      },
+      {
+        "handoff": "06-07",
+        "headingOpacity": "1",
+        "height": 1300,
+        "id": "experience",
+        "progress": "1.0000",
+        "top": -3131
+      },
+      {
+        "handoff": "07-08",
+        "headingOpacity": "1",
+        "height": 1265,
+        "id": "details",
+        "progress": "1.0000",
+        "top": -1831
+      },
+      {
+        "handoff": "08-09",
+        "headingOpacity": "1",
+        "height": 1350,
+        "id": "moment",
+        "progress": "1.0000",
+        "top": -566
+      }
+    ],
+    "surfaces": [
+      {
+        "bottom": -9432,
+        "canvasWidth": 421,
+        "class": "light-inspection ",
+        "frame": "8",
+        "ready": "true",
+        "section": "craftsmanship",
+        "top": -10016
+      },
+      {
+        "bottom": -7793,
+        "canvasWidth": 437,
+        "class": "story-film story-movement",
+        "frame": "0",
+        "ready": "true",
+        "section": "movement",
+        "top": -8317
+      },
+      {
+        "bottom": -5254,
+        "canvasWidth": 375,
+        "class": "light-inspection light-inspection-compact",
+        "frame": "8",
+        "ready": "true",
+        "section": "materials",
+        "top": -5604
+      },
+      {
+        "bottom": -4647,
+        "canvasWidth": 375,
+        "class": "story-film story-sapphire",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4997
+      },
+      {
+        "bottom": -4041,
+        "canvasWidth": 375,
+        "class": "story-film story-anthracite",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -4391
+      },
+      {
+        "bottom": -3440,
+        "canvasWidth": 361,
+        "class": "story-film story-rubber",
+        "frame": "17",
+        "ready": "true",
+        "section": "materials",
+        "top": -3776
+      },
+      {
+        "bottom": -2273,
+        "canvasWidth": 377,
+        "class": "studio-orbit",
+        "frame": "0",
+        "ready": "true",
+        "section": "experience",
+        "top": -2754
+      },
+      {
+        "bottom": 485,
+        "canvasWidth": 327,
+        "class": "final-product",
+        "frame": "71",
+        "ready": "true",
+        "section": "moment",
+        "top": 45
+      }
+    ],
+    "url": "https://vyren-website-eight.vercel.app/",
+    "width": 390,
+    "y": 11922
+  }
+]

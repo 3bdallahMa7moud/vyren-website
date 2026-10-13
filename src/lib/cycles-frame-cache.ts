@@ -15,7 +15,9 @@ export class CyclesFrameCache {
   request(urls: string[]) {
     if (this.disposed) return;
     this.wanted = [...new Set(urls)];
-    for (const [url, controller] of this.pending) if (!this.wanted.includes(url)) controller.abort();
+    // Let the bounded in-flight requests finish. Cancelling on every scroll
+    // update can prevent any frame from arriving over a slower connection.
+    // The queue always follows the newest target; release() cancels on exit.
     this.queue = this.wanted.filter(url => !this.entries.has(url) && !this.pending.has(url) && (this.attempts.get(url) ?? 0) < 3 && (this.retries.get(url) ?? 0) < performance.now());
     this.pump();
   }

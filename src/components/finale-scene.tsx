@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { CyclesSurface, type SurfaceDiagnostics } from './cycles-surface';
@@ -17,6 +17,12 @@ function FinaleArrow() {
 export function FinaleScene() {
   const section = useRef<HTMLElement>(null);
   const [frame, setFrame] = useState(count - 1);
+  const [litFramePresented, setLitFramePresented] = useState(true);
+  // The scroll asks for the camera pose before the network may have delivered
+  // it. Keep the closing copy together with a genuinely presented lit frame.
+  const copyFrame = Math.ceil(.66 / revealLength * (count - 1));
+  const presented = useCallback((index: number) => setLitFramePresented(index >= copyFrame), [copyFrame]);
+  const copyWaiting = frame >= copyFrame && !litFramePresented;
   useEffect(() => {
     if (!section.current) return;
     const media = gsap.matchMedia();
@@ -46,9 +52,9 @@ export function FinaleScene() {
         <div className="final-product">
           <Media name="finale-reveal-v1/poster-complete" className="final-poster-complete" alt="The complete VYREN NOCTIS 01 under studio lighting" sizes="(max-width:768px) 90vw, 640px" />
           <Media name="finale-reveal-v1/poster-rim" className="final-poster-rim" alt="The rim and crown of the NOCTIS 01 emerge from darkness" sizes="(max-width:768px) 90vw, 640px" />
-          <CyclesSurface frame={frame} count={count} path={assetPath} prefix="reveal-" fit="contain" label="The VYREN NOCTIS 01 turns slowly as studio lighting reveals its dial, crown and complete strap" diagnostics={read => { if (read) window.__VYREN_FINALE = read; else delete window.__VYREN_FINALE; }} />
+          <CyclesSurface frame={frame} count={count} path={assetPath} prefix="reveal-" fit="contain" label="The VYREN NOCTIS 01 turns slowly as studio lighting reveals its dial, crown and complete strap" onPresent={presented} diagnostics={read => { if (read) window.__VYREN_FINALE = read; else delete window.__VYREN_FINALE; }} />
         </div>
-        <div className="final-copy">
+        <div className="final-copy" data-copy-waiting={copyWaiting} inert={copyWaiting} aria-hidden={copyWaiting || undefined} style={copyWaiting ? { opacity: 0 } : undefined}>
           <h2 id="final-title"><span>Own the</span> <em>moment.</em></h2>
           <p>VYREN NOCTIS 01 — An exploration of precision.</p>
           <a className="button button-ivory" href="#experience">Enter the Studio <FinaleArrow /></a>
