@@ -16,6 +16,8 @@ function FinaleArrow() {
 
 export function FinaleScene() {
   const section = useRef<HTMLElement>(null);
+  const topline = useRef<HTMLDivElement>(null);
+  const [toplineVisible, setToplineVisible] = useState(true);
   const [frame, setFrame] = useState(count - 1);
   const [litFramePresented, setLitFramePresented] = useState(false);
   const [motionActive, setMotionActive] = useState(false);
@@ -24,6 +26,22 @@ export function FinaleScene() {
   const copyFrame = Math.ceil(.66 / revealLength * (count - 1));
   const presented = useCallback((index: number) => setLitFramePresented(index >= copyFrame), [copyFrame]);
   const copyWaiting = motionActive && frame >= copyFrame && !litFramePresented;
+  useEffect(() => {
+    const row = topline.current, navigation = document.querySelector<HTMLElement>('.navigation');
+    if (!row || !navigation) return;
+    let observer: IntersectionObserver | undefined;
+    const observe = () => {
+      observer?.disconnect();
+      const clearance = Math.ceil(navigation.getBoundingClientRect().height) + 4;
+      observer = new IntersectionObserver(([entry]) => {
+        setToplineVisible(entry.isIntersecting && entry.intersectionRatio >= .999);
+      }, { rootMargin: `-${clearance}px 0px 0px 0px`, threshold: 1 });
+      observer.observe(row);
+    };
+    const resize = new ResizeObserver(observe);
+    resize.observe(navigation); observe();
+    return () => { observer?.disconnect(); resize.disconnect(); };
+  }, []);
   useEffect(() => {
     if (!section.current) return;
     const media = gsap.matchMedia();
@@ -49,7 +67,7 @@ export function FinaleScene() {
   return <section ref={section} id="moment" className="finale finale-reveal scene" aria-labelledby="final-title">
     <div className="finale-sticky">
       <div className="final-atmosphere" aria-hidden="true" />
-      <div className="final-topline"><div className="eyebrow"><span className="scene-number">09</span><span>The final chapter</span></div><span className="small-label">NOCTIS 01 / VYREN</span></div>
+      <div ref={topline} className="final-topline" style={{ visibility: toplineVisible ? 'visible' : 'hidden' }}><div className="eyebrow"><span className="scene-number">09</span><span>The final chapter</span></div><span className="small-label">NOCTIS 01 / VYREN</span></div>
       <div className="final-composition">
         <div className="final-product">
           <Media name="finale-reveal-v1/poster-complete" className="final-poster-complete" alt="The complete VYREN NOCTIS 01 under studio lighting" sizes="(max-width:768px) 90vw, 640px" />
