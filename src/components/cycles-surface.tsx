@@ -2,14 +2,22 @@
 import { useEffect, useRef } from 'react';
 import { CyclesFrameCache } from '@/lib/cycles-frame-cache';
 import { studioFraming } from '@/lib/studio-framing';
+import { CriticalFrameSurface } from '@/lib/critical-frame-surface';
+import type { FramePreviewSpec } from '@/lib/frame-preview';
 
 export type SurfaceDiagnostics = ReturnType<CyclesFrameCache['diagnostics']> & { desiredFrame: number; displayedFrame: number; draws: number; averageDrawMs: number; active: boolean; variant: string; previewDraws: number; atlasBytes: number; fullResolution: boolean };
-export function CyclesSurface({ frame, count, path, prefix = '', circular = false, fit: surfaceFit, label, className = '', diagnostics, onPresent }: { frame: number; count: number; path: string; prefix?: string; circular?: boolean; fit?: 'cover' | 'contain'; label: string; className?: string; diagnostics?: (read: (() => SurfaceDiagnostics) | null) => void; onPresent?: (frame: number) => void }) {
+export function CyclesSurface({ frame, count, path, prefix = '', circular = false, fit: surfaceFit, preview, label, className = '', diagnostics, onPresent }: { frame: number; count: number; path: string; prefix?: string; circular?: boolean; fit?: 'cover' | 'contain'; preview?: FramePreviewSpec; label: string; className?: string; diagnostics?: (read: (() => SurfaceDiagnostics) | null) => void; onPresent?: (frame: number) => void }) {
   const slot = useRef<HTMLDivElement>(null), canvas = useRef<HTMLCanvasElement>(null);
   const target = useRef(frame), seek = useRef<() => void>(() => {}), callbacks = useRef({ diagnostics, onPresent });
   useEffect(() => { callbacks.current = { diagnostics, onPresent }; }, [diagnostics, onPresent]);
   useEffect(() => { target.current = frame; seek.current(); }, [frame]);
   useEffect(() => {
+    if (preview) {
+      const surface = new CriticalFrameSurface(slot.current!, canvas.current!, { frame: target.current, count, path, prefix, preview, fit: surfaceFit, onPresent: index => callbacks.current.onPresent?.(index) });
+      seek.current = () => surface.seek(target.current);
+      callbacks.current.diagnostics?.(() => surface.diagnostics());
+      return () => { surface.dispose(); seek.current = () => {}; callbacks.current.diagnostics?.(null); };
+    }
     const element = slot.current!, output = canvas.current!, ctx = output.getContext('2d');
     if (!ctx) return;
     let mobile = innerWidth <= 768, active = false, displayed = -1, held: ImageBitmap | undefined, raf = 0, draws = 0, drawMs = 0, atlas:ImageBitmap|undefined, atlasController:AbortController|undefined, atlasBytes=0, previewDraws=0, fullResolution=false;
@@ -62,6 +70,6 @@ export function CyclesSurface({ frame, count, path, prefix = '', circular = fals
     document.addEventListener('visibilitychange', visibility);
     callbacks.current.diagnostics?.(() => ({ ...cache.diagnostics(), desiredFrame: desired(), displayedFrame: displayed, draws, averageDrawMs: drawMs / Math.max(1, draws), active, variant: mobile ? 'mobile' : 'desktop',previewDraws,atlasBytes,fullResolution }));
     return () => { cancelAnimationFrame(raf); observer.disconnect(); resize.disconnect(); document.removeEventListener('visibilitychange', visibility); cache.dispose();releaseAtlas(); seek.current = () => {}; callbacks.current.diagnostics?.(null); };
-  }, [count, path, prefix, circular, surfaceFit]);
+  }, [count, path, prefix, circular, surfaceFit, preview]);
   return <div ref={slot} className={`cycles-surface ${className}`}><canvas ref={canvas} role="img" aria-label={label} /></div>;
 }

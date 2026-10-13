@@ -1,25 +1,24 @@
 import { experience } from './experience-state';
+import { CriticalFrameStream } from './critical-frame-stream';
+import { assemblyPreview } from './frame-previews';
+import { deviceStreamProfile } from './frame-stream-policy';
+import type { FilmFrame } from './frame-preview';
 
 type Frame = { progress:number; factors:Record<string,number>; anchors:Record<string,[number,number]>; restMatrixDelta:number|null };
 type Variant = { width:number; height:number; crop:[number,number,number,number]; limit:number; urls:string[] };
 type Manifest = { frameCount:number; variants:Record<'desktop'|'mobile',Variant>; frames:Frame[] };
-type Entry = { bitmap:ImageBitmap; bytes:number; used:number };
-type Pending = { controller:AbortController; generation:number };
 
 /** Only decoded neighbouring frames are resident. ScrollTrigger owns the playhead. */
 export class CyclesSequence {
   private manifest?:Manifest;
   private variant?:Variant;
   private mobile=false;
-  private coarseFrames=false;
-  private generation=0;
-  private cache=new Map<string,Entry>();
-  private pending=new Map<string,Pending>();
-  private retry=new Map<string,number>();
-  private queue:string[]=[];
+  private stream?:CriticalFrameStream;
+  private fullResolution=false;
+  private previewDraws=0;
   private desired=0;
   private displayed=-1;
-  private lastUrl='';
+  private lastBitmap?:ImageBitmap;
   private active=false;
   private warming=false;
   private disposed=false;
@@ -34,19 +33,13 @@ export class CyclesSequence {
   private visible:IntersectionObserver;
   private preload:IntersectionObserver;
   private resize:ResizeObserver;
-  private downloaded=0;
-  private fetches=0;
-  private failures=0;
-  private aborted=0;
-  private peakFrames=0;
-  private peakBytes=0;
   private draws=0;
   private waits=0;
   private renderTimes:number[]=[];
   private progressElement:HTMLElement|null;
   private caption:HTMLElement|null;
   private anchorElements:{name:string;label:HTMLElement;line:SVGLineElement|null}[];
-  private onVisibility=()=>{if(document.hidden){this.pause();this.releaseFrames();this.warming=false;}else if(this.active){this.warming=true;this.startLoop();}};
+  private onVisibility=()=>{if(document.hidden){this.pause();this.stream?.setWarm(false);}else{this.stream?.setWarm(this.warming||this.active);if(this.active)this.startLoop();}};
 
   constructor(private slot:HTMLDivElement,private canvas:HTMLCanvasElement) {
     const context=canvas.getContext('2d',{alpha:true});
@@ -56,8 +49,8 @@ export class CyclesSequence {
     this.progressElement=section.querySelector<HTMLElement>('.assembly-progress span');
     this.caption=section.querySelector<HTMLElement>('.assembly-step');
     this.anchorElements=Array.from(section.querySelectorAll<HTMLElement>('.assembly-labels > [data-anchor]')).map(label=>({name:label.dataset.anchor!,label,line:section.querySelector<SVGLineElement>(`.assembly-leaders line[data-anchor="${label.dataset.anchor}"]`)}));
-    this.preload=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){this.warming=true;void this.load();this.preload.disconnect();}},{rootMargin:'900px 0px'});
-    this.visible=new IntersectionObserver(entries=>{const wasActive=this.active;this.active=entries.some(e=>e.isIntersecting);if(this.active){this.warming=true;void this.load();this.startLoop();}else{this.pause();if(wasActive){this.releaseFrames();this.warming=false;}}});
+    this.preload=new IntersectionObserver(entries=>{this.warming=entries.some(e=>e.isIntersecting);if(this.warming){void this.load();this.stream?.setWarm(!document.hidden);}else if(!this.active)this.stream?.setWarm(false);},{rootMargin:`${deviceStreamProfile(innerWidth<=768).warmMargin}px 0px`});
+    this.visible=new IntersectionObserver(entries=>{this.active=entries.some(e=>e.isIntersecting);if(this.active){void this.load();this.stream?.setWarm(!document.hidden);this.startLoop();}else{this.pause();if(!this.warming)this.stream?.setWarm(false);}});
     this.resize=new ResizeObserver(()=>{this.resizePending=true;if(this.active)this.startLoop();});
     this.preload.observe(slot);this.visible.observe(slot);this.resize.observe(slot);
     document.addEventListener('visibilitychange',this.onVisibility);
@@ -71,75 +64,30 @@ export class CyclesSequence {
       this.manifest=await response.json() as Manifest;
       if(this.disposed)return;
       delete this.slot.dataset.sequenceError;
-      this.selectVariant();this.updateTarget();this.schedule();
+      this.selectVariant();this.updateTarget();
     } catch(e) {if(!this.disposed&&!(e instanceof DOMException&&e.name==='AbortError')){this.slot.dataset.sequenceError='true';this.manifestRetryAfter=performance.now()+2000;}}
     finally {this.manifestLoading=false;}
   }
   private selectVariant() {
     const mobile=innerWidth<=768;
     if(this.variant&&mobile===this.mobile)return;
-    this.releaseFrames();this.mobile=mobile;this.variant=this.manifest!.variants[mobile?'mobile':'desktop'];this.displayed=-1;this.lastUrl='';this.resizePending=true;
+    this.stream?.dispose();this.mobile=mobile;this.variant=this.manifest!.variants[mobile?'mobile':'desktop'];this.displayed=-1;this.lastBitmap=undefined;this.resizePending=true;
+    this.stream=new CriticalFrameStream(this.variant.urls,assemblyPreview.variants[mobile?'mobile':'desktop'],deviceStreamProfile(mobile),()=>{if(this.active)this.startLoop();});
+    this.stream.setTarget(this.desired);this.stream.setWarm((this.warming||this.active)&&!document.hidden);
   }
   private updateTarget() {
     if(!this.manifest)return;
     const p=experience.reducedMotion?(experience.manualAssembly===1?.72:0):experience.assemblyScroll;
     const requested=Math.round(Math.max(0,Math.min(1,p))*(this.manifest.frameCount-1));
-    // Save-Data still seeks deterministically, but visits half as many unique frames.
-    const saveData=(navigator as Navigator&{connection?:{saveData?:boolean}}).connection?.saveData;
-    this.coarseFrames=!!saveData;
-    this.desired=saveData?Math.min(this.manifest.frameCount-1,Math.round(requested/2)*2):requested;
-  }
-  private schedule() {
-    if(!this.variant||!this.warming||this.disposed)return;
-    const candidates=[0,1,-1,2,-2,3,-3,4,-4].map(n=>this.desired+n*(this.coarseFrames?2:1)).filter(n=>n>=0&&n<this.manifest!.frameCount);
-    const wanted=[...new Set(candidates.map(i=>this.variant!.urls[i]))];
-    // Keep the few in-flight frames so the film can advance while scrolling
-    // over a slower connection. Retarget only the queue; section exit aborts.
-    this.queue=wanted.filter(url=>!this.cache.has(url)&&!this.pending.has(url)&&(this.retry.get(url)??0)<=performance.now());
-    this.pump();
-  }
-  private pump() {
-    const concurrency=this.mobile?2:3;
-    while(!this.disposed&&this.warming&&this.pending.size<concurrency&&this.queue.length){
-      const url=this.queue.shift()!;const controller=new AbortController();const generation=this.generation;
-      this.pending.set(url,{controller,generation});this.fetches++;
-      void (async()=>{
-        try {
-          const response=await fetch(url,{signal:controller.signal,cache:'force-cache'});
-          if(!response.ok)throw new Error('Frame unavailable');
-          const blob=await response.blob();this.downloaded+=blob.size;
-          const bitmap=await createImageBitmap(blob);
-          if(this.disposed||controller.signal.aborted||generation!==this.generation){bitmap.close();return;}
-          this.cache.set(url,{bitmap,bytes:bitmap.width*bitmap.height*4,used:performance.now()});this.evict();
-          this.peakFrames=Math.max(this.peakFrames,this.cache.size);
-          this.peakBytes=Math.max(this.peakBytes,[...this.cache.values()].reduce((n,e)=>n+e.bytes,0));
-          this.retry.delete(url);if(this.active)this.startLoop();
-        } catch(e) {
-          if(controller.signal.aborted)this.aborted++;
-          else if(!this.disposed){this.failures++;this.retry.set(url,performance.now()+1000);if(e instanceof DOMException&&e.name==='AbortError')this.aborted++;}
-        } finally {this.pending.delete(url);this.pump();}
-      })();
-    }
-  }
-  private evict() {
-    while(this.cache.size>this.variant!.limit){
-      const desiredUrl=this.variant!.urls[this.desired];
-      const candidate=[...this.cache.entries()].filter(([url])=>url!==desiredUrl&&url!==this.lastUrl).sort((a,b)=>a[1].used-b[1].used)[0];
-      if(!candidate)break;candidate[1].bitmap.close();this.cache.delete(candidate[0]);
-    }
+    this.desired=requested;this.slot.dataset.desiredFrame=String(requested);this.stream?.setTarget(requested);
   }
   private startLoop() {if(!this.raf&&!this.disposed&&!document.hidden)this.raf=requestAnimationFrame(this.tick);}
   private pause() {cancelAnimationFrame(this.raf);this.raf=0;}
-  private releaseFrames() {
-    this.generation++;this.queue=[];for(const pending of this.pending.values())pending.controller.abort();
-    for(const entry of this.cache.values())entry.bitmap.close();this.cache.clear();
-  }
   private tick=()=>{
     this.raf=0;if(!this.active||document.hidden||this.disposed)return;
     if(!this.manifest)void this.load();
     if(this.manifest){
-      this.selectVariant();const previous=this.desired;this.updateTarget();
-      if(previous!==this.desired||!this.cache.has(this.variant!.urls[this.desired]))this.schedule();
+      this.selectVariant();this.updateTarget();
       if(this.resizePending){
         const held=document.createElement('canvas');held.width=this.canvas.width;held.height=this.canvas.height;held.getContext('2d')?.drawImage(this.canvas,0,0);
         this.width=this.slot.clientWidth;this.height=this.slot.clientHeight;
@@ -148,35 +96,22 @@ export class CyclesSequence {
         const heldScale=Math.min(this.width/held.width,this.height/held.height);this.context.drawImage(held,(this.width-held.width*heldScale)/2,(this.height-held.height*heldScale)/2,held.width*heldScale,held.height*heldScale);
         this.resizePending=false;this.displayed=-1;
       }
-      const url=this.variant!.urls[this.desired];const entry=this.cache.get(url);
-      if(entry)this.present(entry,this.desired,url);
-      else {
-        this.waits++;
-        // A ready neighbour may arrive just after the scroll playhead has passed it.
-        // Present the nearest ready pose toward the target; do not freeze waiting
-        // for a moving exact index. At rest the requested index still wins.
-        const previous=Math.max(0,this.displayed),direction=this.desired>=previous?1:-1;
-        for(let index=this.desired;direction*(index-previous)>=0;index-=direction){
-          if(this.coarseFrames&&index%2!==0)continue;
-          const nearbyUrl=this.variant!.urls[index],nearby=this.cache.get(nearbyUrl);
-          if(nearby){this.present(nearby,index,nearbyUrl);break;}
-        }
-      }
+      const frame=this.stream?.getFrame();if(frame)this.present(frame);else this.waits++;
     }
     this.startLoop();
   };
-  private present(entry:Entry,index:number,url:string) {
-    entry.used=performance.now();
-    if(this.displayed!==index){
-      if(this.lastUrl!==url||this.displayed<0)this.draw(entry.bitmap,index);
-      else this.positionLabels(index);
-      this.displayed=index;this.lastUrl=url;this.slot.dataset.sequenceReady='true';
+  private present(frame:FilmFrame) {
+    if(this.displayed!==frame.index||this.fullResolution!==frame.fullResolution||this.lastBitmap!==frame.bitmap){
+      this.draw(frame);this.displayed=frame.index;this.fullResolution=frame.fullResolution;this.lastBitmap=frame.bitmap;
+      this.slot.dataset.sequenceReady='true';this.slot.dataset.displayedFrame=String(frame.index);this.slot.dataset.fullResolution=String(frame.fullResolution);
     }
   }
-  private draw(bitmap:ImageBitmap,index:number) {
-    const start=performance.now();const scale=Math.min(this.width/bitmap.width,this.height/bitmap.height);const w=bitmap.width*scale,h=bitmap.height*scale;
-    this.context.clearRect(0,0,this.width,this.height);this.context.drawImage(bitmap,(this.width-w)/2,(this.height-h)/2,w,h);
-    this.draws++;this.positionLabels(index);this.renderTimes.push(performance.now()-start);if(this.renderTimes.length>180)this.renderTimes.shift();
+  private draw(frame:FilmFrame) {
+    const start=performance.now();const scale=Math.min(this.width/frame.width,this.height/frame.height);const w=frame.width*scale,h=frame.height*scale,x=(this.width-w)/2,y=(this.height-h)/2;
+    this.context.clearRect(0,0,this.width,this.height);
+    if(frame.crop){const c=frame.crop;this.context.drawImage(frame.bitmap,c.x,c.y,c.width,c.height,x,y,w,h);this.previewDraws++;}
+    else this.context.drawImage(frame.bitmap,x,y,w,h);
+    this.draws++;this.positionLabels(frame.index);this.renderTimes.push(performance.now()-start);if(this.renderTimes.length>180)this.renderTimes.shift();
   }
   private positionLabels(index:number) {
     const frame=this.manifest!.frames[index];const variant=this.variant!;
@@ -201,9 +136,10 @@ export class CyclesSequence {
     }
   }
   diagnostics() {
-    return {ready:!!this.manifest,active:this.active,variant:this.mobile?'mobile':'desktop',frameCount:this.manifest?.frameCount??0,desiredFrame:this.desired,displayedFrame:this.displayed,displayedProgress:this.manifest?.frames[this.displayed]?.progress??null,displayedFactors:this.manifest?.frames[this.displayed]?.factors??null,restMatrixDelta:this.manifest?.frames[this.displayed]?.restMatrixDelta??null,cacheFrames:this.cache.size,cacheLimit:this.variant?.limit??0,peakCacheFrames:this.peakFrames,decodedBytes:[...this.cache.values()].reduce((n,e)=>n+e.bytes,0),peakDecodedBytes:this.peakBytes,pending:this.pending.size,downloadedBytes:this.downloaded,fetches:this.fetches,failedFrames:this.failures,abortedRequests:this.aborted,waitingRafChecks:this.waits,draws:this.draws,averageDrawMs:this.renderTimes.reduce((a,b)=>a+b,0)/Math.max(1,this.renderTimes.length),progressSource:'Existing GSAP ScrollTrigger; reduced motion uses explicit endpoint controls'};
+    const stream=this.stream?.diagnostics()??{cacheFrames:0,cacheLimit:0,peakCacheFrames:0,decodedBytes:0,peakDecodedBytes:0,pending:0,downloadedBytes:0,fetches:0,failedFrames:0,abortedRequests:0};
+    return {...stream,ready:!!this.manifest,active:this.active,variant:this.mobile?'mobile':'desktop',frameCount:this.manifest?.frameCount??0,desiredFrame:this.desired,displayedFrame:this.displayed,fullResolution:this.fullResolution,previewDraws:this.previewDraws,displayedProgress:this.manifest?.frames[this.displayed]?.progress??null,displayedFactors:this.manifest?.frames[this.displayed]?.factors??null,restMatrixDelta:this.manifest?.frames[this.displayed]?.restMatrixDelta??null,waitingRafChecks:this.waits,draws:this.draws,averageDrawMs:this.renderTimes.reduce((a,b)=>a+b,0)/Math.max(1,this.renderTimes.length),progressSource:'Existing GSAP ScrollTrigger; reduced motion uses explicit endpoint controls'};
   }
   dispose() {
-    this.disposed=true;this.pause();this.manifestController.abort();this.preload.disconnect();this.visible.disconnect();this.resize.disconnect();document.removeEventListener('visibilitychange',this.onVisibility);this.releaseFrames();delete this.slot.dataset.sequenceReady;delete this.slot.dataset.sequenceError;
+    this.disposed=true;this.pause();this.manifestController.abort();this.preload.disconnect();this.visible.disconnect();this.resize.disconnect();document.removeEventListener('visibilitychange',this.onVisibility);this.stream?.dispose();delete this.slot.dataset.sequenceReady;delete this.slot.dataset.sequenceError;delete this.slot.dataset.displayedFrame;delete this.slot.dataset.desiredFrame;delete this.slot.dataset.fullResolution;
   }
 }

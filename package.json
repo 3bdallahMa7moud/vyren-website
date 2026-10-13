@@ -13,6 +13,8 @@
     "test:exploded": "node scripts/exploded-test.mjs",
     "test:viewer": "playwright test --config playwright.viewer.config.ts",
     "test:phase3": "playwright test --config playwright.phase3.config.ts",
+    "test:frames": "node scripts/test-frame-streaming.mjs && node scripts/test-frame-previews.mjs",
+    "assets:previews": "node scripts/build-frame-previews.mjs",
     "assets:viewer": "node scripts/optimize-viewer.mjs",
     "assets:prepare": "python scripts/prepare-assets.py"
   },
