@@ -1,8 +1,13 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  || (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : 'http://localhost:3000');
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(siteUrl),
   title: 'VYREN — NOCTIS 01 | Time, redefined.',
   description: 'An exploration of precision. Discover the NOCTIS 01 concept through cinematic detail, mechanical assembly and an interactive 3D experience.',
   openGraph: { title: 'VYREN — Time, redefined.', description: 'NOCTIS 01. An exploration of precision.', images: [{ url: '/assets/hero-dark-1600.webp', width: 1600, height: 1200 }] },

@@ -65,6 +65,6 @@ The original Blender project, high-resolution renders and authoring backups are 
 
 ## Hosting
 
-Use a host that supports Next.js. Set `NEXT_PUBLIC_SITE_URL` to the deployment origin before building. `VYREN_BUILD_DIR` optionally selects a separate local build output; the default is `.next`.
+Use a host that supports Next.js. On Vercel, import this repository with the Next.js preset and root directory `./`; the site uses `VERCEL_PROJECT_PRODUCTION_URL` for sharing-image URLs automatically. Set `NEXT_PUBLIC_SITE_URL` before building to override the origin or deploy to another host. `VYREN_BUILD_DIR` optionally selects a separate local build output; the default is `.next`.
 
 This is a fictional design exploration. Material and mechanism names describe visual intent; no manufactured performance, certification or purchase availability is claimed.
