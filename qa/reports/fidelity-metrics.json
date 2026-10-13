@@ -1,0 +1,68 @@
+[
+  {
+    "view": "hero",
+    "reference": "D:\\VYREN\\04_RENDER_OUTPUT\\Comparison_Final\\Controlled\\after\\hero.png",
+    "browser": "D:\\VYREN\\06_WEBSITE\\qa\\screenshots\\fidelity-hero.png",
+    "comparisonResolution": [
+      1000,
+      750
+    ],
+    "meanAbsoluteRgbDifference_0to255": 7.924,
+    "interpretation": "Composition-matched RGB image difference, including background and lighting; not percentage fidelity."
+  },
+  {
+    "view": "front",
+    "reference": "D:\\VYREN\\04_RENDER_OUTPUT\\Comparison_Final\\Controlled\\after\\front.png",
+    "browser": "D:\\VYREN\\06_WEBSITE\\qa\\screenshots\\fidelity-front.png",
+    "comparisonResolution": [
+      1000,
+      1000
+    ],
+    "meanAbsoluteRgbDifference_0to255": 8.014,
+    "interpretation": "Composition-matched RGB image difference, including background and lighting; not percentage fidelity."
+  },
+  {
+    "view": "rear",
+    "reference": "D:\\VYREN\\04_RENDER_OUTPUT\\Comparison_Final\\Controlled\\after\\rear.png",
+    "browser": "D:\\VYREN\\06_WEBSITE\\qa\\screenshots\\fidelity-rear.png",
+    "comparisonResolution": [
+      1000,
+      1000
+    ],
+    "meanAbsoluteRgbDifference_0to255": 10.701,
+    "interpretation": "Composition-matched RGB image difference, including background and lighting; not percentage fidelity."
+  },
+  {
+    "view": "movement",
+    "reference": "D:\\VYREN\\04_RENDER_OUTPUT\\Comparison_Final\\Controlled\\after\\movement.png",
+    "browser": "D:\\VYREN\\06_WEBSITE\\qa\\screenshots\\fidelity-movement.png",
+    "comparisonResolution": [
+      1200,
+      1200
+    ],
+    "meanAbsoluteRgbDifference_0to255": 28.13,
+    "interpretation": "Composition-matched RGB image difference, including background and lighting; not percentage fidelity."
+  },
+  {
+    "view": "strap",
+    "reference": "D:\\VYREN\\04_RENDER_OUTPUT\\Comparison_Final\\Controlled\\after\\strap.png",
+    "browser": "D:\\VYREN\\06_WEBSITE\\qa\\screenshots\\fidelity-strap.png",
+    "comparisonResolution": [
+      1000,
+      750
+    ],
+    "meanAbsoluteRgbDifference_0to255": 19.388,
+    "interpretation": "Composition-matched RGB image difference, including background and lighting; not percentage fidelity."
+  },
+  {
+    "view": "crown",
+    "reference": "D:\\VYREN\\04_RENDER_OUTPUT\\Comparison_Final\\Controlled\\after\\crown.png",
+    "browser": "D:\\VYREN\\06_WEBSITE\\qa\\screenshots\\fidelity-crown.png",
+    "comparisonResolution": [
+      1000,
+      750
+    ],
+    "meanAbsoluteRgbDifference_0to255": 25.948,
+    "interpretation": "Composition-matched RGB image difference, including background and lighting; not percentage fidelity."
+  }
+]

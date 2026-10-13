@@ -1,0 +1,78 @@
+{
+  "report": [
+    {
+      "index": 1,
+      "id": "watch",
+      "height": 1000,
+      "headline": "Time,redefined.",
+      "frames": []
+    },
+    {
+      "index": 2,
+      "id": "manifesto",
+      "height": 1080,
+      "headline": "EVERY SECONDHAS A STORY.",
+      "frames": []
+    },
+    {
+      "index": 3,
+      "id": "craftsmanship",
+      "height": 1189,
+      "headline": "Sculpted fromprecision.",
+      "frames": [
+        "3"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "movement",
+      "height": 1900,
+      "headline": "The artof motion.",
+      "frames": []
+    },
+    {
+      "index": 5,
+      "id": "assembly",
+      "height": 3000,
+      "headline": "Every detail.In its place.",
+      "frames": []
+    },
+    {
+      "index": 6,
+      "id": "materials",
+      "height": 3000,
+      "headline": "Built to be felt.",
+      "frames": [
+        null
+      ]
+    },
+    {
+      "index": 7,
+      "id": "experience",
+      "height": 1422,
+      "headline": "Make time yours.",
+      "frames": [
+        "0"
+      ]
+    },
+    {
+      "index": 8,
+      "id": "details",
+      "height": 1075,
+      "headline": "Precision inevery form.",
+      "frames": []
+    },
+    {
+      "index": 9,
+      "id": "moment",
+      "height": 1000,
+      "headline": "Time belongsto you.",
+      "frames": [
+        "11"
+      ]
+    }
+  ],
+  "warnings": [
+    "Element not found: .finale"
+  ]
+}

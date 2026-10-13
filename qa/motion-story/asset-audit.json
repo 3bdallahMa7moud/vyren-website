@@ -1,0 +1,40 @@
+{
+  "protectedFiles": 491,
+  "protectedFilesChanged": [],
+  "originalBlendAndGlbUnchanged": true,
+  "cycles": {
+    "engine": "CYCLES",
+    "backend": "OPTIX",
+    "blender": "5.2.2 LTS",
+    "samples": 80,
+    "resolution": [
+      1440,
+      1080
+    ]
+  },
+  "frames": [
+    {
+      "kind": "movement",
+      "framesPerVariant": 48,
+      "allUnique": true
+    },
+    {
+      "kind": "sapphire",
+      "framesPerVariant": 18,
+      "allUnique": true
+    },
+    {
+      "kind": "anthracite",
+      "framesPerVariant": 18,
+      "allUnique": true
+    },
+    {
+      "kind": "rubber",
+      "framesPerVariant": 18,
+      "allUnique": true
+    }
+  ],
+  "totalWebpBytes": 8050418,
+  "webpFiles": 212,
+  "passed": true
+}

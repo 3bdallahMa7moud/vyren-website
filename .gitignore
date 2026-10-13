@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+qa/*.log
+qa/test-results/
+
+# Generated builds, local environment files and QA recordings
+.next*/
+.env*
+!.env.example
+qa/**/*.png
+qa/**/*.jpg
+qa/**/*.webm
+qa/**/*.mp4
+qa/**/*.log

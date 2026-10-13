@@ -1,0 +1,48 @@
+{
+  "dimensions": [
+    1600,
+    1200
+  ],
+  "rgbaMeanAbsoluteDifference": [
+    0.74629375,
+    0.7247239583333334,
+    0.774575,
+    0.018648958333333333
+  ],
+  "camera": "CAM_HERO 66mm, original orientation and assembled geometry",
+  "color": {
+    "view": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.25,
+    "gamma": 1.0
+  },
+  "pixelIdentityClaimed": false,
+  "referenceSamples": 160,
+  "newSamples": 128,
+  "referenceAlphaBounds": [
+    413,
+    223,
+    1142,
+    1093
+  ],
+  "newAlphaBounds": [
+    415,
+    224,
+    1141,
+    1092
+  ],
+  "compositedMeanRgbDifference": [
+    0.448221875,
+    0.42284895833333336,
+    0.46276875
+  ],
+  "referenceProductMaskedMeanRgbDifference": [
+    1.9695616668391935,
+    1.857458334771057,
+    2.033865866142185
+  ],
+  "referenceWebpSha256": "855fc97bfcd326a71450ec3a8c9b98daeff70893878165fee76132fb0ce8defa",
+  "referenceSourcePng": "D:\\VYREN\\06_WEBSITE\\..\\04_RENDER_OUTPUT\\Hero\\vyren_hero_transparent.png",
+  "referenceSourcePngSha256": "3162a03cc308b093af51b82fb2c637944ddd46b10692a75c0cbee8eebfb2ca60",
+  "masterSha256": "ef5d3a23702617e29040e9c535f9cc9fbab31aff5ef8cff00a174b61bd046dcb"
+}

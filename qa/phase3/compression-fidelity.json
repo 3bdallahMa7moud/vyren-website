@@ -1,0 +1,34 @@
+[
+  {
+    "frame": 0,
+    "wholeImageMeanChannelDifference": 0.14349583333333335,
+    "productMaskMeanChannelDifference": 1.0668494976022806,
+    "alphaMeanDifference": 0.0,
+    "browserBytes": 43166,
+    "meaning": "Compression difference in 0\u2013255 channels; not a realism score"
+  },
+  {
+    "frame": 66,
+    "wholeImageMeanChannelDifference": 0.11615902777777777,
+    "productMaskMeanChannelDifference": 1.07747637159146,
+    "alphaMeanDifference": 0.0,
+    "browserBytes": 38520,
+    "meaning": "Compression difference in 0\u2013255 channels; not a realism score"
+  },
+  {
+    "frame": 12,
+    "wholeImageMeanChannelDifference": 0.08984982638888889,
+    "productMaskMeanChannelDifference": 1.0655278581497143,
+    "alphaMeanDifference": 0.0,
+    "browserBytes": 39196,
+    "meaning": "Compression difference in 0\u2013255 channels; not a realism score"
+  },
+  {
+    "frame": 24,
+    "wholeImageMeanChannelDifference": 0.14418211805555556,
+    "productMaskMeanChannelDifference": 0.9903338939984968,
+    "alphaMeanDifference": 0.0,
+    "browserBytes": 45130,
+    "meaning": "Compression difference in 0\u2013255 channels; not a realism score"
+  }
+]

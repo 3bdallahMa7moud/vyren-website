@@ -1,0 +1,130 @@
+'use client';
+
+import { useEffect, useRef, useState, type MouseEvent } from 'react';
+import { Media } from './media';
+import { StudioViewer } from './studio-viewer';
+import { LightInspection, MaterialDiscovery, Blueprint, FinaleFilm } from './signature-experiences';
+import { AssemblySequence } from './assembly-sequence';
+import { StoryFilm } from './story-films';
+import { useMotion } from './motion';
+import { experience } from '@/lib/experience-state';
+
+const links = [{ title: 'Watch', href: '#watch' }, { title: 'Craftsmanship', href: '#craftsmanship' }, { title: 'Experience', href: '#experience' }, { title: 'Details', href: '#details' }];
+
+export function Arrow({ diagonal = false }: { diagonal?: boolean }) {
+  return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d={diagonal ? 'M6 18 18 6M6 6h12v12' : 'M4 12h15m-6-6 6 6-6 6'} stroke="currentColor" strokeWidth="1.25" /></svg>;
+}
+function Eyebrow({ number, children }: { number: string; children: React.ReactNode }) {
+  return <div className="eyebrow"><span className="scene-number">{number}</span><span>{children}</span></div>;
+}
+function Nav() {
+  const [open, setOpen] = useState(false);
+  const [light, setLight] = useState(false);
+  const button = useRef<HTMLButtonElement>(null);
+  const menu = useRef<HTMLDivElement>(null);
+  const navigateTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => { if (navigateTimer.current) clearTimeout(navigateTimer.current); }, []);
+  const navigateMobile = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault(); setOpen(false);
+    // Let the menu's scroll lock release before starting the long anchor journey.
+    navigateTimer.current = setTimeout(() => {
+      const target = document.querySelector<HTMLElement>(href); if (!target) return;
+      history.pushState(null, '', href);
+      window.scrollTo({ top: target.getBoundingClientRect().top + scrollY - 76, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+      const heading = target.querySelector<HTMLElement>('h1,h2'); heading?.setAttribute('tabindex', '-1'); heading?.focus({ preventScroll: true });
+    }, 60);
+  };
+  useEffect(() => {
+    const update = () => { const rect = document.getElementById('manifesto')?.getBoundingClientRect(); setLight(!!rect && rect.top < 70 && rect.bottom > 70); };
+    window.addEventListener('scroll', update, { passive: true }); update();
+    return () => window.removeEventListener('scroll', update);
+  }, []);
+  useEffect(() => {
+    if (!open) return;
+    const before = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const first = menu.current?.querySelector<HTMLAnchorElement>('a'); first?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { setOpen(false); button.current?.focus(); }
+      if (e.key === 'Tab') {
+        const items = [button.current, ...Array.from(menu.current?.querySelectorAll<HTMLAnchorElement>('a') ?? [])].filter((item): item is HTMLButtonElement | HTMLAnchorElement => !!item);
+        const index = items.indexOf(document.activeElement as HTMLAnchorElement);
+        e.preventDefault(); items[(index + (e.shiftKey ? -1 : 1) + items.length) % items.length]?.focus();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => { document.body.style.overflow = before; window.removeEventListener('keydown', onKey); };
+  }, [open]);
+  return <header className={`navigation ${light && !open ? 'navigation-light' : ''} ${open ? 'menu-open' : ''}`}>
+    <a href="#watch" className="wordmark" aria-label="VYREN home">VYREN</a>
+    <nav className="desktop-nav" aria-label="Main navigation">{links.map(link => <a key={link.title} href={link.href}>{link.title}</a>)}</nav>
+    <a className="nav-model" href="#experience">NOCTIS 01 <Arrow diagonal /></a>
+    <button ref={button} className="menu-toggle" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? 'Close menu' : 'Open menu'} onClick={() => setOpen(!open)}><span /><span /></button>
+    <div ref={menu} id="mobile-menu" className="mobile-menu" hidden={!open}>
+      <nav aria-label="Mobile navigation">{links.map((link, i) => <a key={link.title} href={link.href} onClick={event => navigateMobile(event, link.href)}><span>0{i + 1}</span>{link.title}<Arrow diagonal /></a>)}</nav>
+      <p>VYREN / NOCTIS 01<br /><span>An exploration of precision.</span></p>
+    </div>
+  </header>;
+}
+
+function Assembly() {
+  const [manual, setManual] = useState(false);
+  useEffect(() => {
+    const preference=matchMedia('(prefers-reduced-motion: reduce)');
+    const reset=()=>{setManual(false);experience.manualAssembly=0;};
+    preference.addEventListener('change',reset);
+    return()=>{preference.removeEventListener('change',reset);experience.manualAssembly=null;};
+  },[]);
+  return <section id="assembly" className="assembly scene" aria-labelledby="assembly-title">
+    <div className="assembly-sticky">
+      <div className="assembly-heading"><Eyebrow number="05">Beyond the surface</Eyebrow><h2 id="assembly-title">Every detail.<br /><em>In its place.</em></h2><p>A singular vision.<br />Revealed, layer by layer.</p></div>
+      <AssemblySequence />
+      <div className="component-spotlight" role="status" aria-live="off"><span>ASSEMBLED / NOCTIS 01</span><p>Ten component groups. One complete silhouette.</p></div>
+      <div className="assembly-labels" aria-hidden="true"><svg className="assembly-leaders"><line data-anchor="ASSEMBLY_CRYSTAL" /><line data-anchor="ASSEMBLY_DIAL" /><line data-anchor="ASSEMBLY_MOVEMENT" /><line data-anchor="case_main" /></svg><span className="label-crystal" data-anchor="ASSEMBLY_CRYSTAL">01 <i /> Sapphire-style crystal</span><span className="label-dial" data-anchor="ASSEMBLY_DIAL">02 <i /> Anthracite dial</span><span className="label-movement" data-anchor="ASSEMBLY_MOVEMENT">03 <i /> VN-01 visual assembly</span><span className="label-case" data-anchor="case_main">04 <i /> Sculpted case</span></div>
+      <div className="assembly-footer"><span className="assembly-step">Assembled / 01</span><div className="assembly-progress"><span /></div><span>Scroll to reveal. Scroll back to restore.</span>
+        <button className="text-button reduced-assembly" onClick={() => { const next = !manual; setManual(next); experience.manualAssembly = next ? 1 : 0; }}>{manual ? 'Reassemble' : 'Separate layers'} <Arrow /></button>
+      </div>
+    </div>
+  </section>;
+}
+const materials = [
+  { number: '01', name: 'Titanium', qualifier: 'A study in light.', image: 'case', copy: 'Satin surfaces meet polished edges. An architectural expression of strength and restraint.' },
+  { number: '02', name: 'Sapphire', qualifier: 'Clarity with depth.', image: 'motion-story-v1/sapphire-poster', copy: 'A travelling reflection traces the sapphire-style lens. The intricate landscape beneath stays in view.' },
+  { number: '03', name: 'Anthracite', qualifier: 'Darkness, defined.', image: 'motion-story-v1/anthracite-poster', copy: 'Move closer to the dial. Applied markers rise from the quiet anthracite surface.' },
+  { number: '04', name: 'Rubber', qualifier: 'The softer side of precision.', image: 'motion-story-v1/rubber-poster', copy: 'From the metal shoulder to the molded strap. Quiet texture, a recessed border and one continuous silhouette.' },
+];
+function Materials() {
+  return <section id="materials" className="materials scene" aria-labelledby="materials-title"><div className="materials-sticky">
+    <div className="section-top"><Eyebrow number="06">Materials of time</Eyebrow><h2 id="materials-title">Built to be <em>felt.</em></h2><span className="material-counter">01 — 04</span></div>
+    <div className="materials-window"><div className="materials-track">{materials.map(item => <article key={item.name} className={`material-panel material-${item.name.toLowerCase()}`}><div className="material-image"><Media name={item.image} alt={`Actual VYREN ${item.name.toLowerCase()} design detail, rendered in Blender Cycles`} sizes="(max-width: 700px) 100vw, 65vw" /><MaterialDiscovery material={item.name} /><span>{item.number} / MATERIAL STUDY</span></div><div className="material-copy"><span className="small-label">{item.qualifier}</span><h3><span className="material-name">{item.name}</span><span className="material-dash">—</span></h3><p>{item.copy}</p><span className="material-line" /></div></article>)}</div></div>
+    <div className="materials-footer"><span>Four textures. One expression.</span><div className="material-progress"><span /></div><span className="material-direction">Continue scrolling <Arrow /></span></div>
+  </div></section>;
+}
+export function Landing() {
+  const root = useRef<HTMLDivElement>(null);
+  useMotion(root);
+  return <div ref={root} className="site">
+    <a className="skip-link" href="#manifesto">Skip to content</a><Nav />
+    <main>
+      <section id="watch" className="hero scene" aria-labelledby="hero-title">
+        <div className="hero-topline"><span>THE NOCTIS COLLECTION</span><span>A STUDY IN PRECISION — 01</span></div>
+        <div className="hero-atmosphere" aria-hidden="true" /><div className="hero-product"><Media name="hero" alt="The actual VYREN NOCTIS 01: satin titanium-inspired case, anthracite open-heart dial and integrated black rubber strap" eager sizes="(max-width: 700px) 140vw, 84vw" /></div>
+        <div className="hero-copy"><div className="small-label hero-label"><span className="tiny-mark" />VYREN / NOCTIS 01</div><h1 id="hero-title"><span className="line-mask"><span>Time,</span></span><span className="line-mask"><span><em>redefined.</em></span></span></h1><p>Precision is not measured.<br />It is experienced.</p><div className="hero-actions"><a className="button button-ivory" href="#manifesto">Discover the watch <Arrow diagonal /></a><a className="text-link" href="#experience">Enter the Studio <span className="link-line" /></a></div></div>
+        <div className="hero-bottom"><a href="#manifesto" className="scroll-cue"><span className="scroll-track"><i /></span>SCROLL TO DISCOVER</a><div className="hero-caption"><span>NOCTIS 01</span><span>Darkness reveals character.</span></div><span className="hero-edition">DESIGN EXPLORATION / 2026</span></div>
+      </section>
+      <section id="manifesto" className="manifesto scene" aria-labelledby="manifesto-title">
+        <Eyebrow number="02">An obsession with precision</Eyebrow><div className="manifesto-type" id="manifesto-title" role="heading" aria-level={2} aria-label="Every second has a story."><div className="manifesto-word">EVERY SECOND</div><div className="manifesto-word">HAS A <span className="manifesto-serif">STORY.</span></div></div>
+        <div className="manifesto-product"><Media name="hero" alt="The sculptural silhouette of the NOCTIS 01" sizes="(max-width: 700px) 90vw, 48vw" /></div><div className="manifesto-bottom"><span className="manifesto-statement">The extraordinary<br />is in the ordinary.</span><p>Designed around the smallest details.<br />Built to change the way we see time.</p><span className="manifesto-sign">V / N° 01</span></div><div className="ivory-exit" aria-hidden="true" />
+      </section>
+      <section id="craftsmanship" className="craftsmanship scene" aria-labelledby="craft-title">
+        <div className="section-top"><Eyebrow number="03">Sculpted in titanium</Eyebrow><span className="small-label">THE ARCHITECTURE OF A WATCH</span></div><div className="craft-heading"><h2 id="craft-title">Sculpted from<br /><em>precision.</em></h2><p>Not a line without a purpose.<br />Not an edge without intention.</p></div>
+        <div className="case-film"><div className="case-image"><Media name="case" alt="Macro view of the actual brushed case, polished chamfer, lug and fluted crown" /></div><div className="case-crown"><Media name="crown" alt="A second genuine Cycles camera view: crown flutes and engraved V" /></div><span className="macro-label macro-label-one"><i />01 / SATIN SURFACE</span><span className="macro-label macro-label-two"><i />02 / CROWN & CHAMFER</span><LightInspection /><span className="macro-scale">ACTUAL NOCTIS GEOMETRY<br /><span>CYCLES MATERIAL STUDY / 03</span></span></div>
+        <div className="craft-bottom"><span>01 — SURFACE & FORM</span><p>Titanium-inspired surfaces. Precisely framed reflections.<br />An interplay of brushed planes and polished edges.</p><a className="text-link" href="#materials">The material language <Arrow diagonal /></a></div>
+      </section>
+      <section id="movement" className="movement scene" aria-labelledby="movement-title"><div className="movement-sticky"><div className="movement-image"><Media name="motion-story-v1/movement-poster" alt="Actual exposed balance, hairspring, jewelled bearings and bridges in the VYREN VN-01 illustrative assembly" /><StoryFilm kind="movement" /></div><div className="movement-shade" aria-hidden="true" /><div className="movement-copy"><Eyebrow number="04">The heart of time</Eyebrow><h2 id="movement-title">The art<br />of <em>motion.</em></h2><p>Behind the quiet surface,<br />a world of considered detail.</p><span className="movement-rule" /><p className="movement-detail">Enter the open-heart aperture. Follow the balance, its fine spring and the bridge that holds them in place.</p></div><div className="movement-annotation"><span className="annotation-dot" /><span>BALANCE & HAIRSPRING<br /><small>A rhythm revealed by your scroll.</small></span></div><div className="movement-bridge-callout"><i /><span>SUPPORTING BRIDGE<br /><small>A fixed anchor for a moving heart.</small></span></div><div className="movement-footer"><span>MECHANICAL EXPRESSION / VN-01</span><span>Illustrative mechanism study.</span></div></div></section>
+      <Assembly /><Materials /><StudioViewer />
+      <section id="details" className="details scene" aria-labelledby="details-title"><div className="section-top"><Eyebrow number="08">The details define everything</Eyebrow><span className="small-label">NOCTIS 01 / DESIGN DOSSIER</span></div><h2 id="details-title">Precision in<br /><em>every form.</em></h2><div className="details-grid"><div className="dimension-image"><Media name="front" alt="Front elevation of the NOCTIS 01 concept, with its verified 41 millimetre circular case" /><Blueprint /><div className="dimension-line"><i /><span><b className="dimension-number">41</b> MM</span><i /></div><span className="dimension-caption">CIRCULAR CASE DIAMETER</span></div><div className="specifications"><dl><div><dt>Model</dt><dd>NOCTIS 01</dd></div><div><dt>Case diameter</dt><dd>41 mm</dd></div><div><dt>Case expression</dt><dd>Titanium-inspired</dd></div><div><dt>Crystal</dt><dd>Sapphire-style</dd></div><div><dt>Dial</dt><dd>Anthracite / semi-skeleton</dd></div><div><dt>Strap</dt><dd>Integrated black rubber</dd></div><div><dt>Mechanism</dt><dd>VN-01 visual concept</dd></div></dl><p className="concept-disclosure">NOCTIS 01 is a fictional design exploration. Material names describe visual intent. No manufactured performance, certification or purchase availability is claimed.</p></div></div></section>
+      <section id="moment" className="finale scene" aria-labelledby="final-title"><div className="final-atmosphere" aria-hidden="true" /><div className="final-product"><Media name="hero" alt="The VYREN NOCTIS 01 in its final cinematic composition" /><FinaleFilm /></div><div className="final-copy"><Eyebrow number="09">Own the moment</Eyebrow><h2 id="final-title"><span className="line-mask"><span>Time belongs</span></span><span className="line-mask"><span>to <em>you.</em></span></span></h2><p>VYREN NOCTIS 01 — An exploration of precision.</p><a className="button button-ivory" href="#experience">Enter the Studio <Arrow diagonal /></a></div><div className="final-footer"><span className="wordmark">VYREN</span><span>TIME, REDEFINED.</span><a href="#watch">Back to top <Arrow diagonal /></a></div></section>
+    </main><footer className="site-footer"><span>© 2026 VYREN. A fictional watch concept.</span><span>DESIGNED AROUND THE DETAILS.</span></footer>
+  </div>;
+}

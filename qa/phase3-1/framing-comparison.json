@@ -1,0 +1,128 @@
+[
+  {
+    "viewport": 360,
+    "beforeCanvas": [
+      360,
+      478
+    ],
+    "afterCanvas": [
+      360,
+      481
+    ],
+    "beforeScale": 0.4700333333333333,
+    "afterScale": 0.4371029224904701,
+    "frame0HeightBefore": 313.0422,
+    "frame0HeightAfter": 291.1105463786531,
+    "scaleChangePercent": -7.005973514544328,
+    "worstSilhouetteHeight": 343.12579415501904,
+    "nativeResolution": [
+      720,
+      960
+    ]
+  },
+  {
+    "viewport": 390,
+    "beforeCanvas": [
+      390,
+      478
+    ],
+    "afterCanvas": [
+      390,
+      481
+    ],
+    "beforeScale": 0.4700333333333333,
+    "afterScale": 0.47522236340533675,
+    "frame0HeightBefore": 313.0422,
+    "frame0HeightAfter": 316.49809402795427,
+    "scaleChangePercent": 1.103970655698916,
+    "worstSilhouetteHeight": 373.04955527318936,
+    "nativeResolution": [
+      720,
+      960
+    ]
+  },
+  {
+    "viewport": 768,
+    "beforeCanvas": [
+      768,
+      478
+    ],
+    "afterCanvas": [
+      768,
+      481
+    ],
+    "beforeScale": 0.4700333333333333,
+    "afterScale": 0.5057324840764331,
+    "frame0HeightBefore": 313.0422,
+    "frame0HeightAfter": 336.8178343949045,
+    "scaleChangePercent": 7.595025333614602,
+    "worstSilhouetteHeight": 397.0,
+    "nativeResolution": [
+      720,
+      960
+    ]
+  },
+  {
+    "viewport": 1280,
+    "beforeCanvas": [
+      1166,
+      578
+    ],
+    "afterCanvas": [
+      1166,
+      683
+    ],
+    "beforeScale": 0.6261666666666668,
+    "afterScale": 0.7554140127388536,
+    "frame0HeightBefore": 417.02700000000004,
+    "frame0HeightAfter": 503.1057324840765,
+    "scaleChangePercent": 20.641045420099037,
+    "worstSilhouetteHeight": 593.0,
+    "nativeResolution": [
+      1600,
+      1200
+    ]
+  },
+  {
+    "viewport": 1440,
+    "beforeCanvas": [
+      1312,
+      578
+    ],
+    "afterCanvas": [
+      1312,
+      683
+    ],
+    "beforeScale": 0.6261666666666668,
+    "afterScale": 0.7554140127388536,
+    "frame0HeightBefore": 417.02700000000004,
+    "frame0HeightAfter": 503.1057324840765,
+    "scaleChangePercent": 20.641045420099037,
+    "worstSilhouetteHeight": 593.0,
+    "nativeResolution": [
+      1600,
+      1200
+    ]
+  },
+  {
+    "viewport": 1920,
+    "beforeCanvas": [
+      1749,
+      578
+    ],
+    "afterCanvas": [
+      1749,
+      683
+    ],
+    "beforeScale": 0.6261666666666668,
+    "afterScale": 0.7554140127388536,
+    "frame0HeightBefore": 417.02700000000004,
+    "frame0HeightAfter": 503.1057324840765,
+    "scaleChangePercent": 20.641045420099037,
+    "worstSilhouetteHeight": 593.0,
+    "nativeResolution": [
+      1600,
+      1200
+    ]
+  }
+]

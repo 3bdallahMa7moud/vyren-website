@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const context=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true});
+const page=await context.newPage(),cdp=await context.newCDPSession(page);
+await cdp.send('Network.enable');await cdp.send('Network.emulateNetworkConditions',{offline:false,downloadThroughput:500000,uploadThroughput:500000,latency:120});
+await page.addInitScript(()=>{window.__S7_LOADING={};const watch=()=>{const t=window.__S7_LOADING,d=window.__VYREN?.diagnostics();if(document.documentElement?.dataset.studio==='ready'&&!t.studioReady)t.studioReady=performance.now();if(d?.activeFrames>0&&!t.firstRenderedFrame)t.firstRenderedFrame=performance.now();if(!t.studioReady||!t.firstRenderedFrame)setTimeout(watch,20);};watch();});
+const responseHeaders=[];page.on('response',r=>{if(r.url().includes('vyren-noctis-01.glb'))responseHeaders.push(r.headers());});
+await page.goto('http://127.0.0.1:3001/#experience');
+await page.waitForFunction(()=>window.__S7_LOADING?.studioReady&&window.__S7_LOADING?.firstRenderedFrame,{},{timeout:90000});
+const result=await page.evaluate(()=>({measuredFromNavigationStartMs:window.__S7_LOADING,resources:performance.getEntriesByType('resource').filter(e=>e.name.includes('vyren-noctis-01.glb')).map(e=>({url:new URL(e.name).pathname,transferSize:e.transferSize,encodedBodySize:e.encodedBodySize,decodedBodySize:e.decodedBodySize,duration:e.duration,startTime:e.startTime,responseEnd:e.responseEnd})),viewport:[innerWidth,innerHeight],devicePixelRatio,dpr:window.__VYREN.diagnostics().dpr}));
+result.scope='Cold 4 Mbps / 120 ms CDP network emulation in desktop Edge, mobile 390×844 DPR 2. Ready and first render observed every 20 ms, no fixed photography delays included.';result.responseHeaders=responseHeaders;
+await page.screenshot({path:'qa/section-seven/network-first-ready.png'});fs.writeFileSync('qa/section-seven/network-loading.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));await context.close();await browser.close();

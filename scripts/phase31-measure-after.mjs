@@ -1,0 +1,16 @@
+import {chromium} from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({channel:'msedge',headless:true});const results=[];
+for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
+ const context=await browser.newContext({viewport,deviceScaleFactor:1,isMobile:viewport.width<700,hasTouch:viewport.width<700});const page=await context.newPage();
+ await page.addInitScript(()=>{window.__phase3Perf={lcp:0,cls:0,longTasks:[]};new PerformanceObserver(l=>l.getEntries().forEach(e=>window.__phase3Perf.lcp=e.startTime)).observe({type:'largest-contentful-paint',buffered:true});new PerformanceObserver(l=>l.getEntries().forEach(e=>{if(!e.hadRecentInput)window.__phase3Perf.cls+=e.value;})).observe({type:'layout-shift',buffered:true});new PerformanceObserver(l=>l.getEntries().forEach(e=>window.__phase3Perf.longTasks.push(e.duration))).observe({type:'longtask',buffered:true});});
+ await page.goto('http://127.0.0.1:3001/');await page.waitForTimeout(3000);const initial=await page.evaluate(()=>({metrics:window.__phase3Perf,resources:performance.getEntriesByType('resource').map(e=>({url:new URL(e.name).pathname,bytes:e.transferSize,duration:e.duration})),glbRequested:performance.getEntriesByType('resource').some(e=>e.name.includes('.glb'))}));
+ const cdp=await context.newCDPSession(page);await cdp.send('Network.enable');await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:120,downloadThroughput:500000,uploadThroughput:250000});
+ const started=Date.now();await page.goto('http://127.0.0.1:3001/#experience',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.__VYREN_STUDIO?.diagnostics().displayedFrame>=0);const first=Date.now()-started;await page.waitForFunction(()=>window.__VYREN_STUDIO?.diagnostics().fullResolution);const refined=Date.now()-started;await page.waitForTimeout(1500);
+ const before=await page.evaluate(()=>window.__VYREN_STUDIO.diagnostics());let samples=[];for(const f of [12,24,36,48,60,71,0]){await page.evaluate(f=>window.__VYREN_STUDIO.seek(f),f);await page.waitForTimeout(780);samples.push(await page.evaluate(()=>window.__VYREN_STUDIO.diagnostics()));}
+ await page.waitForFunction(()=>window.__VYREN_STUDIO.diagnostics().fullResolution);const end=await page.evaluate(()=>({d:window.__VYREN_STUDIO.diagnostics(),resources:performance.getEntriesByType('resource').filter(e=>e.name.includes('studio-cycles')).map(e=>({url:new URL(e.name).pathname,bytes:e.transferSize,duration:e.duration})),heap:performance.memory?.usedJSHeapSize??null}));
+ results.push({viewport,scope:'Installed desktop Edge, DPR 1; 4 Mbps / 120 ms CDP simulation; timing starts before HTML navigation, first visible source poster is separate; same context cached application shell',initial,firstOrbitMs:first,refinedMs:refined,before,samples,end});await context.close();
+}
+fs.writeFileSync('qa/phase3-1/performance-after.json',JSON.stringify({browser:browser.version(),results},null,2));await browser.close();console.log(results.map(r=>({viewport:r.viewport,initialBytes:r.initial.resources.reduce((n,e)=>n+e.bytes,0),glb:r.initial.glbRequested,first:r.firstOrbitMs,refined:r.refinedMs,cache:r.end.d})));
+
+

@@ -1,0 +1,985 @@
+{
+  "video": "after/scroll-through.webm",
+  "recordedFramesAt5fps": 363,
+  "firstProductFrameSeconds": 0.4,
+  "reviewedContinuousRangeSeconds": [
+    34.171,
+    66.422
+  ],
+  "nearUniformSamples": [],
+  "samples": [
+    {
+      "seconds": 34.2,
+      "luma": 29.4,
+      "contrastStdDev": 42.24,
+      "deltaRgb": 1.17
+    },
+    {
+      "seconds": 34.4,
+      "luma": 29.38,
+      "contrastStdDev": 42.22,
+      "deltaRgb": 0.1
+    },
+    {
+      "seconds": 34.6,
+      "luma": 29.38,
+      "contrastStdDev": 42.21,
+      "deltaRgb": 0.12
+    },
+    {
+      "seconds": 34.8,
+      "luma": 29.38,
+      "contrastStdDev": 42.21,
+      "deltaRgb": 0.03
+    },
+    {
+      "seconds": 35.0,
+      "luma": 29.38,
+      "contrastStdDev": 42.21,
+      "deltaRgb": 0.06
+    },
+    {
+      "seconds": 35.2,
+      "luma": 29.38,
+      "contrastStdDev": 42.21,
+      "deltaRgb": 0.03
+    },
+    {
+      "seconds": 35.4,
+      "luma": 29.38,
+      "contrastStdDev": 42.21,
+      "deltaRgb": 0.05
+    },
+    {
+      "seconds": 35.6,
+      "luma": 29.38,
+      "contrastStdDev": 42.21,
+      "deltaRgb": 0.02
+    },
+    {
+      "seconds": 35.8,
+      "luma": 47.85,
+      "contrastStdDev": 70.14,
+      "deltaRgb": 40.21
+    },
+    {
+      "seconds": 36.0,
+      "luma": 72.08,
+      "contrastStdDev": 90.2,
+      "deltaRgb": 46.92
+    },
+    {
+      "seconds": 36.2,
+      "luma": 93.13,
+      "contrastStdDev": 100.4,
+      "deltaRgb": 48.74
+    },
+    {
+      "seconds": 36.4,
+      "luma": 112.39,
+      "contrastStdDev": 105.7,
+      "deltaRgb": 49.43
+    },
+    {
+      "seconds": 36.6,
+      "luma": 129.56,
+      "contrastStdDev": 107.9,
+      "deltaRgb": 50.78
+    },
+    {
+      "seconds": 36.8,
+      "luma": 152.48,
+      "contrastStdDev": 105.78,
+      "deltaRgb": 49.1
+    },
+    {
+      "seconds": 37.0,
+      "luma": 170.59,
+      "contrastStdDev": 100.03,
+      "deltaRgb": 45.99
+    },
+    {
+      "seconds": 37.2,
+      "luma": 191.82,
+      "contrastStdDev": 86.73,
+      "deltaRgb": 46.79
+    },
+    {
+      "seconds": 37.4,
+      "luma": 213.37,
+      "contrastStdDev": 63.34,
+      "deltaRgb": 47.27
+    },
+    {
+      "seconds": 37.6,
+      "luma": 219.06,
+      "contrastStdDev": 53.98,
+      "deltaRgb": 31.52
+    },
+    {
+      "seconds": 37.8,
+      "luma": 218.78,
+      "contrastStdDev": 54.14,
+      "deltaRgb": 26.67
+    },
+    {
+      "seconds": 38.0,
+      "luma": 218.78,
+      "contrastStdDev": 54.09,
+      "deltaRgb": 11.84
+    },
+    {
+      "seconds": 38.2,
+      "luma": 218.79,
+      "contrastStdDev": 54.09,
+      "deltaRgb": 0.22
+    },
+    {
+      "seconds": 38.4,
+      "luma": 211.03,
+      "contrastStdDev": 65.04,
+      "deltaRgb": 25.38
+    },
+    {
+      "seconds": 38.6,
+      "luma": 190.67,
+      "contrastStdDev": 85.49,
+      "deltaRgb": 46.17
+    },
+    {
+      "seconds": 38.8,
+      "luma": 168.74,
+      "contrastStdDev": 97.86,
+      "deltaRgb": 40.68
+    },
+    {
+      "seconds": 39.0,
+      "luma": 138.54,
+      "contrastStdDev": 105.44,
+      "deltaRgb": 46.79
+    },
+    {
+      "seconds": 39.2,
+      "luma": 81.46,
+      "contrastStdDev": 95.26,
+      "deltaRgb": 66.5
+    },
+    {
+      "seconds": 39.4,
+      "luma": 30.03,
+      "contrastStdDev": 38.43,
+      "deltaRgb": 64.67
+    },
+    {
+      "seconds": 39.6,
+      "luma": 35.14,
+      "contrastStdDev": 39.32,
+      "deltaRgb": 20.01
+    },
+    {
+      "seconds": 39.8,
+      "luma": 46.61,
+      "contrastStdDev": 51.48,
+      "deltaRgb": 21.33
+    },
+    {
+      "seconds": 40.0,
+      "luma": 59.06,
+      "contrastStdDev": 58.85,
+      "deltaRgb": 28.38
+    },
+    {
+      "seconds": 40.2,
+      "luma": 66.06,
+      "contrastStdDev": 59.45,
+      "deltaRgb": 33.61
+    },
+    {
+      "seconds": 40.4,
+      "luma": 69.98,
+      "contrastStdDev": 58.27,
+      "deltaRgb": 38.97
+    },
+    {
+      "seconds": 40.6,
+      "luma": 69.42,
+      "contrastStdDev": 57.33,
+      "deltaRgb": 41.93
+    },
+    {
+      "seconds": 40.8,
+      "luma": 69.34,
+      "contrastStdDev": 57.32,
+      "deltaRgb": 30.6
+    },
+    {
+      "seconds": 41.0,
+      "luma": 69.3,
+      "contrastStdDev": 57.32,
+      "deltaRgb": 2.11
+    },
+    {
+      "seconds": 41.2,
+      "luma": 69.29,
+      "contrastStdDev": 57.32,
+      "deltaRgb": 0.32
+    },
+    {
+      "seconds": 41.4,
+      "luma": 70.68,
+      "contrastStdDev": 56.86,
+      "deltaRgb": 40.17
+    },
+    {
+      "seconds": 41.6,
+      "luma": 69.66,
+      "contrastStdDev": 56.06,
+      "deltaRgb": 42.52
+    },
+    {
+      "seconds": 41.8,
+      "luma": 67.22,
+      "contrastStdDev": 56.76,
+      "deltaRgb": 38.19
+    },
+    {
+      "seconds": 42.0,
+      "luma": 50.03,
+      "contrastStdDev": 47.09,
+      "deltaRgb": 38.2
+    },
+    {
+      "seconds": 42.2,
+      "luma": 42.55,
+      "contrastStdDev": 38.45,
+      "deltaRgb": 28.03
+    },
+    {
+      "seconds": 42.4,
+      "luma": 38.73,
+      "contrastStdDev": 35.07,
+      "deltaRgb": 24.67
+    },
+    {
+      "seconds": 42.6,
+      "luma": 35.08,
+      "contrastStdDev": 30.65,
+      "deltaRgb": 22.24
+    },
+    {
+      "seconds": 42.8,
+      "luma": 35.07,
+      "contrastStdDev": 31.08,
+      "deltaRgb": 19.02
+    },
+    {
+      "seconds": 43.0,
+      "luma": 36.73,
+      "contrastStdDev": 32.22,
+      "deltaRgb": 18.8
+    },
+    {
+      "seconds": 43.2,
+      "luma": 36.47,
+      "contrastStdDev": 31.41,
+      "deltaRgb": 18.08
+    },
+    {
+      "seconds": 43.4,
+      "luma": 36.33,
+      "contrastStdDev": 31.21,
+      "deltaRgb": 10.32
+    },
+    {
+      "seconds": 43.6,
+      "luma": 36.34,
+      "contrastStdDev": 31.21,
+      "deltaRgb": 0.1
+    },
+    {
+      "seconds": 43.8,
+      "luma": 38.56,
+      "contrastStdDev": 29.64,
+      "deltaRgb": 11.1
+    },
+    {
+      "seconds": 44.0,
+      "luma": 40.37,
+      "contrastStdDev": 30.89,
+      "deltaRgb": 8.44
+    },
+    {
+      "seconds": 44.2,
+      "luma": 40.43,
+      "contrastStdDev": 31.02,
+      "deltaRgb": 0.99
+    },
+    {
+      "seconds": 44.4,
+      "luma": 40.4,
+      "contrastStdDev": 31.03,
+      "deltaRgb": 1.25
+    },
+    {
+      "seconds": 44.6,
+      "luma": 40.35,
+      "contrastStdDev": 30.99,
+      "deltaRgb": 4.1
+    },
+    {
+      "seconds": 44.8,
+      "luma": 40.31,
+      "contrastStdDev": 30.95,
+      "deltaRgb": 3.95
+    },
+    {
+      "seconds": 45.0,
+      "luma": 40.22,
+      "contrastStdDev": 30.92,
+      "deltaRgb": 3.89
+    },
+    {
+      "seconds": 45.2,
+      "luma": 40.15,
+      "contrastStdDev": 30.91,
+      "deltaRgb": 2.48
+    },
+    {
+      "seconds": 45.4,
+      "luma": 40.14,
+      "contrastStdDev": 30.91,
+      "deltaRgb": 0.32
+    },
+    {
+      "seconds": 45.6,
+      "luma": 39.79,
+      "contrastStdDev": 30.81,
+      "deltaRgb": 14.46
+    },
+    {
+      "seconds": 45.8,
+      "luma": 38.81,
+      "contrastStdDev": 30.44,
+      "deltaRgb": 18.36
+    },
+    {
+      "seconds": 46.0,
+      "luma": 37.02,
+      "contrastStdDev": 28.48,
+      "deltaRgb": 16.79
+    },
+    {
+      "seconds": 46.2,
+      "luma": 35.14,
+      "contrastStdDev": 27.3,
+      "deltaRgb": 14.83
+    },
+    {
+      "seconds": 46.4,
+      "luma": 34.46,
+      "contrastStdDev": 26.99,
+      "deltaRgb": 14.46
+    },
+    {
+      "seconds": 46.6,
+      "luma": 33.79,
+      "contrastStdDev": 27.12,
+      "deltaRgb": 14.47
+    },
+    {
+      "seconds": 46.8,
+      "luma": 33.42,
+      "contrastStdDev": 27.66,
+      "deltaRgb": 14.51
+    },
+    {
+      "seconds": 47.0,
+      "luma": 32.42,
+      "contrastStdDev": 26.35,
+      "deltaRgb": 14.01
+    },
+    {
+      "seconds": 47.2,
+      "luma": 31.58,
+      "contrastStdDev": 25.26,
+      "deltaRgb": 12.8
+    },
+    {
+      "seconds": 47.4,
+      "luma": 30.54,
+      "contrastStdDev": 23.98,
+      "deltaRgb": 10.78
+    },
+    {
+      "seconds": 47.6,
+      "luma": 30.71,
+      "contrastStdDev": 24.15,
+      "deltaRgb": 8.72
+    },
+    {
+      "seconds": 47.8,
+      "luma": 30.71,
+      "contrastStdDev": 24.17,
+      "deltaRgb": 0.07
+    },
+    {
+      "seconds": 48.0,
+      "luma": 30.93,
+      "contrastStdDev": 24.32,
+      "deltaRgb": 2.26
+    },
+    {
+      "seconds": 48.2,
+      "luma": 31.06,
+      "contrastStdDev": 24.51,
+      "deltaRgb": 2.47
+    },
+    {
+      "seconds": 48.4,
+      "luma": 31.15,
+      "contrastStdDev": 24.55,
+      "deltaRgb": 2.7
+    },
+    {
+      "seconds": 48.6,
+      "luma": 31.17,
+      "contrastStdDev": 24.38,
+      "deltaRgb": 3.63
+    },
+    {
+      "seconds": 48.8,
+      "luma": 31.25,
+      "contrastStdDev": 24.16,
+      "deltaRgb": 4.37
+    },
+    {
+      "seconds": 49.0,
+      "luma": 31.49,
+      "contrastStdDev": 24.33,
+      "deltaRgb": 4.9
+    },
+    {
+      "seconds": 49.2,
+      "luma": 31.84,
+      "contrastStdDev": 24.68,
+      "deltaRgb": 5.18
+    },
+    {
+      "seconds": 49.4,
+      "luma": 32.11,
+      "contrastStdDev": 24.85,
+      "deltaRgb": 4.71
+    },
+    {
+      "seconds": 49.6,
+      "luma": 32.14,
+      "contrastStdDev": 24.86,
+      "deltaRgb": 3.15
+    },
+    {
+      "seconds": 49.8,
+      "luma": 32.14,
+      "contrastStdDev": 24.86,
+      "deltaRgb": 0.15
+    },
+    {
+      "seconds": 50.0,
+      "luma": 32.15,
+      "contrastStdDev": 24.88,
+      "deltaRgb": 0.27
+    },
+    {
+      "seconds": 50.2,
+      "luma": 32.2,
+      "contrastStdDev": 24.92,
+      "deltaRgb": 0.47
+    },
+    {
+      "seconds": 50.4,
+      "luma": 32.22,
+      "contrastStdDev": 24.93,
+      "deltaRgb": 3.0
+    },
+    {
+      "seconds": 50.6,
+      "luma": 31.91,
+      "contrastStdDev": 24.75,
+      "deltaRgb": 5.36
+    },
+    {
+      "seconds": 50.8,
+      "luma": 31.47,
+      "contrastStdDev": 24.29,
+      "deltaRgb": 5.56
+    },
+    {
+      "seconds": 51.0,
+      "luma": 31.23,
+      "contrastStdDev": 24.27,
+      "deltaRgb": 4.82
+    },
+    {
+      "seconds": 51.2,
+      "luma": 31.21,
+      "contrastStdDev": 24.52,
+      "deltaRgb": 4.1
+    },
+    {
+      "seconds": 51.4,
+      "luma": 31.1,
+      "contrastStdDev": 24.48,
+      "deltaRgb": 3.26
+    },
+    {
+      "seconds": 51.6,
+      "luma": 30.85,
+      "contrastStdDev": 24.22,
+      "deltaRgb": 2.84
+    },
+    {
+      "seconds": 51.8,
+      "luma": 30.78,
+      "contrastStdDev": 24.18,
+      "deltaRgb": 0.99
+    },
+    {
+      "seconds": 52.0,
+      "luma": 30.78,
+      "contrastStdDev": 24.19,
+      "deltaRgb": 0.1
+    },
+    {
+      "seconds": 52.2,
+      "luma": 30.32,
+      "contrastStdDev": 24.28,
+      "deltaRgb": 9.19
+    },
+    {
+      "seconds": 52.4,
+      "luma": 29.98,
+      "contrastStdDev": 24.59,
+      "deltaRgb": 10.02
+    },
+    {
+      "seconds": 52.6,
+      "luma": 29.05,
+      "contrastStdDev": 22.14,
+      "deltaRgb": 10.06
+    },
+    {
+      "seconds": 52.8,
+      "luma": 28.52,
+      "contrastStdDev": 20.51,
+      "deltaRgb": 8.79
+    },
+    {
+      "seconds": 53.0,
+      "luma": 29.11,
+      "contrastStdDev": 22.59,
+      "deltaRgb": 9.77
+    },
+    {
+      "seconds": 53.2,
+      "luma": 33.65,
+      "contrastStdDev": 33.69,
+      "deltaRgb": 12.64
+    },
+    {
+      "seconds": 53.4,
+      "luma": 39.3,
+      "contrastStdDev": 42.01,
+      "deltaRgb": 14.77
+    },
+    {
+      "seconds": 53.6,
+      "luma": 44.53,
+      "contrastStdDev": 48.15,
+      "deltaRgb": 17.82
+    },
+    {
+      "seconds": 53.8,
+      "luma": 46.79,
+      "contrastStdDev": 48.69,
+      "deltaRgb": 21.08
+    },
+    {
+      "seconds": 54.0,
+      "luma": 47.86,
+      "contrastStdDev": 48.58,
+      "deltaRgb": 22.41
+    },
+    {
+      "seconds": 54.2,
+      "luma": 48.62,
+      "contrastStdDev": 49.0,
+      "deltaRgb": 17.02
+    },
+    {
+      "seconds": 54.4,
+      "luma": 50.08,
+      "contrastStdDev": 49.85,
+      "deltaRgb": 1.69
+    },
+    {
+      "seconds": 54.6,
+      "luma": 50.81,
+      "contrastStdDev": 50.26,
+      "deltaRgb": 0.83
+    },
+    {
+      "seconds": 54.8,
+      "luma": 50.57,
+      "contrastStdDev": 49.48,
+      "deltaRgb": 18.68
+    },
+    {
+      "seconds": 55.0,
+      "luma": 52.27,
+      "contrastStdDev": 51.82,
+      "deltaRgb": 43.65
+    },
+    {
+      "seconds": 55.2,
+      "luma": 52.64,
+      "contrastStdDev": 51.85,
+      "deltaRgb": 49.34
+    },
+    {
+      "seconds": 55.4,
+      "luma": 52.75,
+      "contrastStdDev": 51.89,
+      "deltaRgb": 9.04
+    },
+    {
+      "seconds": 55.6,
+      "luma": 52.75,
+      "contrastStdDev": 51.9,
+      "deltaRgb": 0.28
+    },
+    {
+      "seconds": 55.8,
+      "luma": 52.74,
+      "contrastStdDev": 51.89,
+      "deltaRgb": 0.12
+    },
+    {
+      "seconds": 56.0,
+      "luma": 50.16,
+      "contrastStdDev": 49.9,
+      "deltaRgb": 27.94
+    },
+    {
+      "seconds": 56.2,
+      "luma": 38.28,
+      "contrastStdDev": 36.47,
+      "deltaRgb": 36.28
+    },
+    {
+      "seconds": 56.4,
+      "luma": 38.42,
+      "contrastStdDev": 36.54,
+      "deltaRgb": 26.88
+    },
+    {
+      "seconds": 56.6,
+      "luma": 38.42,
+      "contrastStdDev": 36.63,
+      "deltaRgb": 5.57
+    },
+    {
+      "seconds": 56.8,
+      "luma": 38.43,
+      "contrastStdDev": 36.63,
+      "deltaRgb": 0.01
+    },
+    {
+      "seconds": 57.0,
+      "luma": 38.39,
+      "contrastStdDev": 36.47,
+      "deltaRgb": 3.21
+    },
+    {
+      "seconds": 57.2,
+      "luma": 40.05,
+      "contrastStdDev": 34.8,
+      "deltaRgb": 26.23
+    },
+    {
+      "seconds": 57.4,
+      "luma": 48.58,
+      "contrastStdDev": 42.2,
+      "deltaRgb": 36.28
+    },
+    {
+      "seconds": 57.6,
+      "luma": 48.48,
+      "contrastStdDev": 42.1,
+      "deltaRgb": 24.34
+    },
+    {
+      "seconds": 57.8,
+      "luma": 48.54,
+      "contrastStdDev": 42.15,
+      "deltaRgb": 0.54
+    },
+    {
+      "seconds": 58.0,
+      "luma": 48.54,
+      "contrastStdDev": 42.15,
+      "deltaRgb": 0.04
+    },
+    {
+      "seconds": 58.2,
+      "luma": 48.51,
+      "contrastStdDev": 42.12,
+      "deltaRgb": 0.15
+    },
+    {
+      "seconds": 58.4,
+      "luma": 48.53,
+      "contrastStdDev": 42.11,
+      "deltaRgb": 0.1
+    },
+    {
+      "seconds": 58.6,
+      "luma": 48.45,
+      "contrastStdDev": 42.15,
+      "deltaRgb": 10.72
+    },
+    {
+      "seconds": 58.8,
+      "luma": 47.62,
+      "contrastStdDev": 42.04,
+      "deltaRgb": 20.75
+    },
+    {
+      "seconds": 59.0,
+      "luma": 42.57,
+      "contrastStdDev": 39.3,
+      "deltaRgb": 16.03
+    },
+    {
+      "seconds": 59.2,
+      "luma": 38.69,
+      "contrastStdDev": 36.51,
+      "deltaRgb": 14.34
+    },
+    {
+      "seconds": 59.4,
+      "luma": 34.64,
+      "contrastStdDev": 31.21,
+      "deltaRgb": 14.76
+    },
+    {
+      "seconds": 59.6,
+      "luma": 30.32,
+      "contrastStdDev": 26.69,
+      "deltaRgb": 12.77
+    },
+    {
+      "seconds": 59.8,
+      "luma": 28.5,
+      "contrastStdDev": 25.07,
+      "deltaRgb": 11.57
+    },
+    {
+      "seconds": 60.0,
+      "luma": 27.82,
+      "contrastStdDev": 25.71,
+      "deltaRgb": 11.57
+    },
+    {
+      "seconds": 60.2,
+      "luma": 27.44,
+      "contrastStdDev": 27.18,
+      "deltaRgb": 11.77
+    },
+    {
+      "seconds": 60.4,
+      "luma": 28.17,
+      "contrastStdDev": 27.34,
+      "deltaRgb": 11.77
+    },
+    {
+      "seconds": 60.6,
+      "luma": 28.81,
+      "contrastStdDev": 27.33,
+      "deltaRgb": 11.51
+    },
+    {
+      "seconds": 60.8,
+      "luma": 28.05,
+      "contrastStdDev": 25.3,
+      "deltaRgb": 11.31
+    },
+    {
+      "seconds": 61.0,
+      "luma": 27.48,
+      "contrastStdDev": 23.58,
+      "deltaRgb": 5.52
+    },
+    {
+      "seconds": 61.2,
+      "luma": 27.48,
+      "contrastStdDev": 23.58,
+      "deltaRgb": 0.02
+    },
+    {
+      "seconds": 61.4,
+      "luma": 27.21,
+      "contrastStdDev": 22.63,
+      "deltaRgb": 5.21
+    },
+    {
+      "seconds": 61.6,
+      "luma": 27.12,
+      "contrastStdDev": 22.69,
+      "deltaRgb": 8.93
+    },
+    {
+      "seconds": 61.8,
+      "luma": 26.58,
+      "contrastStdDev": 23.1,
+      "deltaRgb": 8.28
+    },
+    {
+      "seconds": 62.0,
+      "luma": 26.05,
+      "contrastStdDev": 24.95,
+      "deltaRgb": 8.65
+    },
+    {
+      "seconds": 62.2,
+      "luma": 24.54,
+      "contrastStdDev": 24.25,
+      "deltaRgb": 9.0
+    },
+    {
+      "seconds": 62.4,
+      "luma": 24.05,
+      "contrastStdDev": 21.56,
+      "deltaRgb": 9.16
+    },
+    {
+      "seconds": 62.6,
+      "luma": 24.74,
+      "contrastStdDev": 22.56,
+      "deltaRgb": 8.33
+    },
+    {
+      "seconds": 62.8,
+      "luma": 26.14,
+      "contrastStdDev": 25.43,
+      "deltaRgb": 8.91
+    },
+    {
+      "seconds": 63.0,
+      "luma": 28.97,
+      "contrastStdDev": 29.16,
+      "deltaRgb": 9.01
+    },
+    {
+      "seconds": 63.2,
+      "luma": 31.43,
+      "contrastStdDev": 29.93,
+      "deltaRgb": 10.04
+    },
+    {
+      "seconds": 63.4,
+      "luma": 32.52,
+      "contrastStdDev": 30.21,
+      "deltaRgb": 11.28
+    },
+    {
+      "seconds": 63.6,
+      "luma": 32.55,
+      "contrastStdDev": 30.24,
+      "deltaRgb": 10.67
+    },
+    {
+      "seconds": 63.8,
+      "luma": 32.6,
+      "contrastStdDev": 30.21,
+      "deltaRgb": 0.22
+    },
+    {
+      "seconds": 64.0,
+      "luma": 32.54,
+      "contrastStdDev": 30.24,
+      "deltaRgb": 3.9
+    },
+    {
+      "seconds": 64.2,
+      "luma": 30.81,
+      "contrastStdDev": 28.43,
+      "deltaRgb": 11.79
+    },
+    {
+      "seconds": 64.4,
+      "luma": 29.56,
+      "contrastStdDev": 27.41,
+      "deltaRgb": 11.35
+    },
+    {
+      "seconds": 64.6,
+      "luma": 29.77,
+      "contrastStdDev": 29.1,
+      "deltaRgb": 12.08
+    },
+    {
+      "seconds": 64.8,
+      "luma": 29.37,
+      "contrastStdDev": 30.44,
+      "deltaRgb": 12.62
+    },
+    {
+      "seconds": 65.0,
+      "luma": 31.69,
+      "contrastStdDev": 35.64,
+      "deltaRgb": 16.19
+    },
+    {
+      "seconds": 65.2,
+      "luma": 31.62,
+      "contrastStdDev": 35.79,
+      "deltaRgb": 18.95
+    },
+    {
+      "seconds": 65.4,
+      "luma": 30.85,
+      "contrastStdDev": 34.76,
+      "deltaRgb": 19.64
+    },
+    {
+      "seconds": 65.6,
+      "luma": 29.83,
+      "contrastStdDev": 36.97,
+      "deltaRgb": 20.84
+    },
+    {
+      "seconds": 65.8,
+      "luma": 29.24,
+      "contrastStdDev": 37.94,
+      "deltaRgb": 20.75
+    },
+    {
+      "seconds": 66.0,
+      "luma": 29.17,
+      "contrastStdDev": 37.9,
+      "deltaRgb": 20.37
+    },
+    {
+      "seconds": 66.2,
+      "luma": 29.12,
+      "contrastStdDev": 37.87,
+      "deltaRgb": 6.43
+    },
+    {
+      "seconds": 66.4,
+      "luma": 29.12,
+      "contrastStdDev": 37.86,
+      "deltaRgb": 0.11
+    }
+  ],
+  "method": "Decoded actual video at 5 fps; sequential quarter/middle/late frames inspected per scene. Hero filmstrip starts at the first sampled product frame; the full recording retains the white browser page before navigation. Not a live-frame-time or stutter benchmark. Earlier baseline recording uses 100px stepped scroll with section jumps; do not compare video smoothness quantitatively."
+}

@@ -1,0 +1,156 @@
+{
+  "sourceHash": "5af8ebb6e04309692e34bf4e55d530f9464c320e0b45dbe15f0e0dcd11a8dd5e",
+  "cases": [
+    {
+      "width": 360,
+      "initial": {
+        "clip": "none",
+        "visibility": "hidden",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 674.71875,
+        "scroll": 9707
+      },
+      "finished": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 674.71875,
+        "scroll": 9707
+      },
+      "revisited": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 674.71875,
+        "scroll": 9707
+      },
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "width": 390,
+      "initial": {
+        "clip": "none",
+        "visibility": "hidden",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 675.4375,
+        "scroll": 9690
+      },
+      "finished": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 675.4375,
+        "scroll": 9690
+      },
+      "revisited": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 675.4375,
+        "scroll": 9690
+      },
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "width": 768,
+      "initial": {
+        "clip": "inset(0px 93.4007% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 675.390625,
+        "scroll": 9794
+      },
+      "finished": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 675.390625,
+        "scroll": 9794
+      },
+      "revisited": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 675.390625,
+        "scroll": 9794
+      },
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "width": 1440,
+      "initial": {
+        "clip": "inset(0px 90.5634% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 800.046875,
+        "scroll": 11910
+      },
+      "finished": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 800.046875,
+        "scroll": 11910
+      },
+      "revisited": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 800.046875,
+        "scroll": 11910
+      },
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "width": 1857,
+      "initial": {
+        "clip": "inset(0px 93.4007% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 799.8125,
+        "scroll": 12271
+      },
+      "finished": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 799.8125,
+        "scroll": 12271
+      },
+      "revisited": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 799.8125,
+        "scroll": 12271
+      },
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "name": "reduced-motion-and-details-anchor",
+      "clip": "none",
+      "visibility": "visible",
+      "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+      "top": 349.671875,
+      "scroll": 8130
+    },
+    {
+      "name": "delayed-image",
+      "waiting": {
+        "clip": "none",
+        "visibility": "hidden",
+        "src": "",
+        "top": 800.046875,
+        "scroll": 11910
+      },
+      "loaded": {
+        "clip": "inset(0px 0% 0px 0px)",
+        "visibility": "visible",
+        "src": "http://127.0.0.1:3002/_next/static/media/blueprint.1s9qep3yk1moa.svg",
+        "top": 800.046875,
+        "scroll": 11910
+      }
+    }
+  ],
+  "errors": []
+}

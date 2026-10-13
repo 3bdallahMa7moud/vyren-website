@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { createHash } from 'node:crypto';
+import assert from 'node:assert/strict';
+const root = 'D:/VYREN';
+const protectedAssets = JSON.parse(fs.readFileSync(`${root}/08_BACKUPS/WEBSITE_MOTION_STORY_ENTRY_20261011/protected-assets.json`, 'utf8'));
+const changed = Object.entries(protectedAssets).filter(([file, hash]) => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex') !== hash).map(([file]) => file);
+assert.deepEqual(changed, []);
+const manifest = JSON.parse(fs.readFileSync('public/assets/finale-reveal-v1/provenance.json', 'utf8'));
+assert.equal(manifest.renderSource.renders.length, 72);
+assert.ok(manifest.renderSource.renders.every(r => r.samples === 40 && r.resolution.every(n => n === 1200)));
+assert.equal(manifest.renderSource.savedBlend, false);
+assert.equal(manifest.assets.length, 148);
+for (const a of manifest.assets) assert.equal(createHash('sha256').update(fs.readFileSync(`public/assets/finale-reveal-v1/${a.file}`)).digest('hex'), a.sha256);
+const result = { protectedAssets: Object.keys(protectedAssets).length, changed, genuineCyclesFrames: 72, cameraTurnDegrees: manifest.renderSource.cameraTurnDegrees, savedBlend: false, newWebpAssets: manifest.assets.length, webpBytes: manifest.assets.reduce((n, a) => n + a.bytes, 0) };
+fs.writeFileSync('qa/finale-reveal/asset-audit.json', JSON.stringify(result, null, 2));
+console.log(JSON.stringify(result, null, 2));

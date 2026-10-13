@@ -1,0 +1,1354 @@
+{
+  "browser": "155.0.4283.45",
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Installed desktop Edge, DPR 1; 4 Mbps / 120 ms CDP simulation; timing starts before HTML navigation, first visible source poster is separate; same context cached application shell",
+      "initial": {
+        "metrics": {
+          "lcp": 196,
+          "cls": 0.0011405756293402778,
+          "longTasks": []
+        },
+        "resources": [
+          {
+            "url": "/_next/static/chunks/0ewq4ip_v5ke5.css",
+            "bytes": 11414,
+            "duration": 12.599999997764826
+          },
+          {
+            "url": "/_next/static/chunks/01ce6pg25fldo.js",
+            "bytes": 7851,
+            "duration": 14.599999997764826
+          },
+          {
+            "url": "/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+            "bytes": 4240,
+            "duration": 15.300000000745058
+          },
+          {
+            "url": "/_next/static/chunks/1y1oplj8d6imb.js",
+            "bytes": 48498,
+            "duration": 18.5
+          },
+          {
+            "url": "/_next/static/chunks/0s7mvllxht1mo.js",
+            "bytes": 72199,
+            "duration": 23.099999997764826
+          },
+          {
+            "url": "/_next/static/chunks/0z0iy1-oo-cnj.js",
+            "bytes": 514,
+            "duration": 17.600000001490116
+          },
+          {
+            "url": "/_next/static/chunks/0umf92h1sb77c.js",
+            "bytes": 3814,
+            "duration": 17.5
+          },
+          {
+            "url": "/_next/static/chunks/250fs5dt04gox.js",
+            "bytes": 48413,
+            "duration": 21.100000001490116
+          },
+          {
+            "url": "/assets/hero-1600.webp",
+            "bytes": 66736,
+            "duration": 10.600000001490116
+          },
+          {
+            "url": "/_next/static/chunks/336q8li0jd9m6.js",
+            "bytes": 27579,
+            "duration": 19.899999998509884
+          },
+          {
+            "url": "/_next/static/media/manrope-latin-400-normal.2xa18tgv2np2i.woff2",
+            "bytes": 14408,
+            "duration": 7.599999997764826
+          },
+          {
+            "url": "/_next/static/media/cormorant-garamond-latin-400-normal.1fm7t8dmldrtt.woff2",
+            "bytes": 23176,
+            "duration": 7.199999999254942
+          },
+          {
+            "url": "/_next/static/media/cormorant-garamond-latin-400-italic.1zhb_kb4w2oq1.woff2",
+            "bytes": 23960,
+            "duration": 7.399999998509884
+          },
+          {
+            "url": "/_next/static/media/manrope-latin-500-normal.23dhs730snm70.woff2",
+            "bytes": 14344,
+            "duration": 6.5
+          },
+          {
+            "url": "/assets/hero-800.webp",
+            "bytes": 28826,
+            "duration": 2.7999999970197678
+          },
+          {
+            "url": "/icon.svg",
+            "bytes": 481,
+            "duration": 14.699999999254942
+          },
+          {
+            "url": "/assets/phase3-signatures/desktop/hero-000.webp",
+            "bytes": 42966,
+            "duration": 3.300000000745058
+          },
+          {
+            "url": "/assets/phase3-signatures/desktop/hero-001.webp",
+            "bytes": 51850,
+            "duration": 3.900000002235174
+          },
+          {
+            "url": "/assets/phase3-signatures/desktop/hero-002.webp",
+            "bytes": 56498,
+            "duration": 2.5
+          },
+          {
+            "url": "/assets/phase3-signatures/desktop/hero-003.webp",
+            "bytes": 63004,
+            "duration": 3.699999999254942
+          }
+        ],
+        "glbRequested": false
+      },
+      "firstOrbitMs": 1832,
+      "refinedMs": 1834,
+      "before": {
+        "cacheFrames": 5,
+        "cacheLimit": 6,
+        "decodedBytes": 38400000,
+        "peakDecodedBytes": 38400000,
+        "peakCacheFrames": 5,
+        "pending": 0,
+        "downloadedBytes": 215772,
+        "fetches": 5,
+        "failedFrames": 0,
+        "abortedRequests": 0,
+        "desiredFrame": 0,
+        "displayedFrame": 0,
+        "draws": 6,
+        "averageDrawMs": 0.10000000024835269,
+        "active": true,
+        "variant": "desktop",
+        "previewDraws": 0,
+        "atlasBytes": 295646,
+        "fullResolution": true,
+        "mode": "studio",
+        "angle": 0,
+        "fullscreen": false
+      },
+      "samples": [
+        {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 2,
+          "downloadedBytes": 336428,
+          "fetches": 14,
+          "failedFrames": 0,
+          "abortedRequests": 5,
+          "desiredFrame": 12,
+          "displayedFrame": 12,
+          "draws": 20,
+          "averageDrawMs": 0.059999999962747096,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 11,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 60,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 2,
+          "downloadedBytes": 428596,
+          "fetches": 24,
+          "failedFrames": 0,
+          "abortedRequests": 12,
+          "desiredFrame": 24,
+          "displayedFrame": 24,
+          "draws": 35,
+          "averageDrawMs": 0.06285714272941861,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 23,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 120,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 2,
+          "downloadedBytes": 587308,
+          "fetches": 33,
+          "failedFrames": 0,
+          "abortedRequests": 17,
+          "desiredFrame": 36,
+          "displayedFrame": 36,
+          "draws": 50,
+          "averageDrawMs": 0.061999999955296516,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 37,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 180,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 2,
+          "downloadedBytes": 714524,
+          "fetches": 42,
+          "failedFrames": 0,
+          "abortedRequests": 23,
+          "desiredFrame": 48,
+          "displayedFrame": 48,
+          "draws": 64,
+          "averageDrawMs": 0.06406250002328306,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 50,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 240,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 2,
+          "downloadedBytes": 839292,
+          "fetches": 51,
+          "failedFrames": 0,
+          "abortedRequests": 29,
+          "desiredFrame": 60,
+          "displayedFrame": 60,
+          "draws": 79,
+          "averageDrawMs": 0.06582278480069546,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 63,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 300,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 0,
+          "downloadedBytes": 1096038,
+          "fetches": 60,
+          "failedFrames": 0,
+          "abortedRequests": 34,
+          "desiredFrame": 71,
+          "displayedFrame": 71,
+          "draws": 95,
+          "averageDrawMs": 0.0663157895207405,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 74,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 355,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 0,
+          "downloadedBytes": 1140020,
+          "fetches": 61,
+          "failedFrames": 0,
+          "abortedRequests": 34,
+          "desiredFrame": 0,
+          "displayedFrame": 0,
+          "draws": 97,
+          "averageDrawMs": 0.0649484536543335,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 74,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 0,
+          "fullscreen": false
+        }
+      ],
+      "end": {
+        "d": {
+          "cacheFrames": 6,
+          "cacheLimit": 6,
+          "decodedBytes": 46080000,
+          "peakDecodedBytes": 46080000,
+          "peakCacheFrames": 6,
+          "pending": 0,
+          "downloadedBytes": 1140020,
+          "fetches": 61,
+          "failedFrames": 0,
+          "abortedRequests": 34,
+          "desiredFrame": 0,
+          "displayedFrame": 0,
+          "draws": 97,
+          "averageDrawMs": 0.0649484536543335,
+          "active": true,
+          "variant": "desktop",
+          "previewDraws": 74,
+          "atlasBytes": 295646,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 0,
+          "fullscreen": false
+        },
+        "resources": [
+          {
+            "url": "/assets/studio-cycles/poster-desktop.webp",
+            "bytes": 43466,
+            "duration": 572.8999999985099
+          },
+          {
+            "url": "/assets/studio-cycles/hotspots.json",
+            "bytes": 6129,
+            "duration": 244
+          },
+          {
+            "url": "/assets/studio-cycles/atlas-desktop.webp",
+            "bytes": 295946,
+            "duration": 2278.199999999255
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/000.webp",
+            "bytes": 43466,
+            "duration": 844.7000000029802
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/001.webp",
+            "bytes": 44166,
+            "duration": 921.3999999985099
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/071.webp",
+            "bytes": 43360,
+            "duration": 616.1000000014901
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/002.webp",
+            "bytes": 44282,
+            "duration": 555.7999999970198
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/070.webp",
+            "bytes": 41998,
+            "duration": 385.5
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/003.webp",
+            "bytes": 0,
+            "duration": 118.5
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/004.webp",
+            "bytes": 0,
+            "duration": 126.59999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/006.webp",
+            "bytes": 0,
+            "duration": 105.60000000149012
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/007.webp",
+            "bytes": 0,
+            "duration": 127.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/009.webp",
+            "bytes": 300,
+            "duration": 217.80000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/010.webp",
+            "bytes": 41438,
+            "duration": 236.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/012.webp",
+            "bytes": 39496,
+            "duration": 225.40000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/013.webp",
+            "bytes": 40622,
+            "duration": 226.20000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/011.webp",
+            "bytes": 0,
+            "duration": 124.59999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/014.webp",
+            "bytes": 0,
+            "duration": 103.80000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/015.webp",
+            "bytes": 0,
+            "duration": 98.59999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/017.webp",
+            "bytes": 0,
+            "duration": 92.80000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/018.webp",
+            "bytes": 0,
+            "duration": 106.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/020.webp",
+            "bytes": 0,
+            "duration": 153.89999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/021.webp",
+            "bytes": 300,
+            "duration": 216.30000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/023.webp",
+            "bytes": 47338,
+            "duration": 225
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/024.webp",
+            "bytes": 45430,
+            "duration": 223
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/025.webp",
+            "bytes": 42096,
+            "duration": 224.40000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/026.webp",
+            "bytes": 300,
+            "duration": 199.5
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/027.webp",
+            "bytes": 0,
+            "duration": 89
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/029.webp",
+            "bytes": 0,
+            "duration": 93.10000000149012
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/030.webp",
+            "bytes": 0,
+            "duration": 107
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/032.webp",
+            "bytes": 300,
+            "duration": 154.40000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/033.webp",
+            "bytes": 34840,
+            "duration": 205.70000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/035.webp",
+            "bytes": 38936,
+            "duration": 203.20000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/036.webp",
+            "bytes": 44040,
+            "duration": 222
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/037.webp",
+            "bytes": 45960,
+            "duration": 225.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/038.webp",
+            "bytes": 300,
+            "duration": 189.59999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/039.webp",
+            "bytes": 0,
+            "duration": 104.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/041.webp",
+            "bytes": 0,
+            "duration": 90.80000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/042.webp",
+            "bytes": 0,
+            "duration": 106.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/044.webp",
+            "bytes": 0,
+            "duration": 155
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/045.webp",
+            "bytes": 300,
+            "duration": 216.89999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/047.webp",
+            "bytes": 41628,
+            "duration": 216.39999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/048.webp",
+            "bytes": 40528,
+            "duration": 219.79999999701977
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/049.webp",
+            "bytes": 38110,
+            "duration": 211.80000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/050.webp",
+            "bytes": 300,
+            "duration": 203.39999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/051.webp",
+            "bytes": 0,
+            "duration": 105.40000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/053.webp",
+            "bytes": 0,
+            "duration": 90.70000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/054.webp",
+            "bytes": 0,
+            "duration": 106.39999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/056.webp",
+            "bytes": 0,
+            "duration": 155.70000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/057.webp",
+            "bytes": 300,
+            "duration": 215.09999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/059.webp",
+            "bytes": 43978,
+            "duration": 231.09999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/060.webp",
+            "bytes": 43580,
+            "duration": 222
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/061.webp",
+            "bytes": 43978,
+            "duration": 226.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/062.webp",
+            "bytes": 300,
+            "duration": 216.40000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/063.webp",
+            "bytes": 0,
+            "duration": 90.5
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/065.webp",
+            "bytes": 0,
+            "duration": 104.59999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/066.webp",
+            "bytes": 0,
+            "duration": 126.40000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/068.webp",
+            "bytes": 300,
+            "duration": 224.5
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/069.webp",
+            "bytes": 41578,
+            "duration": 243.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/071.webp",
+            "bytes": 0,
+            "duration": 1.699999999254942
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/000.webp",
+            "bytes": 0,
+            "duration": 0.6999999992549419
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/070.webp",
+            "bytes": 0,
+            "duration": 0.6999999992549419
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/001.webp",
+            "bytes": 0,
+            "duration": 0.7999999970197678
+          },
+          {
+            "url": "/assets/studio-cycles/desktop/002.webp",
+            "bytes": 0,
+            "duration": 0.9000000022351742
+          }
+        ],
+        "heap": 7300233
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scope": "Installed desktop Edge, DPR 1; 4 Mbps / 120 ms CDP simulation; timing starts before HTML navigation, first visible source poster is separate; same context cached application shell",
+      "initial": {
+        "metrics": {
+          "lcp": 88,
+          "cls": 0,
+          "longTasks": []
+        },
+        "resources": [
+          {
+            "url": "/_next/static/chunks/0ewq4ip_v5ke5.css",
+            "bytes": 11414,
+            "duration": 6.100000001490116
+          },
+          {
+            "url": "/_next/static/chunks/0z0iy1-oo-cnj.js",
+            "bytes": 514,
+            "duration": 8
+          },
+          {
+            "url": "/_next/static/chunks/01ce6pg25fldo.js",
+            "bytes": 7851,
+            "duration": 7.300000000745058
+          },
+          {
+            "url": "/_next/static/chunks/0umf92h1sb77c.js",
+            "bytes": 3814,
+            "duration": 8.300000000745058
+          },
+          {
+            "url": "/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+            "bytes": 4240,
+            "duration": 7.800000000745058
+          },
+          {
+            "url": "/_next/static/chunks/1y1oplj8d6imb.js",
+            "bytes": 48498,
+            "duration": 11.200000002980232
+          },
+          {
+            "url": "/_next/static/chunks/0s7mvllxht1mo.js",
+            "bytes": 72199,
+            "duration": 13
+          },
+          {
+            "url": "/assets/hero-800.webp",
+            "bytes": 28826,
+            "duration": 6.099999997764826
+          },
+          {
+            "url": "/_next/static/chunks/336q8li0jd9m6.js",
+            "bytes": 27579,
+            "duration": 11.099999997764826
+          },
+          {
+            "url": "/_next/static/chunks/250fs5dt04gox.js",
+            "bytes": 48413,
+            "duration": 12.599999997764826
+          },
+          {
+            "url": "/_next/static/media/manrope-latin-400-normal.2xa18tgv2np2i.woff2",
+            "bytes": 14408,
+            "duration": 2.899999998509884
+          },
+          {
+            "url": "/_next/static/media/manrope-latin-500-normal.23dhs730snm70.woff2",
+            "bytes": 14344,
+            "duration": 3
+          },
+          {
+            "url": "/_next/static/media/cormorant-garamond-latin-400-normal.1fm7t8dmldrtt.woff2",
+            "bytes": 23176,
+            "duration": 3.199999999254942
+          },
+          {
+            "url": "/_next/static/media/cormorant-garamond-latin-400-italic.1zhb_kb4w2oq1.woff2",
+            "bytes": 23960,
+            "duration": 2.899999998509884
+          },
+          {
+            "url": "/assets/case-800.webp",
+            "bytes": 41996,
+            "duration": 2.300000000745058
+          },
+          {
+            "url": "/icon.svg",
+            "bytes": 481,
+            "duration": 3
+          },
+          {
+            "url": "/assets/phase3-signatures/mobile/hero-000.webp",
+            "bytes": 24094,
+            "duration": 3.800000000745058
+          },
+          {
+            "url": "/assets/phase3-signatures/mobile/hero-001.webp",
+            "bytes": 27988,
+            "duration": 3.800000000745058
+          },
+          {
+            "url": "/assets/phase3-signatures/mobile/hero-002.webp",
+            "bytes": 30224,
+            "duration": 2.300000000745058
+          },
+          {
+            "url": "/assets/phase3-signatures/mobile/hero-003.webp",
+            "bytes": 34288,
+            "duration": 8.599999997764826
+          }
+        ],
+        "glbRequested": false
+      },
+      "firstOrbitMs": 1444,
+      "refinedMs": 1446,
+      "before": {
+        "cacheFrames": 5,
+        "cacheLimit": 5,
+        "decodedBytes": 13824000,
+        "peakDecodedBytes": 13824000,
+        "peakCacheFrames": 5,
+        "pending": 0,
+        "downloadedBytes": 179604,
+        "fetches": 5,
+        "failedFrames": 0,
+        "abortedRequests": 0,
+        "desiredFrame": 0,
+        "displayedFrame": 0,
+        "draws": 6,
+        "averageDrawMs": 0.10000000024835269,
+        "active": true,
+        "variant": "mobile",
+        "previewDraws": 0,
+        "atlasBytes": 250582,
+        "fullResolution": true,
+        "mode": "studio",
+        "angle": 0,
+        "fullscreen": false
+      },
+      "samples": [
+        {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 2,
+          "downloadedBytes": 252470,
+          "fetches": 15,
+          "failedFrames": 1,
+          "abortedRequests": 5,
+          "desiredFrame": 12,
+          "displayedFrame": 12,
+          "draws": 20,
+          "averageDrawMs": 0.08499999977648258,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 11,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 60,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 2,
+          "downloadedBytes": 331366,
+          "fetches": 24,
+          "failedFrames": 1,
+          "abortedRequests": 12,
+          "desiredFrame": 24,
+          "displayedFrame": 24,
+          "draws": 34,
+          "averageDrawMs": 0.06764705840717344,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 24,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 120,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 2,
+          "downloadedBytes": 506554,
+          "fetches": 34,
+          "failedFrames": 1,
+          "abortedRequests": 17,
+          "desiredFrame": 36,
+          "displayedFrame": 36,
+          "draws": 52,
+          "averageDrawMs": 0.06153846130921291,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 39,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 180,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 2,
+          "downloadedBytes": 616360,
+          "fetches": 43,
+          "failedFrames": 1,
+          "abortedRequests": 24,
+          "desiredFrame": 48,
+          "displayedFrame": 48,
+          "draws": 66,
+          "averageDrawMs": 0.0636363634557435,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 51,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 240,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 2,
+          "downloadedBytes": 764448,
+          "fetches": 54,
+          "failedFrames": 1,
+          "abortedRequests": 30,
+          "desiredFrame": 60,
+          "displayedFrame": 60,
+          "draws": 83,
+          "averageDrawMs": 0.06144578292606825,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 64,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 300,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 0,
+          "downloadedBytes": 939916,
+          "fetches": 63,
+          "failedFrames": 1,
+          "abortedRequests": 36,
+          "desiredFrame": 71,
+          "displayedFrame": 71,
+          "draws": 99,
+          "averageDrawMs": 0.06161616140543812,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 74,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 355,
+          "fullscreen": false
+        },
+        {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 0,
+          "downloadedBytes": 1048838,
+          "fetches": 66,
+          "failedFrames": 1,
+          "abortedRequests": 36,
+          "desiredFrame": 0,
+          "displayedFrame": 0,
+          "draws": 103,
+          "averageDrawMs": 0.061165048297747826,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 74,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 0,
+          "fullscreen": false
+        }
+      ],
+      "end": {
+        "d": {
+          "cacheFrames": 5,
+          "cacheLimit": 5,
+          "decodedBytes": 13824000,
+          "peakDecodedBytes": 13824000,
+          "peakCacheFrames": 5,
+          "pending": 0,
+          "downloadedBytes": 1048838,
+          "fetches": 66,
+          "failedFrames": 1,
+          "abortedRequests": 36,
+          "desiredFrame": 0,
+          "displayedFrame": 0,
+          "draws": 103,
+          "averageDrawMs": 0.061165048297747826,
+          "active": true,
+          "variant": "mobile",
+          "previewDraws": 74,
+          "atlasBytes": 250582,
+          "fullResolution": true,
+          "mode": "studio",
+          "angle": 0,
+          "fullscreen": false
+        },
+        "resources": [
+          {
+            "url": "/assets/studio-cycles/poster-mobile.webp",
+            "bytes": 36192,
+            "duration": 321.0999999977648
+          },
+          {
+            "url": "/assets/studio-cycles/hotspots.json",
+            "bytes": 6129,
+            "duration": 190.89999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/atlas-mobile.webp",
+            "bytes": 250882,
+            "duration": 1567.699999999255
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/000.webp",
+            "bytes": 36192,
+            "duration": 478.1000000014901
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/001.webp",
+            "bytes": 37300,
+            "duration": 492.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/071.webp",
+            "bytes": 35090,
+            "duration": 406.5
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/002.webp",
+            "bytes": 37898,
+            "duration": 427.5999999977648
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/070.webp",
+            "bytes": 34624,
+            "duration": 345.8999999985099
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/003.webp",
+            "bytes": 0,
+            "duration": 113.29999999701977
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/004.webp",
+            "bytes": 0,
+            "duration": 134.5
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/006.webp",
+            "bytes": 0,
+            "duration": 106
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/007.webp",
+            "bytes": 0,
+            "duration": 119.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/009.webp",
+            "bytes": 300,
+            "duration": 216.59999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/010.webp",
+            "bytes": 37526,
+            "duration": 237.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/012.webp",
+            "bytes": 35940,
+            "duration": 209.40000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/013.webp",
+            "bytes": 300,
+            "duration": 139.59999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/011.webp",
+            "bytes": 300,
+            "duration": 161.10000000149012
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/014.webp",
+            "bytes": 300,
+            "duration": 229
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/015.webp",
+            "bytes": 0,
+            "duration": 98.90000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/017.webp",
+            "bytes": 0,
+            "duration": 92.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/018.webp",
+            "bytes": 0,
+            "duration": 106
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/020.webp",
+            "bytes": 300,
+            "duration": 153.10000000149012
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/021.webp",
+            "bytes": 300,
+            "duration": 217.60000000149012
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/023.webp",
+            "bytes": 41134,
+            "duration": 231.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/024.webp",
+            "bytes": 38362,
+            "duration": 204.80000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/025.webp",
+            "bytes": 36550,
+            "duration": 204.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/026.webp",
+            "bytes": 33420,
+            "duration": 202
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/027.webp",
+            "bytes": 0,
+            "duration": 117.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/028.webp",
+            "bytes": 0,
+            "duration": 72.70000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/030.webp",
+            "bytes": 0,
+            "duration": 98.30000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/031.webp",
+            "bytes": 0,
+            "duration": 119.09999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/033.webp",
+            "bytes": 300,
+            "duration": 216.89999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/034.webp",
+            "bytes": 29262,
+            "duration": 207.60000000149012
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/036.webp",
+            "bytes": 37548,
+            "duration": 257.70000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/037.webp",
+            "bytes": 39908,
+            "duration": 253.60000000149012
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/035.webp",
+            "bytes": 0,
+            "duration": 113.79999999701977
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/038.webp",
+            "bytes": 0,
+            "duration": 136.29999999701977
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/039.webp",
+            "bytes": 0,
+            "duration": 99.5
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/041.webp",
+            "bytes": 0,
+            "duration": 91.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/042.webp",
+            "bytes": 0,
+            "duration": 98.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/044.webp",
+            "bytes": 0,
+            "duration": 148.29999999701977
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/045.webp",
+            "bytes": 300,
+            "duration": 217.80000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/047.webp",
+            "bytes": 38096,
+            "duration": 224.89999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/048.webp",
+            "bytes": 37440,
+            "duration": 214.70000000298023
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/049.webp",
+            "bytes": 35170,
+            "duration": 205.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/050.webp",
+            "bytes": 36842,
+            "duration": 207.19999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/046.webp",
+            "bytes": 0,
+            "duration": 15.899999998509884
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/051.webp",
+            "bytes": 0,
+            "duration": 112.90000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/052.webp",
+            "bytes": 0,
+            "duration": 71.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/054.webp",
+            "bytes": 0,
+            "duration": 105.29999999701977
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/055.webp",
+            "bytes": 0,
+            "duration": 120.09999999776483
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/057.webp",
+            "bytes": 300,
+            "duration": 216.79999999701977
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/058.webp",
+            "bytes": 38728,
+            "duration": 233.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/060.webp",
+            "bytes": 37544,
+            "duration": 223.39999999850988
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/061.webp",
+            "bytes": 36174,
+            "duration": 211.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/059.webp",
+            "bytes": 300,
+            "duration": 152
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/062.webp",
+            "bytes": 300,
+            "duration": 161.30000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/063.webp",
+            "bytes": 0,
+            "duration": 105.30000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/065.webp",
+            "bytes": 0,
+            "duration": 105.30000000074506
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/066.webp",
+            "bytes": 0,
+            "duration": 127.5
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/068.webp",
+            "bytes": 300,
+            "duration": 223.69999999925494
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/069.webp",
+            "bytes": 33762,
+            "duration": 219.90000000223517
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/071.webp",
+            "bytes": 0,
+            "duration": 1.1000000014901161
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/000.webp",
+            "bytes": 0,
+            "duration": 0.8000000007450581
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/070.webp",
+            "bytes": 0,
+            "duration": 0.8000000007450581
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/001.webp",
+            "bytes": 0,
+            "duration": 0.6000000014901161
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/002.webp",
+            "bytes": 0,
+            "duration": 1.199999999254942
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/070.webp",
+            "bytes": 0,
+            "duration": 0.6999999992549419
+          },
+          {
+            "url": "/assets/studio-cycles/mobile/001.webp",
+            "bytes": 0,
+            "duration": 0.3999999985098839
+          }
+        ],
+        "heap": 8901418
+      }
+    }
+  ]
+}

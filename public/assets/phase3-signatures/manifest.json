@@ -1,0 +1,181 @@
+{
+  "source": "D:\\VYREN\\04_RENDER_OUTPUT\\Phase3_Studio\\signatures\\render.json",
+  "delivery": {
+    "hero": {
+      "sizes": {
+        "desktop": 213118,
+        "mobile": 115394
+      },
+      "desktopResolution": [
+        1600,
+        1200
+      ],
+      "mobileResolution": [
+        900,
+        675
+      ],
+      "mobileCrop": null,
+      "frames": [
+        {
+          "name": "hero-000",
+          "desktopBytes": 42666,
+          "mobileBytes": 23794
+        },
+        {
+          "name": "hero-001",
+          "desktopBytes": 51550,
+          "mobileBytes": 27688
+        },
+        {
+          "name": "hero-002",
+          "desktopBytes": 56198,
+          "mobileBytes": 29924
+        },
+        {
+          "name": "hero-003",
+          "desktopBytes": 62704,
+          "mobileBytes": 33988
+        }
+      ]
+    },
+    "light": {
+      "sizes": {
+        "desktop": 1052466,
+        "mobile": 519816
+      },
+      "desktopResolution": [
+        1600,
+        1200
+      ],
+      "mobileResolution": [
+        900,
+        675
+      ],
+      "mobileCrop": null,
+      "frames": [
+        {
+          "name": "light-000",
+          "desktopBytes": 117898,
+          "mobileBytes": 58282
+        },
+        {
+          "name": "light-001",
+          "desktopBytes": 117332,
+          "mobileBytes": 58024
+        },
+        {
+          "name": "light-002",
+          "desktopBytes": 116752,
+          "mobileBytes": 57720
+        },
+        {
+          "name": "light-003",
+          "desktopBytes": 116606,
+          "mobileBytes": 57588
+        },
+        {
+          "name": "light-004",
+          "desktopBytes": 116520,
+          "mobileBytes": 57796
+        },
+        {
+          "name": "light-005",
+          "desktopBytes": 116592,
+          "mobileBytes": 57638
+        },
+        {
+          "name": "light-006",
+          "desktopBytes": 117244,
+          "mobileBytes": 57708
+        },
+        {
+          "name": "light-007",
+          "desktopBytes": 116852,
+          "mobileBytes": 57600
+        },
+        {
+          "name": "light-008",
+          "desktopBytes": 116670,
+          "mobileBytes": 57460
+        }
+      ]
+    },
+    "final": {
+      "sizes": {
+        "desktop": 1108286,
+        "mobile": 591694
+      },
+      "desktopResolution": [
+        1600,
+        1200
+      ],
+      "mobileResolution": [
+        900,
+        675
+      ],
+      "mobileCrop": null,
+      "frames": [
+        {
+          "name": "final-000",
+          "desktopBytes": 115808,
+          "mobileBytes": 58940
+        },
+        {
+          "name": "final-001",
+          "desktopBytes": 114192,
+          "mobileBytes": 59434
+        },
+        {
+          "name": "final-002",
+          "desktopBytes": 109472,
+          "mobileBytes": 56650
+        },
+        {
+          "name": "final-003",
+          "desktopBytes": 103750,
+          "mobileBytes": 54970
+        },
+        {
+          "name": "final-004",
+          "desktopBytes": 97752,
+          "mobileBytes": 52454
+        },
+        {
+          "name": "final-005",
+          "desktopBytes": 93132,
+          "mobileBytes": 49752
+        },
+        {
+          "name": "final-006",
+          "desktopBytes": 88048,
+          "mobileBytes": 48346
+        },
+        {
+          "name": "final-007",
+          "desktopBytes": 84118,
+          "mobileBytes": 46012
+        },
+        {
+          "name": "final-008",
+          "desktopBytes": 81154,
+          "mobileBytes": 44196
+        },
+        {
+          "name": "final-009",
+          "desktopBytes": 77106,
+          "mobileBytes": 42042
+        },
+        {
+          "name": "final-010",
+          "desktopBytes": 73448,
+          "mobileBytes": 39992
+        },
+        {
+          "name": "final-011",
+          "desktopBytes": 70306,
+          "mobileBytes": 38906
+        }
+      ]
+    }
+  }
+}

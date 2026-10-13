@@ -1,0 +1,26 @@
+--- before/src\components\cycles-surface.tsx
++++ after/src\components\cycles-surface.tsx
+@@ -1,6 +1,7 @@
+ 'use client';
+ import { useEffect, useRef } from 'react';
+ import { CyclesFrameCache } from '@/lib/cycles-frame-cache';
++import { studioFraming } from '@/lib/studio-framing';
+ 
+ export type SurfaceDiagnostics = ReturnType<CyclesFrameCache['diagnostics']> & { desiredFrame: number; displayedFrame: number; draws: number; averageDrawMs: number; active: boolean; variant: string; previewDraws: number; atlasBytes: number; fullResolution: boolean };
+ export function CyclesSurface({ frame, count, path, prefix = '', circular = false, label, className = '', diagnostics, onPresent }: { frame: number; count: number; path: string; prefix?: string; circular?: boolean; label: string; className?: string; diagnostics?: (read: (() => SurfaceDiagnostics) | null) => void; onPresent?: (frame: number) => void }) {
+@@ -45,9 +46,12 @@
+       const started = performance.now(); output.width = w; output.height = h;
+       ctx.clearRect(0, 0, w, h);
+       if(!exact&&atlas){
+-        const cw=atlas.width/8,ch=atlas.height/9,scale=Math.min(w/cw,h/ch)*(mobile?1.18:1.3);
+-        ctx.drawImage(atlas,(index%8)*cw,Math.floor(index/8)*ch,cw,ch,(w-cw*scale)/2,(h-ch*scale)/2,cw*scale,ch*scale);previewDraws++;
+-      }else{const image=exact??held!,fit=prefix==='light-'?Math.max:Math.min,scale=fit(w/image.width,h/image.height)*(circular?(mobile?1.18:1.3):1);ctx.drawImage(image,(w-image.width*scale)/2,(h-image.height*scale)/2,image.width*scale,image.height*scale);}
++        const cw=atlas.width/8,ch=atlas.height/9,f=studioFraming(r.width,r.height,mobile);
++        ctx.drawImage(atlas,(index%8)*cw,Math.floor(index/8)*ch,cw,ch,f.x*dpr,f.y*dpr,f.width*dpr,f.height*dpr);previewDraws++;
++      }else{const image=exact??held!;
++        if(circular){const f=studioFraming(r.width,r.height,mobile);ctx.drawImage(image,f.x*dpr,f.y*dpr,f.width*dpr,f.height*dpr);}
++        else{const fit=prefix==='light-'?Math.max:Math.min,scale=fit(w/image.width,h/image.height);ctx.drawImage(image,(w-image.width*scale)/2,(h-image.height*scale)/2,image.width*scale,image.height*scale);}
++      }
+       element.dataset.ready = 'true'; element.dataset.displayedFrame = String(displayed); draws++; drawMs += performance.now() - started; callbacks.current.onPresent?.(displayed);
+     };
+     function update() { if (!raf && active && !document.hidden) raf = requestAnimationFrame(draw); }

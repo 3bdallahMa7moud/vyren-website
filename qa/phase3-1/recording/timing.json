@@ -1,0 +1,54 @@
+{
+  "marks": [
+    {
+      "name": "Initial three-quarter",
+      "seconds": 1.563
+    },
+    {
+      "name": "One complete 360-degree Studio rotation",
+      "seconds": 1.907
+    },
+    {
+      "name": "Front",
+      "seconds": 11.878
+    },
+    {
+      "name": "Side",
+      "seconds": 13.278
+    },
+    {
+      "name": "Back",
+      "seconds": 14.667
+    },
+    {
+      "name": "3/4 View",
+      "seconds": 16.054
+    },
+    {
+      "name": "Studio to Free matched pose",
+      "seconds": 17.438
+    },
+    {
+      "name": "Free tilt to nearest Studio angle",
+      "seconds": 20.51
+    },
+    {
+      "name": "Repeated fast switches",
+      "seconds": 21.613
+    },
+    {
+      "name": "Genuine macro dialog",
+      "seconds": 24.182
+    },
+    {
+      "name": "Fullscreen",
+      "seconds": 25.561
+    },
+    {
+      "name": "Exit fullscreen and normal page flow",
+      "seconds": 28.844
+    }
+  ],
+  "errors": [],
+  "duration": 33.13
+}

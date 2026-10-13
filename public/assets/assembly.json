@@ -1,0 +1,198 @@
+{
+  "units": "meters",
+  "blender_axes": "Z dial normal; Y twelve o clock",
+  "gltf_axes": "Y dial normal; -Z twelve o clock",
+  "easing": "Blender Bezier interpolation with staggered holds; smoothstep suggested for web",
+  "assemblies": {
+    "ASSEMBLY_BEZEL": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        0.0,
+        0.03500000014901161
+      ],
+      "start_frame": 52,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        0.03500000014901161,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_CRYSTAL": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        0.0,
+        0.04400000348687172
+      ],
+      "start_frame": 44,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        0.04400000348687172,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_DIAL": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        0.0,
+        0.017000000923871994
+      ],
+      "start_frame": 60,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        0.017000000923871994,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_INDICES": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        0.0,
+        0.017000000923871994
+      ],
+      "start_frame": 60,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        0.017000000923871994,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_HANDS": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        0.0,
+        0.023000001907348633
+      ],
+      "start_frame": 60,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        0.023000001907348633,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_MOVEMENT": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        0.0,
+        0.00800000037997961
+      ],
+      "start_frame": 60,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        0.00800000037997961,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_CROWN": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.01100000087171793,
+        0.0,
+        0.0
+      ],
+      "start_frame": 44,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.01100000087171793,
+        0.0,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_CASEBACK": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        -0.005000000353902578,
+        -0.026000000536441803
+      ],
+      "start_frame": 52,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        -0.026000000536441803,
+        0.005000000353902578
+      ]
+    },
+    "ASSEMBLY_CHAPTER": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        0.0,
+        0.02800000086426735
+      ],
+      "start_frame": 60,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        0.02800000086426735,
+        -0.0
+      ]
+    },
+    "ASSEMBLY_CASEBACK_FASTENERS": {
+      "rest_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exploded_offset_m": [
+        0.0,
+        -0.005000000353902578,
+        -0.03200000151991844
+      ],
+      "start_frame": 44,
+      "fully_exploded_frame": 115,
+      "gltf_local_exploded_offset_m": [
+        0.0,
+        -0.03200000151991844,
+        0.005000000353902578
+      ]
+    }
+  }
+}

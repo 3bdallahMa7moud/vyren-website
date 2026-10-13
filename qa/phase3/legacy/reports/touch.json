@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "Headless desktop Edge with mobile viewport and CDP touch events; not a physical mobile GPU",
+  "before": [
+    0.030170000000000044,
+    0.146160999999999,
+    0.059262999999999566
+  ],
+  "after": [
+    -0.027278599398380576,
+    0.15363800253327092,
+    0.036083599277917794
+  ]
+}

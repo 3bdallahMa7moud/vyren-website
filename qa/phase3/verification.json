@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-11T01:31:43.298315+00:00",
+  "productionUrl": "http://127.0.0.1:3001",
+  "typecheck": {
+    "passed": true,
+    "log": "qa/phase3/typecheck.log"
+  },
+  "lint": {
+    "passed": true,
+    "log": "qa/phase3/lint.log"
+  },
+  "build": {
+    "passed": true,
+    "log": "qa/phase3/build.log"
+  },
+  "browserTests": {
+    "startTime": "2026-10-11T01:22:06.104Z",
+    "duration": 550419.337,
+    "expected": 50,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "viewportWidths": [
+    360,
+    390,
+    768,
+    1280,
+    1440,
+    1920
+  ],
+  "additionalLandscape": [
+    844,
+    390
+  ],
+  "studioFrameCounts": {
+    "desktop": 72,
+    "mobile": 72
+  },
+  "preservedOriginalFiles": 279,
+  "allOriginalHashesUnchanged": true,
+  "visualInspection": "Actual Edge screenshots and the 40.56-second production browser recording inspected; source PNG/WebP and Hero/Studio comparisons inspected.",
+  "testedPlatform": "Installed desktop Edge 155.0.4283.45 on Windows; headless Playwright and CDP touch/network emulation",
+  "untestedPlatforms": [
+    "Physical phone hardware",
+    "Safari",
+    "Firefox"
+  ],
+  "deferredOptionalFeature": "Second Studio lighting sequence",
+  "performance": "qa/phase3/performance.json",
+  "recording": "qa/phase3/recordings/phase3-journey.webm",
+  "modifiedFiles": "qa/phase3/modified-files.json"
+}

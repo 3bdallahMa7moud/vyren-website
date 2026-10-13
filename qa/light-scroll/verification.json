@@ -1,0 +1,101 @@
+{
+  "report": [
+    {
+      "width": 1440,
+      "name": "craft",
+      "frames": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        4,
+        0
+      ],
+      "reversible": true,
+      "stillWhenIdle": true
+    },
+    {
+      "width": 1440,
+      "name": "titanium",
+      "frames": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        4,
+        0
+      ],
+      "reversible": true,
+      "stillWhenIdle": true
+    },
+    {
+      "width": 1440,
+      "name": "craft-reduced-motion",
+      "frames": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "width": 1440,
+      "name": "titanium-reduced-motion",
+      "frames": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "width": 390,
+      "name": "craft",
+      "frames": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        4,
+        0
+      ],
+      "reversible": true,
+      "stillWhenIdle": true
+    },
+    {
+      "width": 390,
+      "name": "titanium",
+      "frames": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        4,
+        0
+      ],
+      "reversible": true,
+      "stillWhenIdle": true
+    },
+    {
+      "width": 390,
+      "name": "craft-reduced-motion",
+      "frames": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "width": 390,
+      "name": "titanium-reduced-motion",
+      "frames": [
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "errors": []
+}

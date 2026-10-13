@@ -1,0 +1,1104 @@
+{
+  "method": "EXT_meshopt_compression. Lossless indices; EXPONENTIAL filter with 20-bit positions, 16-bit UVs and 14-bit normals/tangents. Every decoded position bounded below 1 micrometre. Texture pixels identical after lossless WebP encoding. Node transforms, triangle order, meshes, materials and original file unchanged.",
+  "compressedViews": 297,
+  "precision": [
+    {
+      "view": 0,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.445939213037491e-7
+    },
+    {
+      "view": 1,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006101280450820923
+    },
+    {
+      "view": 3,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 4,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000061005353927612305
+    },
+    {
+      "view": 5,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 6,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 10,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.50181856751442e-7
+    },
+    {
+      "view": 11,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060930848121643066
+    },
+    {
+      "view": 13,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.9802322387695312e-8
+    },
+    {
+      "view": 14,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012046098709106445
+    },
+    {
+      "view": 16,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.434297680854797e-7
+    },
+    {
+      "view": 17,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006085634231567383
+    },
+    {
+      "view": 19,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 20,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 21,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 22,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 24,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.9802322387695312e-8
+    },
+    {
+      "view": 25,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 26,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 27,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 29,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.9802322387695312e-8
+    },
+    {
+      "view": 30,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006076693534851074
+    },
+    {
+      "view": 31,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.00001519918441772461
+    },
+    {
+      "view": 32,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.000060945749282836914
+    },
+    {
+      "view": 34,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.518989827483892e-7
+    },
+    {
+      "view": 35,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006073713302612305
+    },
+    {
+      "view": 37,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 5.960464477539063e-8
+    },
+    {
+      "view": 38,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 40,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.515788406133652e-7
+    },
+    {
+      "view": 41,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060498714447021484
+    },
+    {
+      "view": 43,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.462237358093262e-7
+    },
+    {
+      "view": 44,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012196600437164307
+    },
+    {
+      "view": 46,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.527429938316345e-7
+    },
+    {
+      "view": 47,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006097555160522461
+    },
+    {
+      "view": 48,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 49,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012187659740447998
+    },
+    {
+      "view": 51,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.51811671257019e-7
+    },
+    {
+      "view": 52,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060811638832092285
+    },
+    {
+      "view": 54,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 55,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 57,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 5.960464477539063e-8
+    },
+    {
+      "view": 58,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 60,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 61,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006102025508880615
+    },
+    {
+      "view": 63,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.527429938316345e-7
+    },
+    {
+      "view": 64,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060811638832092285
+    },
+    {
+      "view": 66,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.513460099697113e-7
+    },
+    {
+      "view": 67,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00011342763900756836
+    },
+    {
+      "view": 69,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.519862942397594e-7
+    },
+    {
+      "view": 70,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012201070785522461
+    },
+    {
+      "view": 72,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 73,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 74,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 75,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 77,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.522773325443268e-7
+    },
+    {
+      "view": 78,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00011399388313293457
+    },
+    {
+      "view": 80,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.532086551189423e-7
+    },
+    {
+      "view": 81,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060364603996276855
+    },
+    {
+      "view": 83,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.499490261077881e-7
+    },
+    {
+      "view": 84,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 86,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.522773325443268e-7
+    },
+    {
+      "view": 87,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001214742660522461
+    },
+    {
+      "view": 89,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 90,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 92,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 93,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012196600437164307
+    },
+    {
+      "view": 94,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 95,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 97,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 98,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012135505676269531
+    },
+    {
+      "view": 100,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.9802322387695312e-8
+    },
+    {
+      "view": 101,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 103,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.51811671257019e-7
+    },
+    {
+      "view": 104,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060558319091796875
+    },
+    {
+      "view": 106,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 107,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060886144638061523
+    },
+    {
+      "view": 109,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 110,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 112,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 3.259629011154175e-9
+    },
+    {
+      "view": 113,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 115,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.210719347000122e-8
+    },
+    {
+      "view": 116,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000049173831939697266
+    },
+    {
+      "view": 118,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.477371349930763e-7
+    },
+    {
+      "view": 119,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012159347534179688
+    },
+    {
+      "view": 121,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.313225746154785e-10
+    },
+    {
+      "view": 122,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006091594696044922
+    },
+    {
+      "view": 124,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.499490261077881e-7
+    },
+    {
+      "view": 125,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006079673767089844
+    },
+    {
+      "view": 127,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.862645149230957e-9
+    },
+    {
+      "view": 128,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006097555160522461
+    },
+    {
+      "view": 130,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.528885129839182e-7
+    },
+    {
+      "view": 131,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006085634231567383
+    },
+    {
+      "view": 133,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 134,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 136,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.233481250703335e-7
+    },
+    {
+      "view": 137,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012205541133880615
+    },
+    {
+      "view": 139,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 5.503393367689569e-7
+    },
+    {
+      "view": 140,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00005245208740234375
+    },
+    {
+      "view": 142,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.225914254784584e-7
+    },
+    {
+      "view": 143,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 145,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.334762580692768e-7
+    },
+    {
+      "view": 146,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 148,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.023351594805717e-7
+    },
+    {
+      "view": 149,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00004088878631591797
+    },
+    {
+      "view": 151,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.534414857625961e-7
+    },
+    {
+      "view": 152,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 153,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 154,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 156,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.862645149230957e-9
+    },
+    {
+      "view": 157,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00011491775512695312
+    },
+    {
+      "view": 159,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 6.51925802230835e-9
+    },
+    {
+      "view": 160,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 162,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 5.960464477539063e-8
+    },
+    {
+      "view": 163,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006099417805671692
+    },
+    {
+      "view": 165,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.60770320892334e-8
+    },
+    {
+      "view": 166,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 168,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 5.960464477539063e-8
+    },
+    {
+      "view": 169,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 171,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.60770320892334e-8
+    },
+    {
+      "view": 172,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012195110321044922
+    },
+    {
+      "view": 174,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.9802322387695312e-8
+    },
+    {
+      "view": 175,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012201070785522461
+    },
+    {
+      "view": 177,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 178,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012198090553283691
+    },
+    {
+      "view": 180,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 181,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00011920928955078125
+    },
+    {
+      "view": 183,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 184,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 185,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 186,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 190,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 191,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 192,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 193,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012187473475933075
+    },
+    {
+      "view": 195,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 196,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 197,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 198,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 200,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 7.450580596923828e-9
+    },
+    {
+      "view": 201,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006097555160522461
+    },
+    {
+      "view": 203,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 204,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 206,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.385403245687485e-7
+    },
+    {
+      "view": 207,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006096065044403076
+    },
+    {
+      "view": 208,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 209,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00006091594696044922
+    },
+    {
+      "view": 211,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 212,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 214,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 7.450580596923828e-9
+    },
+    {
+      "view": 215,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006097555160522461
+    },
+    {
+      "view": 217,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 218,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006097555160522461
+    },
+    {
+      "view": 220,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 7.450580596923828e-9
+    },
+    {
+      "view": 221,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006079673767089844
+    },
+    {
+      "view": 222,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.000015139579772949219
+    },
+    {
+      "view": 223,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00005391240119934082
+    },
+    {
+      "view": 225,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 7.450580596923828e-9
+    },
+    {
+      "view": 226,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006097555160522461
+    },
+    {
+      "view": 227,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 228,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012069940567016602
+    },
+    {
+      "view": 230,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 7.450580596923828e-9
+    },
+    {
+      "view": 231,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00011986494064331055
+    },
+    {
+      "view": 233,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.51811671257019e-7
+    },
+    {
+      "view": 234,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012198090553283691
+    },
+    {
+      "view": 236,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.499490261077881e-7
+    },
+    {
+      "view": 237,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006079673767089844
+    },
+    {
+      "view": 239,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.499490261077881e-7
+    },
+    {
+      "view": 240,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006085634231567383
+    },
+    {
+      "view": 242,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 243,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.000060498714447021484
+    },
+    {
+      "view": 244,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.000015236437320709229
+    },
+    {
+      "view": 245,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.000058397650718688965
+    },
+    {
+      "view": 247,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 248,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 249,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.00001519918441772461
+    },
+    {
+      "view": 250,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 252,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 253,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012159347534179688
+    },
+    {
+      "view": 254,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 255,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00011289119720458984
+    },
+    {
+      "view": 257,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 258,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006097555160522461
+    },
+    {
+      "view": 259,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 260,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.000060945749282836914
+    },
+    {
+      "view": 262,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 263,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 265,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.5367431640625e-7
+    },
+    {
+      "view": 266,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012205541133880615
+    },
+    {
+      "view": 268,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 2.9802322387695312e-8
+    },
+    {
+      "view": 269,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 271,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.532086551189423e-7
+    },
+    {
+      "view": 272,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012156367301940918
+    },
+    {
+      "view": 274,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.532086551189423e-7
+    },
+    {
+      "view": 275,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 277,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.529758244752884e-7
+    },
+    {
+      "view": 278,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 280,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 281,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.0001220703125
+    },
+    {
+      "view": 283,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 9.480863809585571e-7
+    },
+    {
+      "view": 284,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00012196600437164307
+    },
+    {
+      "view": 285,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 286,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012187659740447998
+    },
+    {
+      "view": 288,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 1.4901161193847656e-8
+    },
+    {
+      "view": 289,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00011974573135375977
+    },
+    {
+      "view": 291,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 5.960464477539063e-8
+    },
+    {
+      "view": 292,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 293,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 294,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    },
+    {
+      "view": 296,
+      "semantic": "POSITION",
+      "maxAbsoluteError": 5.960464477539063e-8
+    },
+    {
+      "view": 297,
+      "semantic": "NORMAL",
+      "maxAbsoluteError": 0.00006103515625
+    },
+    {
+      "view": 298,
+      "semantic": "TEXCOORD_0",
+      "maxAbsoluteError": 0.0000152587890625
+    },
+    {
+      "view": 299,
+      "semantic": "TANGENT",
+      "maxAbsoluteError": 0.00012189149856567383
+    }
+  ],
+  "imageChecks": [
+    {
+      "name": "vyren_exterior_NORMAL",
+      "pixelsIdentical": true,
+      "beforeBytes": 595043,
+      "afterBytes": 252054
+    },
+    {
+      "name": "vyren_exterior_MR",
+      "pixelsIdentical": true,
+      "beforeBytes": 948392,
+      "afterBytes": 383520
+    },
+    {
+      "name": "vyren_mechanism_NORMAL",
+      "pixelsIdentical": true,
+      "beforeBytes": 129179,
+      "afterBytes": 51934
+    },
+    {
+      "name": "vyren_mechanism_MR",
+      "pixelsIdentical": true,
+      "beforeBytes": 550614,
+      "afterBytes": 258694
+    }
+  ],
+  "maxPositionErrorM": 9.5367431640625e-7,
+  "original": {
+    "bytes": 15723748,
+    "gzipBytes": 8052145,
+    "sha256": "ecdc8c27a55b21c0713e08f6fd5760bbbcf7301d3b257b56db94e26349cb7409"
+  },
+  "optimized": {
+    "bytes": 6363024,
+    "gzipBytes": 4234353,
+    "sha256": "ebc0576019c41c314e48d57350675fa863aa11bfaccd170c7463785380f79842"
+  },
+  "sourceMetadataVerified": true
+}

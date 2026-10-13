@@ -1,0 +1,18 @@
+{
+  "scenePairs": 12,
+  "fidelityPairs": 6,
+  "protectedSourceFiles": 16,
+  "backupFilesVerified": 117,
+  "uniformVideoSamples": [],
+  "changedExistingFiles": [
+    "package.json",
+    "README.md",
+    "tsconfig.tsbuildinfo",
+    "qa\\tests\\experience.spec.ts",
+    "src\\app\\globals.css",
+    "src\\components\\landing.tsx",
+    "src\\components\\motion.ts",
+    "src\\components\\product-stage.tsx",
+    "src\\lib\\watch-engine.ts"
+  ]
+}

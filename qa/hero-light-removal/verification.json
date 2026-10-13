@@ -1,0 +1,29 @@
+{
+  "report": [
+    {
+      "width": 1440,
+      "lightingLayers": 0,
+      "canvases": 0,
+      "imageLoaded": true,
+      "imageOpacity": "1",
+      "overflow": false,
+      "sections": 9,
+      "lightingRequests": []
+    },
+    {
+      "width": 390,
+      "lightingLayers": 0,
+      "canvases": 0,
+      "imageLoaded": true,
+      "imageOpacity": "1",
+      "overflow": false,
+      "sections": 9,
+      "lightingRequests": []
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "Element not found: .finale",
+    "Element not found: .finale"
+  ]
+}

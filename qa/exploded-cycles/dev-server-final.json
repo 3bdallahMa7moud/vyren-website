@@ -1,0 +1,42 @@
+{
+  "url": "http://127.0.0.1:3000/#assembly",
+  "status": 200,
+  "browser": "155.0.4283.45",
+  "diagnostics": {
+    "ready": true,
+    "active": true,
+    "variant": "desktop",
+    "frameCount": 161,
+    "desiredFrame": 115,
+    "displayedFrame": 115,
+    "displayedProgress": 0.71875,
+    "displayedFactors": {
+      "ASSEMBLY_CRYSTAL": 1,
+      "ASSEMBLY_CROWN": 1,
+      "ASSEMBLY_BEZEL": 1,
+      "ASSEMBLY_CHAPTER": 1,
+      "ASSEMBLY_HANDS": 1,
+      "ASSEMBLY_DIAL": 1,
+      "ASSEMBLY_INDICES": 1,
+      "ASSEMBLY_MOVEMENT": 1,
+      "ASSEMBLY_CASEBACK": 1,
+      "ASSEMBLY_CASEBACK_FASTENERS": 1
+    },
+    "restMatrixDelta": null,
+    "cacheFrames": 1,
+    "cacheLimit": 12,
+    "peakCacheFrames": 1,
+    "decodedBytes": 7680000,
+    "peakDecodedBytes": 7680000,
+    "pending": 0,
+    "downloadedBytes": 60484,
+    "fetches": 3,
+    "failedFrames": 0,
+    "abortedRequests": 2,
+    "waitingRafChecks": 5,
+    "draws": 1,
+    "averageDrawMs": 0.599999999627471,
+    "progressSource": "Existing GSAP ScrollTrigger; reduced motion uses explicit endpoint controls"
+  },
+  "errors": []
+}

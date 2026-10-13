@@ -1,0 +1,31 @@
+{
+  "url": "http://127.0.0.1:3001/",
+  "reduce": false,
+  "saveData": false,
+  "width": 1440,
+  "poster": {
+    "src": "http://127.0.0.1:3001/assets/hero-1600.webp",
+    "complete": true,
+    "width": 1209,
+    "decode": true
+  },
+  "orbitCount": 0,
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3001/assets/hero-1600.webp",
+      "start": 11.400000000372529,
+      "end": 20.100000001490116
+    },
+    {
+      "name": "http://127.0.0.1:3001/assets/hero-800.webp",
+      "start": 126,
+      "end": 128.10000000149012
+    },
+    {
+      "name": "http://127.0.0.1:3001/assets/hero-orbit.webp",
+      "start": 177.2000000011176,
+      "end": 182.2000000011176
+    }
+  ],
+  "errors": []
+}

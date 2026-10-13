@@ -1,0 +1,1030 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\VYREN\\06_WEBSITE\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.exploded.config.ts"
+    ],
+    "configFile": "D:\\VYREN\\06_WEBSITE\\playwright.exploded.config.ts",
+    "rootDir": "D:/VYREN/06_WEBSITE/qa",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/VYREN/06_WEBSITE/qa/exploded-cycles/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/VYREN/06_WEBSITE/qa",
+        "testIgnore": [],
+        "testMatch": [
+          "**/exploded-cycles/tests/*.spec.ts",
+          "**/experience.spec.ts",
+          "**/phase2.spec.ts"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\VYREN\\06_WEBSITE\\qa",
+        "snapshotDir": "D:\\VYREN\\06_WEBSITE\\qa",
+        "testIgnore": [],
+        "testMatch": [
+          "**/exploded-cycles/tests/*.spec.ts",
+          "**/experience.spec.ts",
+          "**/phase2.spec.ts"
+        ],
+        "timeout": 180000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3001",
+          "channel": "msedge",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "qa/exploded-cycles/test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start -- --port 3001",
+      "url": "http://127.0.0.1:3001",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "exploded-cycles\\tests\\sequence.spec.ts",
+      "file": "exploded-cycles/tests/sequence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "progressive loading and first-frame poster continuity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5088,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:04.695Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-a1f2c82b9b214cb8af8b",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "deterministic forward, reverse, arbitrary seek and synchronized labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12898,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:10.009Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-cbab6ca7b57fdc2ffad9",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 46,
+          "column": 1
+        },
+        {
+          "title": "slow frames retain the last image and synchronized footer while scrolling stays available",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2997,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m974373807\u001b[39m\nReceived: \u001b[31m45491209\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m974373807\u001b[39m\nReceived: \u001b[31m45491209\u001b[39m\n    at D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\tests\\sequence.spec.ts:74:45",
+                    "location": {
+                      "file": "D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\tests\\sequence.spec.ts",
+                      "column": 45,
+                      "line": 74
+                    },
+                    "snippet": "  72 |   await page.waitForTimeout(900);const waiting=await page.evaluate(sequence);\n  73 |   expect(waiting.desiredFrame).toBeGreaterThan(135);expect(waiting.displayedFrame).toBe(before.displayedFrame);\n> 74 |   expect((await canvasEvidence(page)).hash).toBe(pixels.hash);\n     |                                             ^\n  75 |   const progress=await page.locator('.assembly-progress span').evaluate(e=>new DOMMatrix(getComputedStyle(e).transform).a);\n  76 |   expect(progress).toBeCloseTo(before.displayedProgress!,3);\n  77 |   unblock();await ready(page);const after=await page.evaluate(sequence);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\tests\\sequence.spec.ts",
+                        "column": 45,
+                        "line": 74
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m974373807\u001b[39m\nReceived: \u001b[31m45491209\u001b[39m\n\n  72 |   await page.waitForTimeout(900);const waiting=await page.evaluate(sequence);\n  73 |   expect(waiting.desiredFrame).toBeGreaterThan(135);expect(waiting.displayedFrame).toBe(before.displayedFrame);\n> 74 |   expect((await canvasEvidence(page)).hash).toBe(pixels.hash);\n     |                                             ^\n  75 |   const progress=await page.locator('.assembly-progress span').evaluate(e=>new DOMMatrix(getComputedStyle(e).transform).a);\n  76 |   expect(progress).toBeCloseTo(before.displayedProgress!,3);\n  77 |   unblock();await ready(page);const after=await page.evaluate(sequence);\n    at D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\tests\\sequence.spec.ts:74:45"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:22.939Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\test-results\\exploded-cycles-tests-sequ-30bef-e-scrolling-stays-available\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\test-results\\exploded-cycles-tests-sequ-30bef-e-scrolling-stays-available\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\VYREN\\06_WEBSITE\\qa\\exploded-cycles\\tests\\sequence.spec.ts",
+                    "column": 45,
+                    "line": 74
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-b742594a1b4338ca1990",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "rapid scrubbing releases obsolete requests, seeks after refresh and releases offscreen bitmaps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9547,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:26.942Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-5d41aa167d0a7e8d6f09",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "Cycles responsive variant, resize and unclipped canvas 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:36.716Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-284d5ec2a74a996b7df1",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "Cycles responsive variant, resize and unclipped canvas 1280px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7684,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:44.407Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-676e82ea9b64345f0014",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "Cycles responsive variant, resize and unclipped canvas 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7547,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:52.112Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-1e1257173715e4c7f515",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "Cycles responsive variant, resize and unclipped canvas 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7747,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:07:59.677Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-2a926cd42087ed5d6b4f",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "Cycles responsive variant, resize and unclipped canvas 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7412,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:08:07.441Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-fad1ddeac81030f3e26d",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 99,
+          "column": 3
+        },
+        {
+          "title": "Save-Data uses a smaller frame set and reduced motion has explicit static controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7564,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:08:14.890Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-4f3a3b75644de68b8bbb",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 117,
+          "column": 1
+        },
+        {
+          "title": "the 2D sequence survives unavailable WebGL and the independent viewer uses its fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2099,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:08:22.474Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05eab0a32968e7548508-9b6777e0443fc1b85832",
+          "file": "exploded-cycles/tests/sequence.spec.ts",
+          "line": 140,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "phase2-cinematic\\tests\\phase2.spec.ts",
+      "file": "phase2-cinematic/tests/phase2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "rapid assembly reversal, reload at intermediate progress and exact local rest matrices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:08:24.624Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63256a625f6631674037-68219fb8b9447b280528",
+          "file": "phase2-cinematic/tests/phase2.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "static and offscreen rendering suspend; preset, zoom and interaction resume cleanly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18203,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:08:37.077Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63256a625f6631674037-6adca0bef85be0648105",
+          "file": "phase2-cinematic/tests/phase2.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "all responsive scenes and exact material holds remain readable at 1440 and 768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:08:55.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63256a625f6631674037-0f2ca289bff7c1b70834",
+          "file": "phase2-cinematic/tests/phase2.spec.ts",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "runtime motion preference changes preserve content and a single canvas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:09:29.218Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63256a625f6631674037-5dcd80168bcd7e020a9e",
+          "file": "phase2-cinematic/tests/phase2.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "authentic Hero orbit follows the poster once and skips mobile, reduced motion and deep links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:09:36.742Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "63256a625f6631674037-8ab96e9b8a09d64f34d0",
+          "file": "phase2-cinematic/tests/phase2.spec.ts",
+          "line": 61,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\experience.spec.ts",
+      "file": "tests/experience.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all nine scenes, reversible assembly, genuine viewer and rendering evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 46591,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:09:43.797Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-6e4d2be23f07e4c00b65",
+          "file": "tests/experience.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "responsive layout 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:10:30.397Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-dd19de9bb1e3ece88376",
+          "file": "tests/experience.spec.ts",
+          "line": 87,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14939,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:10:45.441Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-3d8449e9c70b66812849",
+          "file": "tests/experience.spec.ts",
+          "line": 87,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:11:00.388Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-3b65531642ca05314b7f",
+          "file": "tests/experience.spec.ts",
+          "line": 87,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1280px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16087,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:11:15.422Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-5cccbaba91e167f76cc7",
+          "file": "tests/experience.spec.ts",
+          "line": 87,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1920px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16782,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:11:31.516Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-88a45f01da586e3bfa19",
+          "file": "tests/experience.spec.ts",
+          "line": 87,
+          "column": 3
+        },
+        {
+          "title": "reduced motion preserves content and manual assembly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4256,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:11:48.306Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-cd944fdb68b5bf57ab5e",
+          "file": "tests/experience.spec.ts",
+          "line": 99,
+          "column": 1
+        },
+        {
+          "title": "WebGL unavailable leaves actual imagery and all editorial content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2272,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:11:52.585Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-261c89a4e9d7e61aa17f",
+          "file": "tests/experience.spec.ts",
+          "line": 107,
+          "column": 1
+        },
+        {
+          "title": "emulated touch rotates the model and releases page scrolling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6110,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T22:11:54.879Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b77ceea1018ee98d17c4-9adb9c47a3da5f56e1eb",
+          "file": "tests/experience.spec.ts",
+          "line": 114,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-10T22:07:03.618Z",
+    "duration": 298319.92100000003,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

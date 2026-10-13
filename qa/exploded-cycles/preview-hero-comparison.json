@@ -1,0 +1,20 @@
+{
+  "dimensions": [
+    800,
+    600
+  ],
+  "rgbaMeanAbsoluteDifference": [
+    1.4621395833333333,
+    1.45168125,
+    1.4947520833333334,
+    0.0658125
+  ],
+  "camera": "CAM_HERO 66mm, original orientation and assembled geometry",
+  "color": {
+    "view": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.25,
+    "gamma": 1.0
+  },
+  "pixelIdentityClaimed": false
+}

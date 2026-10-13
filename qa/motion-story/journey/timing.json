@@ -1,0 +1,29 @@
+{
+  "chapters": [
+    {
+      "selector": ".movement",
+      "from": 0,
+      "to": 1,
+      "elapsedMs": 7727
+    },
+    {
+      "selector": ".assembly",
+      "from": 0,
+      "to": 1,
+      "elapsedMs": 6732
+    },
+    {
+      "selector": ".materials",
+      "from": 0,
+      "to": 1,
+      "elapsedMs": 10732
+    },
+    {
+      "selector": ".materials",
+      "from": 1,
+      "to": 0,
+      "elapsedMs": 6734
+    }
+  ],
+  "errors": []
+}

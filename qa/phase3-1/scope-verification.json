@@ -1,0 +1,17 @@
+{
+  "protectedAssetsVerified": 492,
+  "changedOriginalSourceFiles": [
+    "src\\app\\globals.css",
+    "src\\components\\cycles-surface.tsx",
+    "src\\components\\studio-hotspots.tsx",
+    "src\\components\\studio-viewer.tsx",
+    "src\\lib\\watch-engine.ts"
+  ],
+  "unchangedOriginalSourceFiles": 14,
+  "newSourceFiles": [
+    "src\\lib\\studio-framing.ts",
+    "src\\lib\\studio-hotspot-visibility.ts"
+  ],
+  "originalBlenderAndGlbUntouched": true,
+  "allOriginalPublicAssetsUntouched": true
+}

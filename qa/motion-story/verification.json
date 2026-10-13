@@ -1,0 +1,244 @@
+{
+  "cases": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "movement": [
+        0,
+        12,
+        24,
+        35,
+        47,
+        24,
+        0
+      ],
+      "materials": [
+        {
+          "kind": "titanium",
+          "seen": [
+            0,
+            4,
+            8,
+            4
+          ]
+        },
+        {
+          "kind": "sapphire",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "anthracite",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "rubber",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        }
+      ],
+      "finalFrames": [
+        0,
+        6,
+        11
+      ],
+      "stillWhenIdle": true,
+      "reducedMotion": true,
+      "cachesReleased": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "movement": [
+        0,
+        12,
+        24,
+        35,
+        47,
+        24,
+        0
+      ],
+      "materials": [
+        {
+          "kind": "titanium",
+          "seen": [
+            0,
+            4,
+            8,
+            4
+          ]
+        },
+        {
+          "kind": "sapphire",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "anthracite",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "rubber",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        }
+      ],
+      "finalFrames": [
+        0,
+        6,
+        11
+      ],
+      "stillWhenIdle": true,
+      "reducedMotion": true,
+      "cachesReleased": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "movement": [
+        0,
+        12,
+        24,
+        35,
+        47,
+        24,
+        0
+      ],
+      "materials": [
+        {
+          "kind": "titanium",
+          "seen": [
+            0,
+            4,
+            8,
+            4
+          ]
+        },
+        {
+          "kind": "sapphire",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "anthracite",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "rubber",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        }
+      ],
+      "finalFrames": [
+        4,
+        6,
+        11
+      ],
+      "stillWhenIdle": true,
+      "reducedMotion": true,
+      "cachesReleased": true
+    },
+    {
+      "width": 360,
+      "height": 740,
+      "movement": [
+        0,
+        12,
+        24,
+        35,
+        47,
+        24,
+        0
+      ],
+      "materials": [
+        {
+          "kind": "titanium",
+          "seen": [
+            0,
+            4,
+            8,
+            4
+          ]
+        },
+        {
+          "kind": "sapphire",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "anthracite",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        },
+        {
+          "kind": "rubber",
+          "seen": [
+            0,
+            9,
+            17,
+            9
+          ]
+        }
+      ],
+      "finalFrames": [
+        4,
+        6,
+        11
+      ],
+      "stillWhenIdle": true,
+      "reducedMotion": true,
+      "cachesReleased": true
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "failedResponses": [],
+  "passed": true
+}

@@ -1,0 +1,98 @@
+'use client';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { CyclesSurface } from './cycles-surface';
+import { Media } from './media';
+import Image from 'next/image';
+import blueprintImage from '../../public/assets/phase3-signatures/blueprint.svg';
+import { craftSurfaceLength, materialStudyLength } from '@/lib/story-timing';
+import { StoryFilm } from './story-films';
+
+gsap.registerPlugin(ScrollTrigger);
+const signaturePath = '/assets/phase3-signatures';
+export function LightReveal() {
+  const [frame, setFrame] = useState(3), [active, setActive] = useState(false);
+  useEffect(() => {
+    const query = matchMedia('(prefers-reduced-motion: reduce)'); let gone = false, tween: gsap.core.Tween | undefined;
+    const changed = () => { if (query.matches) { tween?.kill(); setActive(false); setFrame(3); } };
+    // The original poster paints first. Only a compact genuine lighting progression follows.
+    if (!query.matches && (!location.hash || location.hash === '#watch') && !(navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData) {
+      const poster = document.querySelector<HTMLImageElement>('.hero-product .product-media img');
+      void poster?.decode().then(() => { if (gone) return; setActive(true); setFrame(0); const play = { f: 0 }; tween = gsap.to(play, { f: 3, duration: 2.2, delay: .25, ease: 'none', onUpdate: () => setFrame(Math.round(play.f)), onComplete: () => { setFrame(3); } }); }).catch(() => {});
+    }
+    query.addEventListener('change', changed);
+    return () => { gone = true; tween?.kill(); query.removeEventListener('change', changed); };
+  }, []);
+  return active ? <CyclesSurface frame={frame} count={4} path={signaturePath} prefix="hero-" className="hero-sculpting" label="Crown, chamfer, dial and complete watch under actual Blender lighting" /> : null;
+}
+export function LightInspection({ compact = false }: { compact?: boolean }) {
+  const element = useRef<HTMLDivElement>(null);
+  const [frame, setFrame] = useState(4);
+  useEffect(() => {
+    const media = gsap.matchMedia();
+    media.add({ motion: '(prefers-reduced-motion: no-preference)', desktop: '(min-width: 769px)' }, context => {
+      if (!context.conditions?.motion || !element.current) return;
+      const horizontal = compact && context.conditions.desktop;
+      // Measure the fixed film boundary, not the photographic plane being transformed.
+      const trigger = horizontal ? element.current.closest<HTMLElement>('.materials') : compact ? element.current : element.current.closest<HTMLElement>('.case-film');
+      if (!trigger) return;
+      const light = { frame: 0 };
+      gsap.fromTo(light, { frame: 0 }, {
+        frame: 8, ease: 'none', onUpdate: () => setFrame(Math.round(light.frame)),
+        scrollTrigger: {
+          trigger, start: horizontal ? 'top top' : 'top 80%',
+          // Finish each lighting study before its next camera or material transition.
+          end: horizontal ? () => `+=${Math.max(1, (trigger.offsetHeight - innerHeight) * materialStudyLength)}` : compact ? 'bottom 25%' : () => `+=${(trigger.offsetHeight + innerHeight * .55) * craftSurfaceLength}`,
+          scrub: context.conditions.desktop ? .35 : .2, invalidateOnRefresh: true,
+        },
+      });
+      return () => setFrame(4);
+    });
+    return () => media.revert();
+  }, [compact]);
+  return <div ref={element} className={`light-inspection ${compact ? 'light-inspection-compact' : ''}`}>
+    <CyclesSurface frame={frame} count={9} path={signaturePath} prefix="light-" label="Titanium under nine genuine studio light positions" />
+  </div>;
+}
+const micro = [{ title: 'Balance', image: 'micro-balance', text: 'A close study of the balance rim and jewelled bearing.' }, { title: 'Hairspring', image: 'micro-spring', text: 'The fine spiral geometry inside the open-heart assembly.' }, { title: 'Bridge', image: 'micro-bridge', text: 'Supporting bridge, fasteners and considered surface transitions.' }];
+export function Microscope() {
+  const [selected, setSelected] = useState(-1);
+  return <div className={`microscope ${selected >= 0 ? 'microscope-open' : ''}`}>
+    {selected >= 0 && <div className="microscope-study"><Media name={`phase3-signatures/${micro[selected].image}`} alt={`Original Cycles ${micro[selected].title} close-up`} sizes="(max-width:768px) 100vw, 72vw" /><div><span className="small-label">WATCHMAKER’S MICROSCOPE</span><h3>{micro[selected].title}</h3><p>{micro[selected].text}</p></div></div>}
+    <div className="microscope-controls" role="group" aria-label="Movement microscope"><span>INSPECT THE MOVEMENT</span>{micro.map((item, i) => <button key={item.title} aria-pressed={selected === i} onClick={() => setSelected(i)}>{item.title} <i>+</i></button>)}{selected >= 0 && <button onClick={() => setSelected(-1)}>Overall view ↙</button>}</div>
+  </div>;
+}
+export function MaterialDiscovery({ material }: { material: string }) {
+  return material === 'Titanium' ? <LightInspection compact /> : <StoryFilm kind={material.toLowerCase() as 'sapphire' | 'anthracite' | 'rubber'} materialIndex={['Titanium', 'Sapphire', 'Anthracite', 'Rubber'].indexOf(material)} />;
+}
+export function Blueprint() {
+  const element = useRef<HTMLDivElement>(null);
+  const [ready, setReady] = useState(false);
+  useLayoutEffect(() => {
+    if (!ready) return;
+    const media = gsap.matchMedia();
+    media.add('(prefers-reduced-motion: no-preference)', () => {
+      gsap.fromTo(element.current, { clipPath: 'inset(0 100% 0 0)' }, {
+        clipPath: 'inset(0 0% 0 0)', duration: .8, ease: 'power2.out',
+        // Finish the reveal even when scrolling stops, and retain it on return.
+        scrollTrigger: { trigger: element.current, start: 'top 85%', once: true },
+      });
+    });
+    return () => media.revert();
+  }, [ready]);
+  return <div ref={element} className="blueprint-morph" style={{ visibility: ready ? 'visible' : 'hidden' }}><Image unoptimized src={blueprintImage} width={1000} height={1000} alt="Front elevation line drawing projected from the original watch meshes" loading="lazy" onLoad={() => setReady(true)} /><span>NOCTIS 01 / GEOMETRY STUDY</span></div>;
+}
+export function FinaleFilm() {
+  const [frame, setFrame] = useState(11), element = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const media = gsap.matchMedia(); media.add('(prefers-reduced-motion: no-preference)', () => {
+      const section = element.current?.closest<HTMLElement>('.finale');
+      if (!section) return;
+      const play = { frame: 0 };
+      gsap.fromTo(play, { frame: 0 }, { frame: 11, ease: 'none', onUpdate: () => setFrame(Math.round(play.frame)), scrollTrigger: { id: 'story-finale', trigger: section, start: 'top 85%', end: 'bottom bottom', scrub: .4, invalidateOnRefresh: true } });
+      return () => setFrame(11);
+    }); return () => media.revert();
+  }, []);
+  return <div ref={element} className="final-film"><CyclesSurface frame={frame} count={12} path={signaturePath} prefix="final-" label="Original Cycles camera pullback, from detail to complete watch" /></div>;
+}

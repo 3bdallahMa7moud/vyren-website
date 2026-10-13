@@ -1,0 +1,27 @@
+{
+  "d": {
+    "cacheFrames": 6,
+    "cacheLimit": 6,
+    "decodedBytes": 46080000,
+    "peakDecodedBytes": 46080000,
+    "peakCacheFrames": 6,
+    "pending": 0,
+    "downloadedBytes": 2956870,
+    "fetches": 69,
+    "failedFrames": 0,
+    "abortedRequests": 0,
+    "desiredFrame": 70,
+    "displayedFrame": 70,
+    "draws": 117,
+    "averageDrawMs": 0.15897435885973465,
+    "active": true,
+    "variant": "desktop",
+    "previewDraws": 29,
+    "atlasBytes": 295646,
+    "fullResolution": true,
+    "mode": "studio",
+    "angle": 351.6527759738085,
+    "fullscreen": false
+  },
+  "errors": []
+}

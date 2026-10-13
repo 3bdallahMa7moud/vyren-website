@@ -1,0 +1,349 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: legacy-viewer.spec.ts >> complete-product framing and readable controls 844×390
+- Location: qa\phase3\tests\legacy-viewer.spec.ts:54:107
+
+# Error details
+
+```
+Test timeout of 120000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#manifesto"
+    - banner [ref=e4]:
+      - link "VYREN home" [ref=e5] [cursor=pointer]:
+        - /url: "#watch"
+        - text: VYREN
+      - navigation "Main navigation" [ref=e6]:
+        - link "Watch" [ref=e7] [cursor=pointer]:
+          - /url: "#watch"
+        - link "Craftsmanship" [ref=e8] [cursor=pointer]:
+          - /url: "#craftsmanship"
+        - link "Experience" [ref=e9] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Details" [ref=e10] [cursor=pointer]:
+          - /url: "#details"
+      - link "NOCTIS 01" [ref=e11] [cursor=pointer]:
+        - /url: "#experience"
+    - main [ref=e14]:
+      - region [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]: THE NOCTIS COLLECTION
+          - generic [ref=e18]: A STUDY IN PRECISION — 01
+        - 'img "The actual VYREN NOCTIS 01: satin titanium-inspired case, anthracite open-heart dial and integrated black rubber strap" [ref=e22]'
+        - generic [ref=e23]:
+          - generic [ref=e24]: VYREN / NOCTIS 01
+          - heading "Time, redefined." [level=1] [ref=e26]:
+            - generic [ref=e27]: Time,
+            - emphasis [ref=e31]: redefined.
+          - paragraph [ref=e32]: Precision is not measured.It is experienced.
+          - generic [ref=e33]:
+            - link "Discover the watch" [ref=e34] [cursor=pointer]:
+              - /url: "#manifesto"
+            - link "Enter the Studio" [ref=e37] [cursor=pointer]:
+              - /url: "#experience"
+        - generic [ref=e39]:
+          - link [ref=e40] [cursor=pointer]:
+            - /url: "#manifesto"
+          - generic [ref=e43]:
+            - generic [ref=e44]: NOCTIS 01
+            - generic [ref=e45]: Darkness reveals character.
+          - generic [ref=e46]: DESIGN EXPLORATION / 2026
+      - region [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: "02"
+          - generic [ref=e50]: An obsession with precision
+        - heading "Every second has a story." [level=2] [ref=e51]:
+          - generic [ref=e52]: EVERY SECOND
+          - generic [ref=e53]: HAS A STORY.
+        - generic:
+          - generic:
+            - img "The sculptural silhouette of the NOCTIS 01"
+        - generic [ref=e54]:
+          - generic [ref=e55]: The extraordinaryis in the ordinary.
+          - paragraph [ref=e56]: Designed around the smallest details.Built to change the way we see time.
+          - generic [ref=e57]: V / N° 01
+      - region [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: "03"
+            - generic [ref=e62]: Sculpted in titanium
+          - generic [ref=e63]: THE ARCHITECTURE OF A WATCH
+        - generic [ref=e64]:
+          - heading [level=2] [ref=e65]:
+            - text: Sculpted from
+            - emphasis [ref=e66]: precision.
+          - paragraph [ref=e67]: Not a line without a purpose.Not an edge without intention.
+        - generic [ref=e68]:
+          - img "Macro view of the actual brushed case, polished chamfer, lug and fluted crown" [ref=e71]
+          - 'img "A second genuine Cycles camera view: crown flutes and engraved V" [ref=e74]'
+          - generic [ref=e75]: 01 / SATIN SURFACE
+          - generic [ref=e77]: 02 / CROWN & CHAMFER
+          - generic [ref=e79]:
+            - generic:
+              - img "Titanium under nine genuine studio light positions"
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - text: TRACE THE LIGHT
+                - slider "Titanium light position" [ref=e82]: "4"
+              - generic [ref=e83]: POLISHED CHAMFER / LIGHT BOUNDARY
+        - generic [ref=e84]:
+          - generic [ref=e85]: 01 — SURFACE & FORM
+          - paragraph [ref=e86]: Titanium-inspired surfaces. Precisely framed reflections.An interplay of brushed planes and polished edges.
+          - link "The material language" [ref=e87] [cursor=pointer]:
+            - /url: "#materials"
+      - region [ref=e90]:
+        - generic [ref=e91]:
+          - img "The actual open-heart dial before the closer movement study" [ref=e94]
+          - img "Actual exposed balance, hairspring, jewelled bearings and bridges in the VYREN VN-01 illustrative assembly" [ref=e97]
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]: "04"
+              - generic [ref=e102]: The heart of time
+            - heading [level=2] [ref=e103]:
+              - text: The artof
+              - emphasis [ref=e104]: motion.
+            - paragraph [ref=e105]: Behind the quiet surface,a world of considered detail.
+            - paragraph [ref=e107]: An open-heart aperture offers a glimpse into the VN-01 — an illustrative mechanical landscape of bridges, balance and spring.
+          - generic [ref=e108]: BALANCE & HAIRSPRINGVisual mechanism study
+          - generic [ref=e113]:
+            - text: SUPPORTING BRIDGE
+            - generic [ref=e114]: Considered down to the smallest form.
+          - group "Movement microscope" [ref=e115]:
+            - generic [ref=e116]: INSPECT THE MOVEMENT
+            - button "Balance +" [ref=e117] [cursor=pointer]
+            - button "Hairspring +" [ref=e118] [cursor=pointer]
+            - button "Bridge +" [ref=e119] [cursor=pointer]
+          - generic [ref=e120]:
+            - generic [ref=e121]: MECHANICAL EXPRESSION / VN-01
+            - generic [ref=e122]: Concept geometry. Unhurried detail.
+      - region "Every detail. In its place." [ref=e123]:
+        - generic [ref=e124]:
+          - generic:
+            - generic:
+              - generic: "05"
+              - generic: Beyond the surface
+            - heading "Every detail. In its place." [level=2]:
+              - text: Every detail.
+              - emphasis: In its place.
+            - paragraph: A singular vision.Revealed, layer by layer.
+          - img "The component layers of the NOCTIS 01" [ref=e125]:
+            - img "NOCTIS 01, assembled" [ref=e127]
+          - status [ref=e128]:
+            - generic [ref=e129]: ASSEMBLED / NOCTIS 01
+            - paragraph [ref=e130]: Ten component groups. One complete silhouette.
+          - generic [aria-hidden]:
+            - generic: 01 Sapphire-style crystal
+            - generic: 02 Anthracite dial
+            - generic: 03 VN-01 visual assembly
+            - generic: 04 Sculpted case
+          - generic [ref=e131]:
+            - generic [ref=e132]: Assembled / 01
+            - generic [ref=e134]: Scroll to reveal. Scroll back to restore.
+      - region [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - generic [ref=e139]: "06"
+              - generic [ref=e140]: Materials of time
+            - heading [level=2] [ref=e141]:
+              - text: Built to be
+              - emphasis [ref=e142]: felt.
+            - generic [ref=e143]: 04 — 04
+          - generic [ref=e145]:
+            - article [ref=e146]:
+              - generic [ref=e147]:
+                - img "Actual VYREN titanium design detail, rendered in Blender Cycles" [ref=e149]
+                - generic [ref=e150]:
+                  - generic:
+                    - img "Titanium under nine genuine studio light positions"
+                  - generic [ref=e151]:
+                    - generic [ref=e152]:
+                      - text: TRACE THE LIGHT
+                      - slider "Material titanium light position" [ref=e153]: "4"
+                    - generic [ref=e154]: POLISHED CHAMFER / LIGHT BOUNDARY
+                - generic [ref=e155]: 01 / MATERIAL STUDY
+              - generic [ref=e156]:
+                - text: A study in light.
+                - heading "Titanium —" [level=3] [ref=e157]:
+                  - generic [ref=e158]: Titanium
+                  - generic [ref=e159]: —
+                - paragraph [ref=e160]: Satin surfaces meet polished edges. An architectural expression of strength and restraint.
+            - article [ref=e162]:
+              - generic [ref=e163]:
+                - img "Actual VYREN sapphire design detail, rendered in Blender Cycles" [ref=e165]
+                - generic [ref=e166]:
+                  - img "Sapphire reflections and the dial underneath, from the original Cycles macro" [ref=e169]
+                  - generic [ref=e170]:
+                    - text: THROUGH THE CRYSTAL
+                    - slider "Sapphire optical study reveal" [ref=e171]: "0"
+                - generic [ref=e172]: 02 / MATERIAL STUDY
+              - generic [ref=e173]:
+                - text: Clarity with depth.
+                - heading "Sapphire —" [level=3] [ref=e174]:
+                  - generic [ref=e175]: Sapphire
+                  - generic [ref=e176]: —
+                - paragraph [ref=e177]: A sapphire-style lens catches the light while revealing the intricate landscape beneath.
+            - article [ref=e179]:
+              - generic [ref=e180]:
+                - img "Actual VYREN anthracite design detail, rendered in Blender Cycles" [ref=e182]
+                - button "DISCOVER THE DIAL +" [ref=e184] [cursor=pointer]
+                - generic [ref=e185]: 03 / MATERIAL STUDY
+              - generic [ref=e186]:
+                - text: Darkness, defined.
+                - heading "Anthracite —" [level=3] [ref=e187]:
+                  - generic [ref=e188]: Anthracite
+                  - generic [ref=e189]: —
+                - paragraph [ref=e190]: A considered dial. Applied markers, sculptural hands and an open window into motion.
+            - article [ref=e192]:
+              - generic [ref=e193]:
+                - img "Actual VYREN rubber design detail, rendered in Blender Cycles" [ref=e195]
+                - button "TRACE THE MOLDED SURFACE +" [ref=e197] [cursor=pointer]
+                - generic [ref=e198]: 04 / MATERIAL STUDY
+              - generic [ref=e199]:
+                - text: The softer side of precision.
+                - heading "Rubber —" [level=3] [ref=e200]:
+                  - generic [ref=e201]: Rubber
+                  - generic [ref=e202]: —
+                - paragraph [ref=e203]: An integrated black strap follows the case. Quiet texture. A continuous silhouette.
+          - generic [ref=e205]:
+            - generic [ref=e206]: Four textures. One expression.
+            - generic [ref=e209]: Continue scrolling
+      - region [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - generic [ref=e215]: "07"
+            - generic [ref=e216]: THE INTERACTIVE STUDIO
+          - heading [level=2] [ref=e217]:
+            - text: Make time
+            - emphasis [ref=e218]: yours.
+          - paragraph [ref=e219]: A closer look changes everything.
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - group "Viewing mode" [ref=e222]:
+              - button "Studio" [ref=e223] [cursor=pointer]
+              - button "Free 3D" [active] [pressed] [ref=e224] [cursor=pointer]
+            - generic [ref=e225]: LIVE MODEL / FREE ORBIT
+            - button "Fullscreen" [ref=e226] [cursor=pointer]:
+              - text: Fullscreen
+              - generic [aria-hidden] [ref=e227]: ↗
+          - generic [ref=e228]:
+            - generic: NOCTIS 0141 MM / CONCEPT STUDY
+            - generic [ref=e229]:
+              - generic "Interactive 3D view of VYREN NOCTIS 01" [ref=e230]:
+                - img "Original watch studio preview while Free 3D loads" [ref=e232]
+              - generic [aria-hidden]: 000° 360° ORBIT
+            - generic [ref=e233]:
+              - generic [ref=e234]: Explore freely in three dimensions.
+              - button "Interact with the watch" [ref=e235] [cursor=pointer]:
+                - text: Interact with the watch
+                - generic [aria-hidden] [ref=e236]: ↔
+          - status [ref=e238]:
+            - generic [ref=e239]: Ready to explore
+          - group "3D viewer controls" [ref=e240]:
+            - generic [ref=e241]:
+              - button "front view" [pressed] [ref=e242] [cursor=pointer]
+              - button "rear view" [ref=e243] [cursor=pointer]
+              - button "Dial detail" [ref=e244] [cursor=pointer]
+              - button "Reset" [ref=e245] [cursor=pointer]
+            - generic [ref=e246]:
+              - button "Zoom out" [ref=e247] [cursor=pointer]: −
+              - button "Zoom in" [ref=e248] [cursor=pointer]: +
+              - button "Low power" [ref=e249] [cursor=pointer]
+          - generic [ref=e250]:
+            - generic [ref=e251]: WATCHMAKER’S LOUPE
+            - generic [ref=e252]:
+              - button "Crown" [ref=e253] [cursor=pointer]:
+                - text: Crown
+                - generic [aria-hidden] [ref=e254]: +
+              - button "Dial" [ref=e255] [cursor=pointer]:
+                - text: Dial
+                - generic [aria-hidden] [ref=e256]: +
+              - button "Open-heart movement" [ref=e257] [cursor=pointer]:
+                - text: Open-heart movement
+                - generic [aria-hidden] [ref=e258]: +
+              - button "Case / strap" [ref=e259] [cursor=pointer]:
+                - text: Case / strap
+                - generic [aria-hidden] [ref=e260]: +
+        - paragraph [ref=e261]: Original geometry. Studio photographs rendered in Blender. Free 3D offers unconstrained inspection of the same watch.
+      - region [ref=e262]:
+        - generic [ref=e263]:
+          - generic [ref=e264]:
+            - generic [ref=e265]: "08"
+            - generic [ref=e266]: The details define everything
+          - generic [ref=e267]: NOCTIS 01 / DESIGN DOSSIER
+        - heading [level=2] [ref=e268]:
+          - text: Precision in
+          - emphasis [ref=e269]: every form.
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - img "Front elevation of the NOCTIS 01 concept, with its verified 41 millimetre circular case" [ref=e273]
+            - generic [ref=e274]:
+              - img "Front elevation line drawing projected from the original watch meshes" [ref=e275]
+              - generic [ref=e276]: NOCTIS 01 / GEOMETRY STUDY
+            - generic: 41 MM
+            - generic [ref=e277]: CIRCULAR CASE DIAMETER
+          - generic [ref=e278]:
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - term [ref=e281]: Model
+                - definition [ref=e282]: NOCTIS 01
+              - generic [ref=e283]:
+                - term [ref=e284]: Case diameter
+                - definition [ref=e285]: 41 mm
+              - generic [ref=e286]:
+                - term [ref=e287]: Case expression
+                - definition [ref=e288]: Titanium-inspired
+              - generic [ref=e289]:
+                - term [ref=e290]: Crystal
+                - definition [ref=e291]: Sapphire-style
+              - generic [ref=e292]:
+                - term [ref=e293]: Dial
+                - definition [ref=e294]: Anthracite / semi-skeleton
+              - generic [ref=e295]:
+                - term [ref=e296]: Strap
+                - definition [ref=e297]: Integrated black rubber
+              - generic [ref=e298]:
+                - term [ref=e299]: Mechanism
+                - definition [ref=e300]: VN-01 visual concept
+            - paragraph [ref=e301]: NOCTIS 01 is a fictional design exploration. Material names describe visual intent. No manufactured performance, certification or purchase availability is claimed.
+      - region [ref=e302]:
+        - generic [ref=e304]:
+          - img "The VYREN NOCTIS 01 in its final cinematic composition" [ref=e306]
+          - generic [ref=e307]:
+            - generic:
+              - img "Original Cycles camera pullback, from detail to complete watch"
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - generic [ref=e310]: "09"
+            - generic [ref=e311]: Own the moment
+          - heading "Time belongs to you." [level=2] [ref=e312]:
+            - generic [ref=e313]: Time belongs
+            - generic [ref=e316]:
+              - text: to
+              - emphasis [ref=e317]: you.
+          - paragraph [ref=e318]: VYREN NOCTIS 01 — An exploration of precision.
+          - link "Enter the Studio" [ref=e319] [cursor=pointer]:
+            - /url: "#experience"
+        - generic [ref=e322]:
+          - generic [ref=e323]: VYREN
+          - generic [ref=e324]: TIME, REDEFINED.
+          - link "Back to top" [ref=e325] [cursor=pointer]:
+            - /url: "#watch"
+    - contentinfo [ref=e328]:
+      - generic [ref=e329]: © 2026 VYREN. A fictional watch concept.
+      - generic [ref=e330]: DESIGNED AROUND THE DETAILS.
+  - alert [ref=e331]
+```

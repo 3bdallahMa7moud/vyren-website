@@ -1,0 +1,65 @@
+import { chromium } from '@playwright/test';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const out=path.resolve('qa/section-seven');fs.mkdirSync(out,{recursive:true});
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const origin='http://127.0.0.1:3001';
+const report={browser:browser.version(),origin,scope:'Actual desktop Edge, viewport/touch and CDP network emulation; no physical device or Safari. Inspection only; application source is unchanged.',layouts:[],desktop:{},failureCases:{},network:{}};
+const distance=d=>Math.hypot(...d.camera.map((n,i)=>n-d.target[i]));
+const delta=(a,b)=>Math.max(...a.map((n,i)=>Math.abs(n-b[i])));
+const diagnostics=page=>page.evaluate(()=>window.__VYREN?.diagnostics());
+async function loaded(page){await page.waitForFunction(()=>window.__VYREN?.diagnostics().ready,{},{timeout:90000});await page.waitForTimeout(1100);}
+async function align(page){await page.evaluate(()=>scrollTo({top:document.querySelector('.viewer-body').getBoundingClientRect().top+scrollY-96,behavior:'instant'}));await page.waitForTimeout(350);}
+async function shot(page,name,section=false){await (section?page.locator('#experience'):page).screenshot({path:path.join(out,`${name}.png`)});}
+async function layout(page){return page.evaluate(()=>{
+ const section=document.querySelector('#experience'),body=section.querySelector('.viewer-body');
+ const b=body.getBoundingClientRect();const buttons=[...section.querySelectorAll('button')].map(e=>{const r=e.getBoundingClientRect(),s=getComputedStyle(e);return {text:e.textContent.trim(),label:e.getAttribute('aria-label'),pressed:e.getAttribute('aria-pressed'),width:r.width,height:r.height,font:s.fontSize,color:s.color,visible:s.display!=='none'&&s.visibility!=='hidden',rect:{x:r.x,y:r.y,width:r.width,height:r.height}};});
+ return {scrollWidth:document.documentElement.scrollWidth,viewport:[innerWidth,innerHeight],sectionHeight:section.getBoundingClientRect().height,body:{width:b.width,height:b.height},headingClip:getComputedStyle(section.querySelector('h2')).clipPath,buttons,canvasCount:document.querySelectorAll('[data-vyren-canvas]').length,canvasSize:[document.querySelector('[data-vyren-canvas]')?.width,document.querySelector('[data-vyren-canvas]')?.height],interactiveCanvasTabIndex:document.querySelector('[data-vyren-canvas]')?.tabIndex,instruction:section.querySelector('.viewer-instruction').textContent};
+ });}
+for(const [width,height] of [[1440,1000],[1920,1080],[1280,720],[768,1024],[390,844],[360,640],[844,390]]){
+ const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:width<=768?2:1,isMobile:width<=768,hasTouch:width<=768});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(origin+'/#experience');await loaded(page);await align(page);
+ await shot(page,`${width}x${height}-front`,true);
+ const states={front:await diagnostics(page)};
+ for(const [name,label] of [['rear','rear view'],['detail','Dial detail']]){await page.getByRole('button',{name:label,exact:true}).click();await page.waitForTimeout(1150);await align(page);await shot(page,`${width}x${height}-${name}`,true);states[name]=await diagnostics(page);}
+ report.layouts.push({width,height,layout:await layout(page),states,errors});
+ await context.close();fs.writeFileSync(path.join(out,'audit.json'),JSON.stringify(report,null,2));
+ console.log(JSON.stringify({layout:[width,height],errors}));
+}
+{
+ const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:1});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin+'/#experience');await loaded(page);await align(page);
+ const initial=await diagnostics(page);await page.waitForTimeout(1200);const settled=await diagnostics(page);report.desktop.idleFrames=settled.activeFrames-initial.activeFrames;
+ await page.getByRole('button',{name:'Interact with the watch',exact:true}).click();await page.waitForTimeout(250);await align(page);const box=await page.locator('.viewer-slot').boundingBox();
+ const dragStart=await diagnostics(page);const samples=[];await page.mouse.move(box.x+box.width*.5,box.y+box.height*.5);await page.mouse.down();
+ for(let i=1;i<=80;i++){await page.mouse.move(box.x+box.width*(.5+.28*Math.sin(i/16)),box.y+box.height*(.5+.15*Math.cos(i/17)));await page.waitForTimeout(25);samples.push(await diagnostics(page));}
+ await page.mouse.up();await page.waitForTimeout(900);const dragEnd=await diagnostics(page);await shot(page,'desktop-drag');
+ report.desktop.drag={cameraChanged:delta(dragStart.camera,dragEnd.camera)>1e-6,frames:dragEnd.activeFrames-dragStart.activeFrames,durationMs:dragEnd.elapsedMs-dragStart.elapsedMs,averageCpuRenderMs:dragEnd.averageCpuRenderMs,averageRenderedIntervalMs:dragEnd.averageRenderedIntervalMs,gpu:await page.evaluate(()=>{const gl=document.querySelector('[data-vyren-canvas]').getContext('webgl2'),ext=gl.getExtension('WEBGL_debug_renderer_info');return ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):'unavailable';}),samples};
+ await page.getByRole('button',{name:'Reset',exact:false}).click();await page.waitForTimeout(1200);const reset=await diagnostics(page);report.desktop.reset={positionDelta:delta(initial.camera,reset.camera),targetDelta:delta(initial.target,reset.target)};
+ for(let i=0;i<14;i++){await page.getByRole('button',{name:'Zoom in',exact:true}).click();await page.waitForTimeout(90);}await page.waitForTimeout(700);const close=await diagnostics(page);await align(page);await shot(page,'desktop-maximum-zoom');
+ for(let i=0;i<18;i++){await page.getByRole('button',{name:'Zoom out',exact:true}).click();await page.waitForTimeout(90);}await page.waitForTimeout(700);const far=await diagnostics(page);await shot(page,'desktop-minimum-zoom');report.desktop.zoom={near:distance(close),far:distance(far)};
+ await page.getByRole('button',{name:'Low power',exact:true}).click();await page.waitForTimeout(300);report.desktop.lowPower=await diagnostics(page);await shot(page,'desktop-low-power');await page.getByRole('button',{name:'Studio mode',exact:true}).click();
+ await page.evaluate(()=>scrollTo({top:document.getElementById('details').offsetTop+300,behavior:'instant'}));await page.waitForTimeout(700);const inactive=await diagnostics(page);await page.waitForTimeout(700);const inactiveLater=await diagnostics(page);report.desktop.offscreen={controlsEnabled:inactive.controlsEnabled,renderedFrames:inactiveLater.activeFrames-inactive.activeFrames};
+ await align(page);await page.waitForTimeout(400);report.desktop.returning=await diagnostics(page);
+ await page.getByRole('button',{name:'Finish exploring',exact:true}).click();await page.getByRole('button',{name:'Reset',exact:false}).click();await page.waitForTimeout(1100);
+ const keyStart=await diagnostics(page);await page.getByRole('button',{name:'Interact with the watch',exact:true}).focus();await page.keyboard.press('Enter');await page.waitForTimeout(250);await page.keyboard.press('ArrowLeft');await page.waitForTimeout(500);const keyEnd=await diagnostics(page);report.desktop.keyboard={activationWorks:keyEnd.controlsEnabled,rotationChanged:delta(keyStart.camera,keyEnd.camera)>1e-6,layout:await layout(page)};
+ await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'rear view',exact:true}).click();await page.waitForTimeout(70);report.desktop.reducedMotion={motion:await page.evaluate(()=>window.__VYREN_MOTION?.()),state:await diagnostics(page)};await shot(page,'desktop-reduced-motion');
+ await page.emulateMedia({reducedMotion:'no-preference'});await page.getByRole('button',{name:'Reset',exact:false}).click();await page.waitForTimeout(1100);
+ await page.evaluate(()=>{const canvas=document.querySelector('[data-vyren-canvas]'),gl=canvas.getContext('webgl2');window.__auditContextRestored=false;canvas.addEventListener('webglcontextrestored',()=>window.__auditContextRestored=true);window.__auditLoss=gl.getExtension('WEBGL_lose_context');window.__auditLoss?.loseContext();});await page.waitForTimeout(500);await shot(page,'context-lost');report.failureCases.contextLost={state:await diagnostics(page),studio:await page.evaluate(()=>document.documentElement.dataset.studio),controlsVisible:await page.locator('.viewer-controls').isVisible(),posterVisible:await page.locator('.viewer-slot img').evaluate(e=>getComputedStyle(e).opacity)};
+ await page.evaluate(()=>window.__auditLoss?.restoreContext());await page.waitForTimeout(3500);report.failureCases.contextRestored={eventReceived:await page.evaluate(()=>window.__auditContextRestored),state:await diagnostics(page),studio:await page.evaluate(()=>document.documentElement.dataset.studio),canvasVisibility:await page.locator('[data-vyren-canvas]').evaluate(e=>getComputedStyle(e).visibility)};await shot(page,'context-restored');
+ report.desktop.errors=errors;await context.close();console.log('Desktop interaction and context recovery inspected.');
+}
+{
+ const context=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true});const page=await context.newPage();await page.goto(origin+'/#experience');await loaded(page);await align(page);await page.getByRole('button',{name:'Interact with the watch',exact:true}).tap();await page.waitForTimeout(300);const before=await diagnostics(page),box=await page.locator('.viewer-slot').boundingBox(),cdp=await context.newCDPSession(page),x=box.x+box.width*.5,y=Math.max(180,box.y+box.height*.4);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});for(let i=1;i<=15;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+i*6,y:y+i*2}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(700);const after=await diagnostics(page);await shot(page,'mobile-touch');
+ await page.getByRole('button',{name:'Finish exploring',exact:true}).tap();await align(page);const scrollBefore=await page.evaluate(()=>scrollY);const canvasBox=await page.locator('.viewer-slot').boundingBox(),sx=190,sy=Math.max(200,canvasBox.y+300);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:sx,y:sy}]});for(let i=1;i<=10;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:sx,y:sy-i*15}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(400);report.mobileTouch={rotationChanged:delta(before.camera,after.camera)>1e-6,scrollAfterFinish:await page.evaluate(()=>scrollY)-scrollBefore};
+ await align(page);await page.setViewportSize({width:1280,height:720});await page.waitForTimeout(700);report.resize={afterMobileToDesktop:await diagnostics(page),layout:await layout(page)};await shot(page,'resize-mobile-to-desktop',true);await context.close();
+}
+{
+ const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();let blocked=true;await page.route('**/vyren-noctis-01.glb',route=>blocked?route.abort('failed'):route.continue());await page.goto(origin+'/#experience');await page.waitForFunction(()=>document.documentElement.dataset.studio==='error');await align(page);await shot(page,'network-failure');blocked=false;await page.unroute('**/vyren-noctis-01.glb');await page.evaluate(()=>{scrollTo(0,0);});await page.waitForTimeout(400);await align(page);await page.waitForTimeout(2200);report.failureCases.transientNetwork={studio:await page.evaluate(()=>document.documentElement.dataset.studio),ready:await diagnostics(page),retryButtons:await page.getByRole('button',{name:/retry|try again/i}).count()};await context.close();
+}
+{
+ const context=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true}),page=await context.newPage(),cdp=await context.newCDPSession(page);await cdp.send('Network.enable');await cdp.send('Network.emulateNetworkConditions',{offline:false,downloadThroughput:500000,uploadThroughput:500000,latency:120});const started=Date.now();await page.goto(origin+'/#experience');await page.waitForTimeout(1500);await align(page);await shot(page,'slow-network-loading');await loaded(page);const readyMs=Date.now()-started;const resources=await page.evaluate(()=>performance.getEntriesByType('resource').filter(e=>e.name.includes('vyren-noctis-01.glb')).map(e=>({url:new URL(e.name).pathname,transferSize:e.transferSize,encodedBodySize:e.encodedBodySize,duration:e.duration})));await shot(page,'slow-network-ready',true);report.network={emulation:'4 Mbps / 120 ms latency, desktop Edge mobile viewport. Total ready time includes navigation and page assets.',readyMs,resources,state:await diagnostics(page)};await context.close();
+}
+fs.writeFileSync(path.join(out,'audit.json'),JSON.stringify(report,null,2));await browser.close();console.log(JSON.stringify({finished:true,layouts:report.layouts.length,contextRecovery:report.failureCases.contextRestored.eventReceived&&!report.failureCases.contextRestored.state.contextLost,coldReadyMs:report.network.readyMs}));

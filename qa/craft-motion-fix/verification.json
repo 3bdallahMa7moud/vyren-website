@@ -1,0 +1,49 @@
+{
+  "captureCases": 6,
+  "normalMotionCases": 4,
+  "reducedMotionCases": 2,
+  "visibleMotion": true,
+  "lightingReversible": true,
+  "idleStable": true,
+  "errors": [],
+  "regressions": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "crownMotion": [
+        "matrix(1.0798, 0, 0, 1.0798, 9.57777, -6.23839)",
+        "matrix(1.1126, 0, 0, 1.1126, 23.179, -11.9615)",
+        "matrix(1.0798, 0, 0, 1.0798, 9.57777, -6.23839)"
+      ],
+      "titanium": [
+        0,
+        4,
+        8,
+        4,
+        0
+      ],
+      "controlsAbsent": true,
+      "finaleContained": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "crownMotion": [
+        "matrix(1.079, 0, 0, 1.079, 2.74677, -4.78504)",
+        "matrix(1.1118, 0, 0, 1.1118, 6.7938, -9.282)",
+        "matrix(1.079, 0, 0, 1.079, 2.74677, -4.78504)"
+      ],
+      "titanium": [
+        0,
+        4,
+        8,
+        4,
+        0
+      ],
+      "controlsAbsent": true,
+      "finaleContained": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+[
+  {
+    "index": 66,
+    "d": {
+      "ready": true,
+      "renderedPresetVersion": 1,
+      "contextLost": false,
+      "activeStage": "viewer",
+      "assemblyFactor": 0,
+      "assemblyScroll": 1,
+      "restDelta": 0,
+      "restMatrixDelta": 0,
+      "camera": [
+        -0.008049196651411503,
+        0.23454162914750054,
+        0.1546999961137771
+      ],
+      "target": [
+        0,
+        -0.016,
+        0
+      ],
+      "controlsEnabled": false,
+      "meshes": 85,
+      "materials": 27,
+      "geometryTriangles": 360274,
+      "assemblies": 10,
+      "sapphire": [
+        {
+          "name": "WEB_MAT_SAPPHIRE_REAR",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.000699999975040555,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        },
+        {
+          "name": "WEB_MAT_SAPPHIRE_CRYSTAL",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.0012000000569969416,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        }
+      ],
+      "normalCalibration": 0.75,
+      "caseMm": [
+        40.99971801042557,
+        7.1500001940876245,
+        42.70000010728836
+      ],
+      "threeRevision": "180",
+      "fov": 17.52239241344665,
+      "up": [
+        -0.7252586466833,
+        0.34469211933896626,
+        -0.5959758758544922
+      ],
+      "drawCalls": 250,
+      "peakRenderCalls": 250,
+      "shadowUpdates": 1,
+      "renderedTriangles": 1032110,
+      "textures": 7,
+      "dpr": 1,
+      "opticalBufferScale": 1.5,
+      "canvas": [
+        1311.84375,
+        683
+      ],
+      "demandRendering": true,
+      "averageRenderedIntervalMs": 0,
+      "averageCpuRenderMs": 112.5,
+      "activeFrames": 1,
+      "elapsedMs": 188,
+      "lighting": {
+        "exposure": 1.189207115002721,
+        "environmentIntensity": 0.62,
+        "toneMapping": "AgX",
+        "shadows": true,
+        "cachedShadows": true,
+        "keyIntensity": 0.8,
+        "pmremSize": 512,
+        "source": "Original Blender studio cards, calibrated front/key cards, calibrated sapphire roughness, soft key shadow and warm edge fill"
+      }
+    }
+  },
+  {
+    "index": 0,
+    "d": {
+      "ready": true,
+      "renderedPresetVersion": 2,
+      "contextLost": false,
+      "activeStage": "viewer",
+      "assemblyFactor": 0,
+      "assemblyScroll": 1,
+      "restDelta": 0,
+      "restMatrixDelta": 0,
+      "camera": [
+        0.11830000579357146,
+        0.205000013872981,
+        0.1546999961137771
+      ],
+      "target": [
+        0,
+        -0.016,
+        0
+      ],
+      "controlsEnabled": false,
+      "meshes": 85,
+      "materials": 27,
+      "geometryTriangles": 360274,
+      "assemblies": 10,
+      "sapphire": [
+        {
+          "name": "WEB_MAT_SAPPHIRE_REAR",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.000699999975040555,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        },
+        {
+          "name": "WEB_MAT_SAPPHIRE_CRYSTAL",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.0012000000569969416,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        }
+      ],
+      "normalCalibration": 0.75,
+      "caseMm": [
+        40.99971801042557,
+        7.1500001940876245,
+        42.70000010728836
+      ],
+      "threeRevision": "180",
+      "fov": 17.52239241344665,
+      "up": [
+        -0.4557463526725769,
+        0.6611414551734924,
+        -0.5959758758544922
+      ],
+      "drawCalls": 167,
+      "peakRenderCalls": 250,
+      "shadowUpdates": 1,
+      "renderedTriangles": 692054,
+      "textures": 7,
+      "dpr": 1,
+      "opticalBufferScale": 1.5,
+      "canvas": [
+        1311.84375,
+        683
+      ],
+      "demandRendering": true,
+      "averageRenderedIntervalMs": 27.799999999999727,
+      "averageCpuRenderMs": 39.86666666716337,
+      "activeFrames": 3,
+      "elapsedMs": 1328,
+      "lighting": {
+        "exposure": 1.189207115002721,
+        "environmentIntensity": 0.62,
+        "toneMapping": "AgX",
+        "shadows": true,
+        "cachedShadows": true,
+        "keyIntensity": 0.8,
+        "pmremSize": 512,
+        "source": "Original Blender studio cards, calibrated front/key cards, calibrated sapphire roughness, soft key shadow and warm edge fill"
+      }
+    }
+  },
+  {
+    "index": 12,
+    "d": {
+      "ready": true,
+      "renderedPresetVersion": 3,
+      "contextLost": false,
+      "activeStage": "viewer",
+      "assemblyFactor": 0,
+      "assemblyScroll": 1,
+      "restDelta": 0,
+      "restMatrixDelta": 0,
+      "camera": [
+        0.2505416291475007,
+        -0.007950803348588623,
+        0.1546999961137771
+      ],
+      "target": [
+        0,
+        -0.016,
+        0
+      ],
+      "controlsEnabled": false,
+      "meshes": 85,
+      "materials": 27,
+      "geometryTriangles": 360274,
+      "assemblies": 10,
+      "sapphire": [
+        {
+          "name": "WEB_MAT_SAPPHIRE_REAR",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.000699999975040555,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        },
+        {
+          "name": "WEB_MAT_SAPPHIRE_CRYSTAL",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.0012000000569969416,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        }
+      ],
+      "normalCalibration": 0.75,
+      "caseMm": [
+        40.99971801042557,
+        7.1500001940876245,
+        42.70000010728836
+      ],
+      "threeRevision": "180",
+      "fov": 17.52239241344665,
+      "up": [
+        0.34469211933896654,
+        0.7252586466832999,
+        -0.5959758758544922
+      ],
+      "drawCalls": 167,
+      "peakRenderCalls": 250,
+      "shadowUpdates": 1,
+      "renderedTriangles": 692054,
+      "textures": 7,
+      "dpr": 1,
+      "opticalBufferScale": 1.5,
+      "canvas": [
+        1311.84375,
+        683
+      ],
+      "demandRendering": true,
+      "averageRenderedIntervalMs": 24.299999999999955,
+      "averageCpuRenderMs": 24.86000000014901,
+      "activeFrames": 5,
+      "elapsedMs": 2502.60000000149,
+      "lighting": {
+        "exposure": 1.189207115002721,
+        "environmentIntensity": 0.62,
+        "toneMapping": "AgX",
+        "shadows": true,
+        "cachedShadows": true,
+        "keyIntensity": 0.8,
+        "pmremSize": 512,
+        "source": "Original Blender studio cards, calibrated front/key cards, calibrated sapphire roughness, soft key shadow and warm edge fill"
+      }
+    }
+  },
+  {
+    "index": 24,
+    "d": {
+      "ready": true,
+      "renderedPresetVersion": 4,
+      "contextLost": false,
+      "activeStage": "viewer",
+      "assemblyFactor": 0,
+      "assemblyScroll": 1,
+      "restDelta": 0,
+      "restMatrixDelta": 0,
+      "camera": [
+        0.1322416233539293,
+        -0.2289508172215695,
+        0.15469999611377702
+      ],
+      "target": [
+        0,
+        -0.016,
+        0
+      ],
+      "controlsEnabled": false,
+      "meshes": 85,
+      "materials": 27,
+      "geometryTriangles": 360274,
+      "assemblies": 10,
+      "sapphire": [
+        {
+          "name": "WEB_MAT_SAPPHIRE_REAR",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.000699999975040555,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        },
+        {
+          "name": "WEB_MAT_SAPPHIRE_CRYSTAL",
+          "transmission": 1,
+          "ior": 1.7599999904632568,
+          "thickness": 0.0012000000569969416,
+          "opacity": 1,
+          "roughness": 0.006,
+          "sourceRoughness": 0.012
+        }
+      ],
+      "normalCalibration": 0.75,
+      "caseMm": [
+        40.99971801042557,
+        7.1500001940876245,
+        42.70000010728836
+      ],
+      "threeRevision": "180",
+      "fov": 17.52239241344665,
+      "up": [
+        0.8004384720115435,
+        0.06411719150980755,
+        -0.5959758758544922
+      ],
+      "drawCalls": 167,
+      "peakRenderCalls": 250,
+      "shadowUpdates": 1,
+      "renderedTriangles": 692054,
+      "textures": 7,
+      "dpr": 1,
+      "opticalBufferScale": 1.5,
+      "canvas": [
+        1311.84375,
+        683
+      ],
+      "demandRendering": true,
+      "averageRenderedIntervalMs": 25.466666666666697,
+      "averageCpuRenderMs": 18.257142857249296,
+      "activeFrames": 7,
+      "elapsedMs": 3643.2000000029802,
+      "lighting": {
+        "exposure": 1.189207115002721,
+        "environmentIntensity": 0.62,
+        "toneMapping": "AgX",
+        "shadows": true,
+        "cachedShadows": true,
+        "keyIntensity": 0.8,
+        "pmremSize": 512,
+        "source": "Original Blender studio cards, calibrated front/key cards, calibrated sapphire roughness, soft key shadow and warm edge fill"
+      }
+    }
+  }
+]

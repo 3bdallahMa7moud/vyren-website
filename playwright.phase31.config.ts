@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({ testDir: './qa/phase3-1/tests', timeout: 120000, fullyParallel: false, workers: 1, reporter: [['list'], ['json', { outputFile: 'qa/phase3-1/test-results/results.json' }]], outputDir: 'qa/phase3-1/test-results', use: { baseURL: 'http://127.0.0.1:3001', channel: 'msedge', headless: true, viewport: { width: 1440, height: 1000 }, trace: 'retain-on-failure' } });

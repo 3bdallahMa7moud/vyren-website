@@ -1,0 +1,49 @@
+{
+  "canvas": [
+    503,
+    528
+  ],
+  "controls": [
+    {
+      "pressed": "true",
+      "text": "front view"
+    },
+    {
+      "pressed": "false",
+      "text": "rear view"
+    },
+    {
+      "pressed": "false",
+      "text": "Dial detail"
+    },
+    {
+      "pressed": null,
+      "text": "Reset"
+    },
+    {
+      "pressed": null,
+      "text": "−"
+    },
+    {
+      "pressed": null,
+      "text": "+"
+    },
+    {
+      "pressed": "false",
+      "text": "Low power"
+    }
+  ],
+  "studio": "ready",
+  "url": "http://127.0.0.1:3000/#experience",
+  "viewport": [
+    518,
+    668
+  ],
+  "observed": [
+    "3D watch rendered in the current in-app preview",
+    "Rear preset changed the angle",
+    "Activating interaction and dragging visibly rotated the watch",
+    "Finish exploring and Reset returned to the front view"
+  ],
+  "scope": "Visual inspection of the actual existing in-app browser on port 3000. Failure and network cases were measured separately in Edge."
+}

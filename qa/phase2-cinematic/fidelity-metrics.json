@@ -1,0 +1,38 @@
+[
+  {
+    "view": "hero",
+    "beforeRgbDifference": 7.917,
+    "afterRgbDifference": 8.058,
+    "meaning": "Composition-matched whole-image RGB difference including background, not realism or percentage fidelity."
+  },
+  {
+    "view": "front",
+    "beforeRgbDifference": 8.009,
+    "afterRgbDifference": 8.036,
+    "meaning": "Composition-matched whole-image RGB difference including background, not realism or percentage fidelity."
+  },
+  {
+    "view": "rear",
+    "beforeRgbDifference": 10.695,
+    "afterRgbDifference": 10.706,
+    "meaning": "Composition-matched whole-image RGB difference including background, not realism or percentage fidelity."
+  },
+  {
+    "view": "movement",
+    "beforeRgbDifference": 28.108,
+    "afterRgbDifference": 30.545,
+    "meaning": "Composition-matched whole-image RGB difference including background, not realism or percentage fidelity."
+  },
+  {
+    "view": "strap",
+    "beforeRgbDifference": 19.372,
+    "afterRgbDifference": 17.992,
+    "meaning": "Composition-matched whole-image RGB difference including background, not realism or percentage fidelity."
+  },
+  {
+    "view": "crown",
+    "beforeRgbDifference": 25.927,
+    "afterRgbDifference": 24.339,
+    "meaning": "Composition-matched whole-image RGB difference including background, not realism or percentage fidelity."
+  }
+]

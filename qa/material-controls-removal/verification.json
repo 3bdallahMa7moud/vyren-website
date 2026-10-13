@@ -1,0 +1,53 @@
+{
+  "report": [
+    {
+      "width": 1440,
+      "name": "titanium",
+      "controls": 0,
+      "imageLoaded": true
+    },
+    {
+      "width": 1440,
+      "name": "sapphire",
+      "controls": 0,
+      "imageLoaded": true
+    },
+    {
+      "width": 1440,
+      "name": "anthracite",
+      "controls": 0,
+      "imageLoaded": true
+    },
+    {
+      "width": 1440,
+      "name": "rubber",
+      "controls": 0,
+      "imageLoaded": true
+    },
+    {
+      "width": 390,
+      "name": "titanium",
+      "controls": 0,
+      "imageLoaded": true
+    },
+    {
+      "width": 390,
+      "name": "sapphire",
+      "controls": 0,
+      "imageLoaded": true
+    },
+    {
+      "width": 390,
+      "name": "anthracite",
+      "controls": 0,
+      "imageLoaded": true
+    },
+    {
+      "width": 390,
+      "name": "rubber",
+      "controls": 0,
+      "imageLoaded": true
+    }
+  ],
+  "errors": []
+}

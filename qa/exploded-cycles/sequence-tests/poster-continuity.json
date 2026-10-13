@@ -1,0 +1,40 @@
+{
+  "initialSequenceResources": [],
+  "meanScreenshotChannelDifference": 0.059903856548294686,
+  "diagnostics": {
+    "ready": true,
+    "active": true,
+    "variant": "desktop",
+    "frameCount": 161,
+    "desiredFrame": 0,
+    "displayedFrame": 0,
+    "displayedProgress": 0,
+    "displayedFactors": {
+      "ASSEMBLY_CRYSTAL": 0,
+      "ASSEMBLY_CROWN": 0,
+      "ASSEMBLY_BEZEL": 0,
+      "ASSEMBLY_CHAPTER": 0,
+      "ASSEMBLY_HANDS": 0,
+      "ASSEMBLY_DIAL": 0,
+      "ASSEMBLY_INDICES": 0,
+      "ASSEMBLY_MOVEMENT": 0,
+      "ASSEMBLY_CASEBACK": 0,
+      "ASSEMBLY_CASEBACK_FASTENERS": 0
+    },
+    "restMatrixDelta": 0,
+    "cacheFrames": 1,
+    "cacheLimit": 12,
+    "peakCacheFrames": 1,
+    "decodedBytes": 7680000,
+    "peakDecodedBytes": 7680000,
+    "pending": 0,
+    "downloadedBytes": 58672,
+    "fetches": 1,
+    "failedFrames": 0,
+    "abortedRequests": 0,
+    "waitingRafChecks": 250,
+    "draws": 1,
+    "averageDrawMs": 0.8000000007450581,
+    "progressSource": "Existing GSAP ScrollTrigger; reduced motion uses explicit endpoint controls"
+  }
+}

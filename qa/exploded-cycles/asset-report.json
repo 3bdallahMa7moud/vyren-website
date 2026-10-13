@@ -1,0 +1,94 @@
+{
+  "frameCount": 161,
+  "variants": {
+    "desktop": {
+      "width": 1600,
+      "height": 1200,
+      "uniqueFrames": 121,
+      "totalBytes": 7197964,
+      "limit": 12
+    },
+    "mobile": {
+      "width": 600,
+      "height": 800,
+      "uniqueFrames": 121,
+      "totalBytes": 5161024,
+      "limit": 10
+    }
+  },
+  "compositing": {
+    "choice": "Transparent RGBA WebP, exact CSS #14191e underneath",
+    "reason": "No rectangular background boundary; preserve source antialiasing and physical transmission",
+    "variants": {
+      "desktop": {
+        "width": 1600,
+        "height": 1200,
+        "crop": [
+          0,
+          0,
+          1600,
+          1200
+        ],
+        "limit": 12,
+        "opaquePosterBytes": 45104,
+        "transparentPosterBytes": 58672,
+        "alphaRetainedExactly": true,
+        "transparentEdgeMeanRgbError": [
+          1.0896254458977408,
+          1.014565992865636,
+          1.2003567181926278
+        ],
+        "opaqueEdgeMeanRgbError": [
+          2.3434898929845422,
+          2.0615338882282996,
+          2.2856718192627823
+        ],
+        "opaqueCornerRgb": [
+          20,
+          26,
+          31
+        ],
+        "siteBackgroundRgb": [
+          20,
+          25,
+          30
+        ]
+      },
+      "mobile": {
+        "width": 600,
+        "height": 800,
+        "crop": [
+          350,
+          0,
+          1250,
+          1200
+        ],
+        "limit": 10,
+        "opaquePosterBytes": 26362,
+        "transparentPosterBytes": 39700,
+        "alphaRetainedExactly": true,
+        "transparentEdgeMeanRgbError": [
+          1.123808147934123,
+          1.0248483097370702,
+          1.1931522681305982
+        ],
+        "opaqueEdgeMeanRgbError": [
+          1.9225657324472696,
+          1.7539728402195898,
+          2.0787344698064145
+        ],
+        "opaqueCornerRgb": [
+          20,
+          26,
+          31
+        ],
+        "siteBackgroundRgb": [
+          20,
+          25,
+          30
+        ]
+      }
+    }
+  },
+  "archivalBytes": 164611889
+}

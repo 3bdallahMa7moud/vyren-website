@@ -1,0 +1,402 @@
+{
+  "rollback": "D:\\VYREN\\08_BACKUPS\\EXPLODED_CYCLES_ENTRY_20261010_232258",
+  "backupFilesVerified": 74,
+  "backupChecks": [
+    {
+      "path": ".gitignore",
+      "matches": true
+    },
+    {
+      "path": "AGENTS.md",
+      "matches": true
+    },
+    {
+      "path": "eslint.config.mjs",
+      "matches": true
+    },
+    {
+      "path": "next-env.d.ts",
+      "matches": true
+    },
+    {
+      "path": "next.config.ts",
+      "matches": true
+    },
+    {
+      "path": "package-lock.json",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "matches": true
+    },
+    {
+      "path": "playwright.config.ts",
+      "matches": true
+    },
+    {
+      "path": "playwright.phase2.config.ts",
+      "matches": true
+    },
+    {
+      "path": "postcss.config.mjs",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "matches": true
+    },
+    {
+      "path": "tsconfig.json",
+      "matches": true
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "matches": true
+    },
+    {
+      "path": "docs\\DELIVERY_AR.md",
+      "matches": true
+    },
+    {
+      "path": "docs\\FONT_LICENSE_cormorant-garamond.txt",
+      "matches": true
+    },
+    {
+      "path": "docs\\FONT_LICENSE_manrope.txt",
+      "matches": true
+    },
+    {
+      "path": "docs\\PHASE2_CINEMATIC_REPORT.md",
+      "matches": true
+    },
+    {
+      "path": "docs\\PHASE2_MOTION_QA.md",
+      "matches": true
+    },
+    {
+      "path": "docs\\PHASE2_PERFORMANCE.md",
+      "matches": true
+    },
+    {
+      "path": "docs\\PHASE2_VISUAL_FIDELITY.md",
+      "matches": true
+    },
+    {
+      "path": "docs\\VALIDATION.md",
+      "matches": true
+    },
+    {
+      "path": "docs\\VISUAL_FIDELITY.md",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\alternative-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\alternative-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\assembly.json",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\case-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\case-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\crown-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\crown-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\dial-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\dial-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\exploded-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\exploded-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\front-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\front-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\hero-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\hero-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\hero-dark-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\hero-dark-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\hero-orbit.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\movement-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\movement-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\rear-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\rear-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\rear-macro-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\rear-macro-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\strap-1600.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\strap-800.webp",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\studio.json",
+      "matches": true
+    },
+    {
+      "path": "public\\assets\\vyren-noctis-01.glb",
+      "matches": true
+    },
+    {
+      "path": "qa\\asset-manifest.json",
+      "matches": true
+    },
+    {
+      "path": "qa\\phase2-checkpoint.txt",
+      "matches": true
+    },
+    {
+      "path": "qa\\tests\\experience.spec.ts",
+      "matches": true
+    },
+    {
+      "path": "scripts\\create-qa-sheets.py",
+      "matches": true
+    },
+    {
+      "path": "scripts\\delivery-report.py",
+      "matches": true
+    },
+    {
+      "path": "scripts\\pack-hero-orbit.py",
+      "matches": true
+    },
+    {
+      "path": "scripts\\phase2-capture.mjs",
+      "matches": true
+    },
+    {
+      "path": "scripts\\phase2-docs.py",
+      "matches": true
+    },
+    {
+      "path": "scripts\\phase2-evidence.py",
+      "matches": true
+    },
+    {
+      "path": "scripts\\phase2-performance.mjs",
+      "matches": true
+    },
+    {
+      "path": "scripts\\phase2-test.mjs",
+      "matches": true
+    },
+    {
+      "path": "scripts\\prepare-assets.py",
+      "matches": true
+    },
+    {
+      "path": "scripts\\render-hero-orbit.py",
+      "matches": true
+    },
+    {
+      "path": "src\\app\\globals.css",
+      "matches": true
+    },
+    {
+      "path": "src\\app\\icon.svg",
+      "matches": true
+    },
+    {
+      "path": "src\\app\\layout.tsx",
+      "matches": true
+    },
+    {
+      "path": "src\\app\\page.tsx",
+      "matches": true
+    },
+    {
+      "path": "src\\components\\hero-orbit.tsx",
+      "matches": true
+    },
+    {
+      "path": "src\\components\\landing.tsx",
+      "matches": true
+    },
+    {
+      "path": "src\\components\\media.tsx",
+      "matches": true
+    },
+    {
+      "path": "src\\components\\motion.ts",
+      "matches": true
+    },
+    {
+      "path": "src\\components\\product-stage.tsx",
+      "matches": true
+    },
+    {
+      "path": "src\\lib\\experience-state.ts",
+      "matches": true
+    },
+    {
+      "path": "src\\lib\\watch-engine.ts",
+      "matches": true
+    }
+  ],
+  "protectedSources": [
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Hero\\vyren_hero_transparent.png",
+      "matches": true,
+      "sha256": "3162a03cc308b093af51b82fb2c637944ddd46b10692a75c0cbee8eebfb2ca60"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Hero\\vyren_hero_dark.png",
+      "matches": true,
+      "sha256": "84da5e8ac3cbaa65e3ed07a2eeffa3cfe2a746393b018292ebc7f72a0807e505"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Hero\\vyren_hero_alternative.png",
+      "matches": true,
+      "sha256": "17077532ba9328801bafa2a1bcc0a1b9369db6af3e0a2ba523f8cfd2cfd904c1"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Views\\vyren_front.png",
+      "matches": true,
+      "sha256": "0a4fc049451b5bd98a36eb174249dd6ba5e261ae17f1e92f27dc7a0354ad83bd"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Views\\vyren_rear.png",
+      "matches": true,
+      "sha256": "6da17d9407ff147d9a34e4513bfbbce3c5b4684074827a30ebe760242c4e1a2a"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_case_detail.png",
+      "matches": true,
+      "sha256": "98fea1e926f1336eab1aa87a5ba0dd2b8492e30e5b23718c7aac3347f08fffe9"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_crown_detail.png",
+      "matches": true,
+      "sha256": "6e0cbf0b977c5ac31859a977a994444efc02f366e2eaf65f9a635a4ef446556a"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_dial_macro.png",
+      "matches": true,
+      "sha256": "22b3673463b118a7e0e77295e28065947c17f124e276583c3571298eda41a226"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_movement_macro.png",
+      "matches": true,
+      "sha256": "658eaa4569eaedd64e8a15f37e14c67467017b70a68532dd0fe300e45d325e60"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_strap_connection.png",
+      "matches": true,
+      "sha256": "b61b22c143ae3db3cbd38ebfc304aaa4ae601942f37ad8343c9453a010c01fe3"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_rear_macro.png",
+      "matches": true,
+      "sha256": "aa380aaecf4715494487bb33c5ef781a2f8c1b4b685d62f0946eef1428c9e079"
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Exploded_View\\vyren_exploded.png",
+      "matches": true,
+      "sha256": "2b485560f12933d4ab8abbe65378285f035609a4ae6e441664b8f4b5957ec619"
+    },
+    {
+      "path": "D:\\VYREN\\05_WEB_EXPORT\\GLB\\vyren_noctis_01.glb",
+      "matches": true,
+      "sha256": "ecdc8c27a55b21c0713e08f6fd5760bbbcf7301d3b257b56db94e26349cb7409"
+    },
+    {
+      "path": "D:\\VYREN\\05_WEB_EXPORT\\assembly_transforms.json",
+      "matches": true,
+      "sha256": "d7f247a170a2ff4c2083bc56fa8e40616a1632dc9f67bced178f52999858405d"
+    },
+    {
+      "path": "D:\\VYREN\\02_BLENDER\\Projects\\VYREN_NOCTIS_01_MASTER.blend",
+      "matches": true,
+      "sha256": "ef5d3a23702617e29040e9c535f9cc9fbab31aff5ef8cff00a174b61bd046dcb"
+    },
+    {
+      "path": "D:\\VYREN\\02_BLENDER\\Projects\\VYREN_NOCTIS_01_WEB.blend",
+      "matches": true,
+      "sha256": "336083435641d089507e92be5ca33bbb8e31340341a59db4c3bb0706bc6f5b9f"
+    }
+  ],
+  "changedExistingFiles": [
+    "next.config.ts",
+    "package.json",
+    "tsconfig.tsbuildinfo",
+    "qa\\tests\\experience.spec.ts",
+    "src\\app\\globals.css",
+    "src\\components\\landing.tsx",
+    "src\\components\\motion.ts"
+  ],
+  "unexpectedChanges": [],
+  "otherEightSectionsMarkupPreserved": true,
+  "otherSectionsCssPreserved": true,
+  "otherSectionsMotionPreserved": true,
+  "originalPublicAssetsPreserved": true,
+  "generatedCompilerFiles": [
+    "tsconfig.tsbuildinfo"
+  ],
+  "passed": true
+}

@@ -1,0 +1,83 @@
+{
+  "mode": "baseline",
+  "activeRotationFps": 47.91413786503724,
+  "idleRenderedFramesIn3s": 145,
+  "diagnostic": {
+    "ready": true,
+    "contextLost": false,
+    "activeStage": "viewer",
+    "assemblyFactor": 0,
+    "restDelta": 0,
+    "camera": [
+      0,
+      0.17499999999999957,
+      0.0001000000000000445
+    ],
+    "target": [
+      0,
+      -0.009,
+      0
+    ],
+    "controlsEnabled": true,
+    "meshes": 85,
+    "materials": 27,
+    "geometryTriangles": 360274,
+    "assemblies": 10,
+    "sapphire": [
+      {
+        "name": "WEB_MAT_SAPPHIRE_REAR",
+        "transmission": 1,
+        "ior": 1.7599999904632568,
+        "thickness": 0.000699999975040555,
+        "opacity": 1,
+        "roughness": 0.004,
+        "sourceRoughness": 0.012
+      },
+      {
+        "name": "WEB_MAT_SAPPHIRE_CRYSTAL",
+        "transmission": 1,
+        "ior": 1.7599999904632568,
+        "thickness": 0.0012000000569969416,
+        "opacity": 1,
+        "roughness": 0.004,
+        "sourceRoughness": 0.012
+      }
+    ],
+    "caseMm": [
+      40.99971801042557,
+      7.1500001940876245,
+      42.70000010728836
+    ],
+    "threeRevision": "180",
+    "drawCalls": 167,
+    "peakRenderCalls": 250,
+    "shadowUpdates": 1,
+    "renderedTriangles": 692054,
+    "textures": 7,
+    "dpr": 1,
+    "canvas": [
+      1311.84375,
+      608
+    ],
+    "averageCpuRenderMs": 1.912777778175142,
+    "activeFrames": 344,
+    "elapsedMs": 8276.09999999404,
+    "lighting": {
+      "exposure": 1.189207115002721,
+      "environmentIntensity": 0.45,
+      "toneMapping": "AgX",
+      "shadows": true,
+      "cachedShadows": true,
+      "keyIntensity": 0.8,
+      "source": "Existing Blender studio area cards reconstructed in PMREM; soft key shadow on desktop"
+    }
+  },
+  "gpu": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "browser": "155.0.4283.45",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "dpr": 1,
+  "scope": "Local headless Edge, actual mouse dragging. CPU submission timing is not GPU time. Desktop Intel UHD is not a phone."
+}

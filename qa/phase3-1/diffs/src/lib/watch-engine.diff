@@ -1,0 +1,163 @@
+--- before/src\lib\watch-engine.ts
++++ after/src\lib\watch-engine.ts
+@@ -5,6 +5,7 @@
+ import gsap from 'gsap';
+ import { experience, type ViewPreset } from './experience-state';
+ import viewerAsset from './viewer-asset.json';
++import { studioCamera, studioFraming } from './studio-framing';
+ 
+ type AssemblyEntry = { start_frame: number; fully_exploded_frame: number; gltf_local_exploded_offset_m: [number, number, number] };
+ type AssemblyData = { assemblies: Record<string, AssemblyEntry> };
+@@ -56,6 +57,7 @@
+   private resizeObserver: ResizeObserver;
+   private animation?: gsap.core.Tween;
+   private poseVersion = -1;
++  private renderedPresetVersion = -1;
+   private zoomVersion = -1;
+   private quality = false;
+   private lastSize = '';
+@@ -113,20 +115,20 @@
+     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'high-performance' });
+     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
+     this.renderer.toneMapping = THREE.AgXToneMapping;
+-    this.renderer.toneMappingExposure = 2 ** .15;
++    this.renderer.toneMappingExposure = 2 ** .25;
+     this.renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+     this.renderer.transmissionResolutionScale = 1.5;
+     this.renderer.info.autoReset = false;
+     this.scene.background = new THREE.Color('#14191e');
+     this.scene.add(new THREE.HemisphereLight(0xffffff, 0x252a30, .12));
+-    this.keyLight = new THREE.DirectionalLight(0xf0f7ff, .55);
++    this.keyLight = new THREE.DirectionalLight(0xf0f7ff, .8);
+     this.keyLight.position.set(-.072, .095, .045); this.keyLight.target.position.set(0, -.005, 0);
+     this.keyLight.castShadow = true; this.keyLight.shadow.mapSize.set(1024, 1024);
+     Object.assign(this.keyLight.shadow.camera, { left: -.1, right: .1, top: .1, bottom: -.1, near: .001, far: .5 });
+     this.keyLight.shadow.camera.updateProjectionMatrix();
+     this.keyLight.shadow.bias = -.000008; this.keyLight.shadow.normalBias = .00004; this.keyLight.shadow.radius = 3;
+     this.scene.add(this.keyLight, this.keyLight.target);
+-    const edgeFill = new THREE.DirectionalLight(0xfff2e0, .18);
++    const edgeFill = new THREE.DirectionalLight(0xfff2e0, .26);
+     edgeFill.position.set(.075, .015, -.08); this.scene.add(edgeFill);
+     this.renderer.shadowMap.enabled = innerWidth > 768; this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+     this.renderer.shadowMap.autoUpdate = false; this.renderer.shadowMap.needsUpdate = true;
+@@ -191,10 +193,10 @@
+         }
+       });
+       this.productPoints = new Float32Array(points);
+-      // The exported polished lens is retained. Lower micro-roughness compensates
+-      // for Three's screen-space transmission blur; IOR, thickness and reflection stay physical.
++      // Retain the polished source lens. A small web roughness compensation keeps
++      // the dial readable through Three's screen-space transmission buffer.
+       materials.forEach(material => {
+-        if (material instanceof THREE.MeshPhysicalMaterial && material.name.includes('SAPPHIRE')) material.roughness = .004;
++        if (material instanceof THREE.MeshPhysicalMaterial && material.name.includes('SAPPHIRE')) material.roughness = .006;
+         // Retain the atlases and channel interpretation; soften overpronounced web microfinish.
+         if (material instanceof THREE.MeshStandardMaterial && material.name.includes('TITANIUM') && material.name.includes('exterior_BAKED') && material.normalMap) material.normalScale.setScalar(.75);
+       });
+@@ -250,7 +252,7 @@
+     const conversion = new THREE.Matrix4().set(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1);
+     for (const [name, spec] of Object.entries(cards)) {
+       const radiance = spec.energy / (Math.PI * spec.size * spec.size_y);
+-      const gain = name === 'SOFTBOX_key' ? 1.1 : name === 'CARD_front' ? 1.15 : 1;
++      const gain = name === 'SOFTBOX_key' ? .92 : name === 'CARD_front' ? .78 : 1;
+       const panel = new THREE.Mesh(new THREE.PlaneGeometry(spec.size * 30, spec.size_y * 30), new THREE.MeshBasicMaterial({ color: new THREE.Color(...spec.color).multiplyScalar(radiance * gain), side: THREE.DoubleSide }));
+       const matrix = new THREE.Matrix4().fromArray(spec.matrix.flat()).transpose().premultiply(conversion);
+       matrix.elements[12] *= 30; matrix.elements[13] *= 30; matrix.elements[14] *= 30;
+@@ -258,7 +260,7 @@
+     }
+     const pmrem = new THREE.PMREMGenerator(this.renderer);
+     this.pmremTarget = pmrem.fromScene(studio, 0, .01, 100, { size: 512 });
+-    this.scene.environment = this.pmremTarget.texture; this.scene.environmentIntensity = .55;
++    this.scene.environment = this.pmremTarget.texture; this.scene.environmentIntensity = .62;
+     studio.traverse(object => { if (object instanceof THREE.Mesh) { object.geometry.dispose(); (object.material as THREE.Material).dispose(); } });
+     pmrem.dispose();
+   }
+@@ -284,6 +286,7 @@
+   private applyPose(name: ViewPreset, animate = true, reference = false) {
+     if (experience.studioOrbit && !reference) { this.applyStudioPose(); return; }
+     this.animation?.kill();
++    this.camera.clearViewOffset();
+     this.clearInertia();
+     const pose = (reference ? REFERENCE_POSES : POSES)[name];
+     this.camera.up.fromArray(pose.up);
+@@ -320,14 +323,13 @@
+ 
+   private applyStudioPose() {
+     this.animation?.kill(); this.clearInertia();
+-    // Same source camera orbit as the Cycles sequence; Blender (X,Y,Z) -> glTF (X,Z,-Y).
+-    const a = experience.studioFrame / 72 * Math.PI * 2, c = Math.cos(a), s = Math.sin(a), fit = 1.3;
+-    this.controls.target.set(0, -.016, 0);
+-    this.camera.position.set((.091 * c + .17 * s) * fit, -.016 + (-.091 * s + .17 * c) * fit, .119 * fit);
+-    this.camera.up.set(-.4557463 * c + .6611415 * s, .4557463 * s + .6611415 * c, -.5959759);
+-    const sourceAspect = innerWidth <= 768 ? .75 : 4 / 3;
+-    const baseFov = 2 * Math.atan(36 / (2 * 66 * 4 / 3));
+-    this.camera.fov = THREE.MathUtils.radToDeg(2 * Math.atan(Math.tan(baseFov / 2) * Math.max(1, sourceAspect / this.camera.aspect)/(innerWidth<=768?1.18:1.3)));
++    const pose=studioCamera(experience.studioFrame),r=this.activeSlot?.getBoundingClientRect();
++    this.controls.target.fromArray(pose.target);this.camera.position.fromArray(pose.position);this.camera.up.fromArray(pose.up);
++    const width=r?.width || 1600,height=r?.height || 1200,mobile=innerWidth<=768,f=studioFraming(width,height,mobile);
++    const baseTan=36/(2*66*4/3);
++    this.camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(baseTan*height/(1200*f.scale)));
++    // The same small alpha-centering translation used by the image compositor.
++    this.camera.setViewOffset(width,height, width/2-(f.x+(mobile?450:800)*f.scale),height/2-(f.y+600*f.scale),width,height);
+     this.camera.updateProjectionMatrix(); this.camera.lookAt(this.controls.target); this.controls.update(); this.lastPresentation = '';
+   }
+ 
+@@ -374,7 +376,7 @@
+       // Move the same canvas, renderer and model into the active composition.
+       // Local stacking keeps editorial annotations above it, including sticky scenes.
+       slot.appendChild(this.renderer.domElement);
+-      slot.dataset.ready = 'true'; this.lastSize = ''; this.lastPresentation = ''; this.poseVersion = experience.presetVersion;
++      slot.dataset.ready = 'false'; this.lastSize = ''; this.lastPresentation = ''; this.poseVersion = experience.presetVersion;
+       this.applyAssembly(0); this.applyPose(this.activeType === 'viewer' ? experience.preset : 'hero', false);
+     }
+     this.renderer.domElement.style.visibility = 'visible';
+@@ -383,7 +385,7 @@
+       this.lastSize = sizeKey; this.renderer.setSize(rect.width, rect.height);
+       this.host.style.width = `${rect.width}px`; this.host.style.height = `${rect.height}px`;
+       this.camera.aspect = rect.width / rect.height; this.camera.updateProjectionMatrix();
+-      if (this.activeType === 'viewer') this.applyPose(experience.preset, false);
++      if (this.activeType === 'viewer' && !experience.viewerActive) this.applyPose(experience.preset, false);
+     }
+     const low = experience.lowPower;
+     const shadows = innerWidth > 768 && !low;
+@@ -401,7 +403,7 @@
+           this.zoomVersion = experience.zoomVersion;
+           if (experience.zoomDirection) {
+             this.animation?.kill(); this.clearInertia();
+-            const direction = this.camera.position.clone().sub(this.controls.target); const distance = THREE.MathUtils.clamp(direction.length() * (experience.zoomDirection < 0 ? .84 : 1.19), .06, .25);
++            const direction = this.camera.position.clone().sub(this.controls.target); const distance = THREE.MathUtils.clamp(direction.length() * (experience.zoomDirection < 0 ? .84 : 1.19), .06, this.controls.maxDistance);
+             const position = this.controls.target.clone().add(direction.setLength(distance));
+             if (experience.reducedMotion) this.camera.position.copy(position);
+             else this.animation = gsap.to(this.camera.position, { x: position.x, y: position.y, z: position.z, duration: .38, ease: 'power2.out', onUpdate: () => this.camera.lookAt(this.controls.target) });
+@@ -425,7 +427,7 @@
+     const dpr = low ? .8 : moving ? this.adaptiveDpr : Math.min(devicePixelRatio, 2);
+     if (this.renderer.getPixelRatio() !== dpr) { this.renderer.setPixelRatio(dpr); this.lastPresentation = ''; }
+     // No repeated transmission or shadow passes for a completely static presentation.
+-    const presentation = [this.activeType, this.lastSize, this.quality, opticalScale, this.assembledFactor, this.camera.fov, ...[...this.camera.position.toArray(), ...this.camera.quaternion.toArray(), ...this.controls.target.toArray()].map(v => Math.round(v * 1e7))].join(':');
++    const presentation = [this.poseVersion, this.activeType, this.lastSize, this.quality, opticalScale, this.assembledFactor, this.camera.fov, ...[...this.camera.position.toArray(), ...this.camera.quaternion.toArray(), ...this.controls.target.toArray()].map(v => Math.round(v * 1e7))].join(':');
+     if (presentation === this.lastPresentation && !(this.renderer.shadowMap.enabled && this.renderer.shadowMap.needsUpdate)) return;
+     this.lastPresentation = presentation;
+     const interval = now - this.lastRender;
+@@ -440,6 +442,8 @@
+     if (this.renderer.shadowMap.enabled && this.renderer.shadowMap.needsUpdate) this.shadowUpdates++;
+     this.renderer.info.reset(); this.renderer.render(this.scene, this.camera); this.peakRenderCalls = Math.max(this.peakRenderCalls, this.renderer.info.render.calls);
+     slot.dataset.ready = 'true';
++    this.renderedPresetVersion=this.poseVersion;
++    if(this.activeType==='viewer')window.dispatchEvent(new CustomEvent('vyren-studio-presented',{detail:this.renderedPresetVersion}));
+     this.frameTimes.push(performance.now() - start); if (this.frameTimes.length > 180) this.frameTimes.shift(); this.frameCount++;
+   };
+ 
+@@ -447,7 +451,7 @@
+     this.metadata.fov = this.camera.fov; this.metadata.up = this.camera.up.toArray();
+     const restDelta = Math.max(0, ...this.assemblies.map(({ object, rest }) => object.position.distanceTo(rest)));
+     const restMatrixDelta = Math.max(0, ...this.assemblies.flatMap(({object,restMatrix}) => { object.updateMatrix(); return object.matrix.elements.map((v,i) => Math.abs(v - restMatrix.elements[i])); }));
+-    return { ready: this.ready, contextLost: this.lost, activeStage: this.activeType, assemblyFactor: this.assembledFactor, assemblyScroll: experience.assemblyScroll, restDelta, restMatrixDelta, camera: this.camera.position.toArray(), target: this.controls.target.toArray(), controlsEnabled: this.controls.enabled, ...this.metadata, drawCalls: this.renderer.info.render.calls, peakRenderCalls: this.peakRenderCalls, shadowUpdates: this.shadowUpdates, renderedTriangles: this.renderer.info.render.triangles, textures: this.renderer.info.memory.textures, dpr: this.renderer.getPixelRatio(), opticalBufferScale: this.renderer.transmissionResolutionScale, canvas: this.renderer.getSize(new THREE.Vector2()).toArray(), demandRendering: true, averageRenderedIntervalMs: this.renderedIntervals.reduce((a,b) => a+b,0) / Math.max(1,this.renderedIntervals.length), averageCpuRenderMs: this.frameTimes.reduce((a, b) => a + b, 0) / Math.max(1, this.frameTimes.length), activeFrames: this.frameCount, elapsedMs: performance.now() - this.started, lighting: { exposure: this.renderer.toneMappingExposure, environmentIntensity: this.scene.environmentIntensity, toneMapping: 'AgX', shadows: this.renderer.shadowMap.enabled, cachedShadows: true, keyIntensity: this.keyLight.intensity, pmremSize: 512, source: 'Original Blender studio cards, restrained front/key gains, soft key shadow and warm edge fill' } };
++    return { ready: this.ready, renderedPresetVersion: this.renderedPresetVersion, contextLost: this.lost, activeStage: this.activeType, assemblyFactor: this.assembledFactor, assemblyScroll: experience.assemblyScroll, restDelta, restMatrixDelta, camera: this.camera.position.toArray(), target: this.controls.target.toArray(), controlsEnabled: this.controls.enabled, ...this.metadata, drawCalls: this.renderer.info.render.calls, peakRenderCalls: this.peakRenderCalls, shadowUpdates: this.shadowUpdates, renderedTriangles: this.renderer.info.render.triangles, textures: this.renderer.info.memory.textures, dpr: this.renderer.getPixelRatio(), opticalBufferScale: this.renderer.transmissionResolutionScale, canvas: this.renderer.getSize(new THREE.Vector2()).toArray(), demandRendering: true, averageRenderedIntervalMs: this.renderedIntervals.reduce((a,b) => a+b,0) / Math.max(1,this.renderedIntervals.length), averageCpuRenderMs: this.frameTimes.reduce((a, b) => a + b, 0) / Math.max(1, this.frameTimes.length), activeFrames: this.frameCount, elapsedMs: performance.now() - this.started, lighting: { exposure: this.renderer.toneMappingExposure, environmentIntensity: this.scene.environmentIntensity, toneMapping: 'AgX', shadows: this.renderer.shadowMap.enabled, cachedShadows: true, keyIntensity: this.keyLight.intensity, pmremSize: 512, source: 'Original Blender studio cards, calibrated front/key cards, calibrated sapphire roughness, soft key shadow and warm edge fill' } };
+   }
+   capturePose(name: ViewPreset, factor = 0) {
+     this.testPose = true; this.applyAssembly(factor); this.applyPose(name, false, true); this.lastPresentation = '';
+@@ -474,3 +478,4 @@
+     if (this.model) this.disposeModel(this.model); this.keyLight.shadow.dispose(); this.pmremTarget?.dispose(); this.renderer.dispose(); this.renderer.domElement.remove();
+   }
+ }
++

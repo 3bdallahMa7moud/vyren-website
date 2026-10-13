@@ -1,0 +1,24 @@
+import { chromium } from '@playwright/test';
+import fs from 'node:fs';
+import path from 'node:path';
+const mode=process.argv[2]||'baseline';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
+await page.goto('http://127.0.0.1:3001/#experience');
+await page.waitForFunction(()=>window.__VYREN?.diagnostics().ready);
+await page.waitForTimeout(2000);
+const start=await page.evaluate(()=>({frames:window.__VYREN.diagnostics().activeFrames,time:performance.now()}));
+await page.getByRole('button',{name:'Interact with the watch',exact:true}).click();
+const b=await page.locator('.viewer-slot').boundingBox();
+await page.mouse.move(b.x+b.width*.5,b.y+b.height*.5);await page.mouse.down();
+for(let i=0;i<90;i++){await page.mouse.move(b.x+b.width*(.5+.16*Math.sin(i/15)),b.y+b.height*(.5+.12*Math.cos(i/17)));await page.waitForTimeout(55);}
+await page.mouse.up();await page.waitForTimeout(500);
+const end=await page.evaluate(()=>({diagnostic:window.__VYREN.diagnostics(),time:performance.now()}));
+const fps=(end.diagnostic.activeFrames-start.frames)*1000/(end.time-start.time);
+await page.getByRole('button',{name:'Finish exploring'}).click();await page.waitForTimeout(2200);
+const idleStart=await page.evaluate(()=>window.__VYREN.diagnostics().activeFrames);await page.waitForTimeout(3000);
+const idleFrames=await page.evaluate(()=>window.__VYREN.diagnostics().activeFrames)-idleStart;
+const gpu=await page.evaluate(()=>{const gl=document.querySelector('canvas[data-vyren-canvas]').getContext('webgl2');const e=gl.getExtension('WEBGL_debug_renderer_info');return e?gl.getParameter(e.UNMASKED_RENDERER_WEBGL):null;});
+const out=path.resolve('qa/phase2-cinematic',mode);fs.mkdirSync(out,{recursive:true});
+fs.writeFileSync(path.join(out,'performance.json'),JSON.stringify({mode,activeRotationFps:fps,idleRenderedFramesIn3s:idleFrames,diagnostic:end.diagnostic,gpu,browser:browser.version(),viewport:{width:1440,height:1000},dpr:1,scope:'Local headless Edge, actual mouse dragging. CPU submission timing is not GPU time. Desktop Intel UHD is not a phone.'},null,2));
+console.log(JSON.stringify({mode,activeRotationFps:fps,idleFrames,cpu:end.diagnostic.averageCpuRenderMs}));await browser.close();

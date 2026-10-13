@@ -1,0 +1,48 @@
+{
+  "name": "vyren-noctis",
+  "version": "1.0.0",
+  "description": "VYREN NOCTIS 01 cinematic concept-watch experience",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src next.config.ts",
+    "test": "playwright test",
+    "test:phase2": "node scripts/phase2-test.mjs",
+    "test:exploded": "node scripts/exploded-test.mjs",
+    "test:viewer": "playwright test --config playwright.viewer.config.ts",
+    "test:phase3": "playwright test --config playwright.phase3.config.ts",
+    "assets:viewer": "node scripts/optimize-viewer.mjs",
+    "assets:prepare": "python scripts/prepare-assets.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.180.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.0",
+    "meshoptimizer": "0.22.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
+  },
+  "private": true
+}

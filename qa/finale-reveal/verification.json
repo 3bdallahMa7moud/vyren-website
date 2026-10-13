@@ -1,0 +1,2130 @@
+{
+  "cases": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "reduced": false,
+      "samples": [
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 126.046875,
+            "bottom": 699.453125,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 727.453125,
+            "bottom": 811.046875,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 852.046875,
+            "bottom": 906.046875,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 913.046875
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 6,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 58488,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 2,
+            "averageDrawMs": 0.29999999701976776,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.28,
+          "frame": 26,
+          "product": {
+            "top": 126,
+            "bottom": 699.40625,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 727.40625,
+            "bottom": 811,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 852,
+            "bottom": 906,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 913
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 437346,
+            "fetches": 23,
+            "failedFrames": 0,
+            "abortedRequests": 4,
+            "desiredFrame": 26,
+            "displayedFrame": 26,
+            "draws": 14,
+            "averageDrawMs": 0.1142857117312295,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 126,
+            "bottom": 699.40625,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 727.40625,
+            "bottom": 811,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 852,
+            "bottom": 906,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 913
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 969554,
+            "fetches": 39,
+            "failedFrames": 0,
+            "abortedRequests": 4,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 25,
+            "averageDrawMs": 0.09199999809265137,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.74,
+          "frame": 69,
+          "product": {
+            "top": 126,
+            "bottom": 699.40625,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 710.0729370117188,
+            "bottom": 793.6666870117188,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 852,
+            "bottom": 906,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 913
+          },
+          "headingOpacity": 0.963,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1285200,
+            "fetches": 50,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 69,
+            "displayedFrame": 69,
+            "draws": 37,
+            "averageDrawMs": 0.09999999887234456,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.92,
+          "frame": 71,
+          "product": {
+            "top": 126,
+            "bottom": 699.40625,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 709.40625,
+            "bottom": 793,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 842,
+            "bottom": 896,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 913
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1285200,
+            "fetches": 50,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 38,
+            "averageDrawMs": 0.10263157792781528,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 1,
+          "frame": 71,
+          "product": {
+            "top": 126,
+            "bottom": 699.40625,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 709.40625,
+            "bottom": 793,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 842,
+            "bottom": 896,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 913
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1285200,
+            "fetches": 50,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 38,
+            "averageDrawMs": 0.10263157792781528,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 126,
+            "bottom": 699.40625,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 727.40625,
+            "bottom": 811,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 852,
+            "bottom": 906,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 913
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1703748,
+            "fetches": 63,
+            "failedFrames": 0,
+            "abortedRequests": 7,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 50,
+            "averageDrawMs": 0.09599999964237213,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 126.046875,
+            "bottom": 699.453125,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 727.453125,
+            "bottom": 811.046875,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 852.046875,
+            "bottom": 906.046875,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 913.046875
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1977420,
+            "fetches": 80,
+            "failedFrames": 0,
+            "abortedRequests": 11,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 62,
+            "averageDrawMs": 0.08548387043899106,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        }
+      ],
+      "boundaryContained": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "reduced": false,
+      "samples": [
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 126,
+            "bottom": 486.8125,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 514.8125,
+            "bottom": 579,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 620,
+            "bottom": 674,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 681
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 6,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 58488,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 2,
+            "averageDrawMs": 0.25,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.28,
+          "frame": 26,
+          "product": {
+            "top": 126,
+            "bottom": 486.8125,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 514.8125,
+            "bottom": 579,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 620,
+            "bottom": 674,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 681
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 346090,
+            "fetches": 17,
+            "failedFrames": 0,
+            "abortedRequests": 2,
+            "desiredFrame": 26,
+            "displayedFrame": 26,
+            "draws": 14,
+            "averageDrawMs": 0.14285714072840555,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 126,
+            "bottom": 486.8125,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 514.8125,
+            "bottom": 579,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 620,
+            "bottom": 674,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 681
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 681384,
+            "fetches": 30,
+            "failedFrames": 0,
+            "abortedRequests": 5,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 28,
+            "averageDrawMs": 0.13214285671710968,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.74,
+          "frame": 69,
+          "product": {
+            "top": 126,
+            "bottom": 486.8125,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 497.4945068359375,
+            "bottom": 561.6820068359375,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 620,
+            "bottom": 674,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 681
+          },
+          "headingOpacity": 0.9621,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1067088,
+            "fetches": 42,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 69,
+            "displayedFrame": 69,
+            "draws": 40,
+            "averageDrawMs": 0.1225000001490116,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.92,
+          "frame": 71,
+          "product": {
+            "top": 126,
+            "bottom": 486.8125,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 496.8125,
+            "bottom": 561,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 610.0001220703125,
+            "bottom": 664.0001220703125,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 681
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1067088,
+            "fetches": 42,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 41,
+            "averageDrawMs": 0.1243902441205048,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 1,
+          "frame": 71,
+          "product": {
+            "top": 125.625,
+            "bottom": 486.4375,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 496.4375,
+            "bottom": 560.625,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 609.625,
+            "bottom": 663.625,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 680.625
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1067088,
+            "fetches": 42,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 41,
+            "averageDrawMs": 0.1243902441205048,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 126,
+            "bottom": 486.8125,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 514.8125,
+            "bottom": 579,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 620,
+            "bottom": 674,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 681
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1485678,
+            "fetches": 56,
+            "failedFrames": 0,
+            "abortedRequests": 8,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 53,
+            "averageDrawMs": 0.12264150943396226,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 126,
+            "bottom": 486.8125,
+            "width": 620,
+            "height": 360.8125
+          },
+          "title": {
+            "top": 514.8125,
+            "bottom": 579,
+            "right": 1305.21875,
+            "width": 1244.4375
+          },
+          "action": {
+            "top": 620,
+            "bottom": 674,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 681
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1634588,
+            "fetches": 68,
+            "failedFrames": 0,
+            "abortedRequests": 13,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 66,
+            "averageDrawMs": 0.12272727263696266,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        }
+      ],
+      "boundaryContained": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "samples": [
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 105.4375,
+            "bottom": 544.90625,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 570.90625,
+            "bottom": 670.25,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 706.4375,
+            "bottom": 756.4375,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 764.4375
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 5,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 51144,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 2,
+            "averageDrawMs": 0.14999999850988388,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.28,
+          "frame": 26,
+          "product": {
+            "top": 105,
+            "bottom": 544.46875,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 570.46875,
+            "bottom": 669.8125,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 706,
+            "bottom": 756,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 764
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 266576,
+            "fetches": 15,
+            "failedFrames": 0,
+            "abortedRequests": 2,
+            "desiredFrame": 26,
+            "displayedFrame": 26,
+            "draws": 10,
+            "averageDrawMs": 0.09000000059604644,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 105,
+            "bottom": 544.46875,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 570.46875,
+            "bottom": 669.8125,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 706,
+            "bottom": 756,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 764
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 536392,
+            "fetches": 26,
+            "failedFrames": 0,
+            "abortedRequests": 4,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 19,
+            "averageDrawMs": 0.08947368515165229,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.74,
+          "frame": 69,
+          "product": {
+            "top": 105,
+            "bottom": 544.46875,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 553.1533203125,
+            "bottom": 652.4970703125,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 706,
+            "bottom": 756,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 764
+          },
+          "headingOpacity": 0.962,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 751852,
+            "fetches": 35,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 69,
+            "displayedFrame": 69,
+            "draws": 28,
+            "averageDrawMs": 0.08214285703642028,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.92,
+          "frame": 71,
+          "product": {
+            "top": 105,
+            "bottom": 544.46875,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 552.46875,
+            "bottom": 651.8125,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 696.0007934570312,
+            "bottom": 746.0007934570312,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 764
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 751852,
+            "fetches": 35,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 29,
+            "averageDrawMs": 0.07931034472481958,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 1,
+          "frame": 71,
+          "product": {
+            "top": 105,
+            "bottom": 544.46875,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 552.46875,
+            "bottom": 651.8125,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 696,
+            "bottom": 746,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 764
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 751852,
+            "fetches": 35,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 29,
+            "averageDrawMs": 0.07931034472481958,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 105,
+            "bottom": 544.46875,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 570.46875,
+            "bottom": 669.8125,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 706,
+            "bottom": 756,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 764
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 996678,
+            "fetches": 47,
+            "failedFrames": 0,
+            "abortedRequests": 10,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 37,
+            "averageDrawMs": 0.08648648656703331,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 105.4375,
+            "bottom": 544.90625,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 570.90625,
+            "bottom": 670.25,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 706.4375,
+            "bottom": 756.4375,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 764.4375
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 1099504,
+            "fetches": 59,
+            "failedFrames": 0,
+            "abortedRequests": 16,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 45,
+            "averageDrawMs": 0.09111111130979326,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        }
+      ],
+      "boundaryContained": true
+    },
+    {
+      "width": 360,
+      "height": 740,
+      "reduced": false,
+      "samples": [
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 105.265625,
+            "bottom": 440.734375,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 466.734375,
+            "bottom": 566.078125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 602.265625,
+            "bottom": 652.265625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 660.265625
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 5,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 51144,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 2,
+            "averageDrawMs": 0.20000000298023224,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.28,
+          "frame": 26,
+          "product": {
+            "top": 105,
+            "bottom": 440.46875,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 466.46875,
+            "bottom": 565.8125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 602,
+            "bottom": 652,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 660
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 287880,
+            "fetches": 15,
+            "failedFrames": 0,
+            "abortedRequests": 1,
+            "desiredFrame": 26,
+            "displayedFrame": 26,
+            "draws": 9,
+            "averageDrawMs": 0.09999999900658925,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 105,
+            "bottom": 440.46875,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 466.46875,
+            "bottom": 565.8125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 602,
+            "bottom": 652,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 660
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 614354,
+            "fetches": 26,
+            "failedFrames": 0,
+            "abortedRequests": 1,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 18,
+            "averageDrawMs": 0.07777777728107241,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.74,
+          "frame": 69,
+          "product": {
+            "top": 105,
+            "bottom": 440.46875,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 449.0870361328125,
+            "bottom": 548.4307861328125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 602,
+            "bottom": 652,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 660
+          },
+          "headingOpacity": 0.9656,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 891394,
+            "fetches": 35,
+            "failedFrames": 0,
+            "abortedRequests": 1,
+            "desiredFrame": 69,
+            "displayedFrame": 69,
+            "draws": 26,
+            "averageDrawMs": 0.06923076911614491,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.92,
+          "frame": 71,
+          "product": {
+            "top": 105,
+            "bottom": 440.46875,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 448.46875,
+            "bottom": 547.8125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 592,
+            "bottom": 642,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 660
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 891394,
+            "fetches": 35,
+            "failedFrames": 0,
+            "abortedRequests": 1,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 27,
+            "averageDrawMs": 0.07037037003923345,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 1,
+          "frame": 71,
+          "product": {
+            "top": 105,
+            "bottom": 440.46875,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 448.46875,
+            "bottom": 547.8125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 592,
+            "bottom": 642,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 660
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 891394,
+            "fetches": 35,
+            "failedFrames": 0,
+            "abortedRequests": 1,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 27,
+            "averageDrawMs": 0.07037037003923345,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": 105,
+            "bottom": 440.46875,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 466.46875,
+            "bottom": 565.8125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 602,
+            "bottom": 652,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 660
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 1166868,
+            "fetches": 45,
+            "failedFrames": 0,
+            "abortedRequests": 2,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 37,
+            "averageDrawMs": 0.07027027010917664,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 105.265625,
+            "bottom": 440.734375,
+            "width": 312,
+            "height": 335.46875
+          },
+          "title": {
+            "top": 466.734375,
+            "bottom": 566.078125,
+            "right": 336,
+            "width": 312
+          },
+          "action": {
+            "top": 602.265625,
+            "bottom": 652.265625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 660.265625
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 5,
+            "cacheLimit": 5,
+            "decodedBytes": 10475520,
+            "peakDecodedBytes": 10475520,
+            "peakCacheFrames": 5,
+            "pending": 0,
+            "downloadedBytes": 1340514,
+            "fetches": 56,
+            "failedFrames": 0,
+            "abortedRequests": 4,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 46,
+            "averageDrawMs": 0.07391304295995961,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        }
+      ],
+      "boundaryContained": true
+    },
+    {
+      "width": 1907,
+      "height": 282,
+      "reduced": false,
+      "samples": [
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 355.515625,
+            "bottom": 709.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 719.828125,
+            "bottom": 782.515625,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 823.515625,
+            "bottom": 877.515625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 884.515625
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 6,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 58488,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 2,
+            "averageDrawMs": 0.4000000059604645,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.28,
+          "frame": 26,
+          "product": {
+            "top": 144.515625,
+            "bottom": 498.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 526.828125,
+            "bottom": 589.515625,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 630.515625,
+            "bottom": 684.515625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 691.515625
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 347554,
+            "fetches": 17,
+            "failedFrames": 0,
+            "abortedRequests": 2,
+            "desiredFrame": 26,
+            "displayedFrame": 26,
+            "draws": 13,
+            "averageDrawMs": 0.09230769368318412,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": -48.484375,
+            "bottom": 305.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 333.828125,
+            "bottom": 396.515625,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 437.515625,
+            "bottom": 491.515625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 498.515625
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 816942,
+            "fetches": 35,
+            "failedFrames": 0,
+            "abortedRequests": 6,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 25,
+            "averageDrawMs": 0.07199999988079071,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.74,
+          "frame": 69,
+          "product": {
+            "top": -172.484375,
+            "bottom": 181.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 192.5392303466797,
+            "bottom": 255.2267303466797,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 313.515625,
+            "bottom": 367.515625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 374.515625
+          },
+          "headingOpacity": 0.9605,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1202338,
+            "fetches": 47,
+            "failedFrames": 0,
+            "abortedRequests": 7,
+            "desiredFrame": 69,
+            "displayedFrame": 69,
+            "draws": 36,
+            "averageDrawMs": 0.07500000008278424,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.92,
+          "frame": 71,
+          "product": {
+            "top": -296.484375,
+            "bottom": 57.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 67.828125,
+            "bottom": 130.515625,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 179.5169219970703,
+            "bottom": 233.5169219970703,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 250.515625
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1202338,
+            "fetches": 47,
+            "failedFrames": 0,
+            "abortedRequests": 7,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 37,
+            "averageDrawMs": 0.07567567599786294,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 1,
+          "frame": 71,
+          "product": {
+            "top": -352.484375,
+            "bottom": 1.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 11.828125,
+            "bottom": 74.515625,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 123.515625,
+            "bottom": 177.515625,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 194.515625
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1202338,
+            "fetches": 47,
+            "failedFrames": 0,
+            "abortedRequests": 7,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 37,
+            "averageDrawMs": 0.07567567599786294,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.56,
+          "frame": 52,
+          "product": {
+            "top": -48.484375,
+            "bottom": 305.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 333.828125,
+            "bottom": 396.515625,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 437.515625,
+            "bottom": 491.515625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 498.515625
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1586078,
+            "fetches": 58,
+            "failedFrames": 0,
+            "abortedRequests": 7,
+            "desiredFrame": 52,
+            "displayedFrame": 52,
+            "draws": 49,
+            "averageDrawMs": 0.07551020414245371,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0,
+          "frame": 0,
+          "product": {
+            "top": 355.515625,
+            "bottom": 709.828125,
+            "width": 620,
+            "height": 354.3125
+          },
+          "title": {
+            "top": 719.828125,
+            "bottom": 782.515625,
+            "right": 1822.140625,
+            "width": 1737.28125
+          },
+          "action": {
+            "top": 823.515625,
+            "bottom": 877.515625,
+            "visibility": "hidden"
+          },
+          "footer": {
+            "top": 884.515625
+          },
+          "headingOpacity": 0,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 6,
+            "cacheLimit": 6,
+            "decodedBytes": 12570624,
+            "peakDecodedBytes": 12570624,
+            "peakCacheFrames": 6,
+            "pending": 0,
+            "downloadedBytes": 1836854,
+            "fetches": 72,
+            "failedFrames": 0,
+            "abortedRequests": 10,
+            "desiredFrame": 0,
+            "displayedFrame": 0,
+            "draws": 62,
+            "averageDrawMs": 0.07258064444026639,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        }
+      ],
+      "boundaryContained": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "reduced": true,
+      "samples": [
+        {
+          "p": 0.1,
+          "frame": 71,
+          "product": {
+            "top": 126.0625,
+            "bottom": 699.46875,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 709.46875,
+            "bottom": 793.0625,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 842.0625,
+            "bottom": 896.0625,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 913.0625
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 6,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 105204,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 2,
+            "averageDrawMs": 0.5499999970197678,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.9,
+          "frame": 71,
+          "product": {
+            "top": 126.0625,
+            "bottom": 699.46875,
+            "width": 620,
+            "height": 573.40625
+          },
+          "title": {
+            "top": 709.46875,
+            "bottom": 793.0625,
+            "right": 1375.921875,
+            "width": 1311.84375
+          },
+          "action": {
+            "top": 842.0625,
+            "bottom": 896.0625,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 913.0625
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 6,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 105204,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 2,
+            "averageDrawMs": 0.5499999970197678,
+            "active": true,
+            "variant": "desktop",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        }
+      ],
+      "boundaryContained": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "samples": [
+        {
+          "p": 0.1,
+          "frame": 71,
+          "product": {
+            "top": 104.671875,
+            "bottom": 544.140625,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 552.140625,
+            "bottom": 651.484375,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 695.671875,
+            "bottom": 745.671875,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 763.671875
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 5,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 92350,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 2,
+            "averageDrawMs": 0.25,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        },
+        {
+          "p": 0.9,
+          "frame": 71,
+          "product": {
+            "top": 104.671875,
+            "bottom": 544.140625,
+            "width": 342,
+            "height": 439.46875
+          },
+          "title": {
+            "top": 552.140625,
+            "bottom": 651.484375,
+            "right": 366,
+            "width": 342
+          },
+          "action": {
+            "top": 695.671875,
+            "bottom": 745.671875,
+            "visibility": "visible"
+          },
+          "footer": {
+            "top": 763.671875
+          },
+          "headingOpacity": 1,
+          "horizontalOverflow": false,
+          "diagnostics": {
+            "cacheFrames": 3,
+            "cacheLimit": 5,
+            "decodedBytes": 6285312,
+            "peakDecodedBytes": 6285312,
+            "peakCacheFrames": 3,
+            "pending": 0,
+            "downloadedBytes": 92350,
+            "fetches": 3,
+            "failedFrames": 0,
+            "abortedRequests": 0,
+            "desiredFrame": 71,
+            "displayedFrame": 71,
+            "draws": 2,
+            "averageDrawMs": 0.25,
+            "active": true,
+            "variant": "mobile",
+            "previewDraws": 0,
+            "atlasBytes": 0,
+            "fullResolution": true
+          }
+        }
+      ],
+      "boundaryContained": true
+    }
+  ],
+  "errors": [],
+  "failedResponses": []
+}

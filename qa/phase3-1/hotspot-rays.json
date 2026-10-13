@@ -1,0 +1,2181 @@
+{
+  "source": "D:\\VYREN\\02_BLENDER\\Projects\\VYREN_NOCTIS_01_MASTER.blend",
+  "savedBlend": false,
+  "frames": [
+    {
+      "frame": 0,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0034659795050447978,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002935431903606563,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_spoke_1",
+          "targetDistance": 0.0016147293208852074,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003584920297151275,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 1,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0034752557810427383,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00031131122522112586,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_hairspring",
+          "targetDistance": 0.0008904841130831485,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0037585917019379764,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_polished",
+          "targetDistance": 0.0032069400094547566,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00033430085858014805,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_spoke_1",
+          "targetDistance": 0.0018253382937574022,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003977829819160537,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_polished",
+          "targetDistance": 0.002982817405985313,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00036423488393959763,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_hairspring",
+          "targetDistance": 0.0010649605100052637,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.004253198796950961,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0028829449578587417,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00040362986544657657,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "movement_balance_wheel",
+          "targetDistance": 0.0024635605228529585,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0045988080077443965,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0026561713237510712,
+          "glassSkipped": []
+        },
+        {
+          "object": "hand_minute",
+          "targetDistance": 0.0040103164195703245,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_shock_spring",
+          "targetDistance": 0.000395740333741811,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.005040200882072201,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0024838592434037942,
+          "glassSkipped": []
+        },
+        {
+          "object": "hand_minute",
+          "targetDistance": 0.004565392525087855,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_shock_spring",
+          "targetDistance": 0.0004168740546384848,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.005601664806141692,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.002353104678666222,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0006387097041351894,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "pallet_bridge",
+          "targetDistance": 0.0027083610344898787,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00629636793932993,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.002255322492879827,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0008100087913399667,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "regulator_arm",
+          "targetDistance": 0.0006059707786730299,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0071774472139961186,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0021848397377234588,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0011179546149250553,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.01983105329972466,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.008403183483248337,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.00213778452532971,
+          "glassSkipped": []
+        },
+        {
+          "object": "bezel_polished_outer_chamfer",
+          "targetDistance": 0.022954397250572054,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_bezel_gasket",
+          "targetDistance": 0.020137193395657105,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.009798902501793641,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 11,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0021116453677115722,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.022339803084739932,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.020794831909594975,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.011094371947784443,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0021049037668926717,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.02275656627050788,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.023248285468814765,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.011543487020483597,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 13,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.002117137820582945,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.022192388577478198,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.02335980445672208,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.011553738016821968,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 14,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0021484788079923546,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.022234929919417876,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.02002726386815672,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0007072103209390738,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 15,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.002200156010856352,
+          "glassSkipped": []
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.02161148805150795,
+          "glassSkipped": []
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.019383385272284195,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0004786889053191472,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0022741261063800805,
+          "glassSkipped": []
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.021575583508482522,
+          "glassSkipped": []
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.01907158670502514,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00036248221561804156,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 17,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.002373739400101316,
+          "glassSkipped": []
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.018691340161754052,
+          "glassSkipped": []
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.01665696450177744,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00029272208341852847,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0025037507531136148,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.013480849902488908,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.012042086188738161,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00024727645458415845,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 19,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.0026712692110203063,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.011882587419022261,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.010596914369101906,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0002154614047819687,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_recess",
+          "targetDistance": 0.00288692987633079,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.010515312911897483,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.009521385988619697,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00019231881994903269,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 21,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_polished",
+          "targetDistance": 0.0029663699668894994,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.009784545023497345,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.008699042515634052,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00017482372416204628,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 22,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_face_polished",
+          "targetDistance": 0.0032143922466539663,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.009077926582702128,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.00805863419887302,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00016142272141303658,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 23,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0034340082711379863,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.008522601010556137,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.007554241657762003,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00015097555318659923,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0034931650100816667,
+          "glassSkipped": []
+        },
+        {
+          "object": "rear_train_02",
+          "targetDistance": 0.006228194591588515,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.007155063253764134,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00014274021812813486,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 25,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003407623979603711,
+          "glassSkipped": []
+        },
+        {
+          "object": "rear_train_01",
+          "targetDistance": 0.005963077392065409,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.006839970300912798,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00013643256461644466,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 26,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003203533779677932,
+          "glassSkipped": []
+        },
+        {
+          "object": "movement_main_plate",
+          "targetDistance": 0.004632243009857329,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.006594095633666007,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.028991545375616566,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 27,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003178609269618933,
+          "glassSkipped": []
+        },
+        {
+          "object": "movement_main_plate",
+          "targetDistance": 0.004507810017583205,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.04906790213376985,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.030551664032539914,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 28,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003181739531384896,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_bearing",
+          "targetDistance": 0.0072546536807362805,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.04853421566280135,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.03065757914273102,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003213097968773767,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.055902453030806945,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.04812611430663767,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.03063884069189697,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 30,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003253020283427085,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.05573330796253641,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.04784212785668184,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.030636955621643525,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 31,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0032723604996523284,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.055756687434794824,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.047577810255432486,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.03063245270637055,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 32,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0032588607668869447,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.05595889985302015,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.006170113560008101,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.030647863545564997,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 33,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0032691965216515052,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_bearing",
+          "targetDistance": 0.007257623770927154,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.0062516935890986015,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.030648843983068524,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 34,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.05432897604441206,
+          "glassSkipped": []
+        },
+        {
+          "object": "rear_train_01_spoke.003",
+          "targetDistance": 0.005602727523715752,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.006380016849746637,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.030457840865083505,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 35,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.055703520645114864,
+          "glassSkipped": []
+        },
+        {
+          "object": "rear_train_01_spoke.003",
+          "targetDistance": 0.005765876212291426,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.006560285487428613,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00013267560892592725,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 36,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.05725014387066069,
+          "glassSkipped": []
+        },
+        {
+          "object": "movement_main_plate",
+          "targetDistance": 0.004848797863348132,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.006444626702481121,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00013799551132455965,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 37,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.05892970214976574,
+          "glassSkipped": []
+        },
+        {
+          "object": "rear_train_01",
+          "targetDistance": 0.006159302748475473,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.008423740024372533,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00014481526665479147,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 38,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0033943610821988517,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.008656611404573609,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.008893389093050248,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00015356138752806547,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 39,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.008034944219485373,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.009248021630006743,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.00949135421915873,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00016471667284812097,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 40,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "caseback_concentric_finish_17.1",
+          "targetDistance": 0.010089862910013712,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.009877938608599465,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.010256565230333504,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0001791452428083799,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 41,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.01082898357899686,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.01079314797276483,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.010759930205522197,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0001979058061275698,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 42,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.01214735928630051,
+          "glassSkipped": []
+        },
+        {
+          "object": "automatic_rotor_arm",
+          "targetDistance": 0.012257839353790994,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.010964912910901785,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00022312582801089226,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 43,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.012578676392542325,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.01434496301341468,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.010609450735281958,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00025792624758615417,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 44,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.011957318421710559,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.019571630357897198,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_lower_polished_arris",
+          "targetDistance": 0.010812425549370246,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00030860288427506035,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 45,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.016704308546491922,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.021810527279431804,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.0109029245302752,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0003880954404580518,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 46,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "automatic_rotor_mass",
+          "targetDistance": 0.021905995536063587,
+          "glassSkipped": [
+            "caseback_exhibition_sapphire",
+            "caseback_exhibition_sapphire"
+          ]
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.021934365852550472,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.011025236195886232,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0005235997712344188,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 47,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "caseback_main",
+          "targetDistance": 0.034900399266575,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.022338190192246147,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.01091879417122159,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.011112723967363713,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 48,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "case_main",
+          "targetDistance": 0.035979806502354134,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.02220432706505068,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.010828495639817973,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.011550132250525477,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 49,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "case_main",
+          "targetDistance": 0.040246426890172986,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.022736195765561323,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.011287363462017336,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.011518764492515305,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 50,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "case_main",
+          "targetDistance": 0.03665218234461081,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.022096936958928393,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.011344333801636608,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.010809846956490855,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 51,
+      "frontVisible": false,
+      "hits": [
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.034717527932731994,
+          "glassSkipped": []
+        },
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.02203930077303214,
+          "glassSkipped": []
+        },
+        {
+          "object": "case_main",
+          "targetDistance": 0.011114542679208653,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.009419323533861936,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 52,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "chapter_ring",
+          "targetDistance": 0.010324532325302276,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0010152872918302214,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "case_bezel_gasket",
+          "targetDistance": 0.010852622460387894,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.008066749293143528,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 53,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "chapter_ring",
+          "targetDistance": 0.008322381742542908,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "hand_hour",
+          "targetDistance": 0.005194226233026294,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "bezel_polished_outer_chamfer",
+          "targetDistance": 0.011842652821500193,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.006913124996707431,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 54,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "case_main",
+          "targetDistance": 0.008175226909991723,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "hand_hour_inset",
+          "targetDistance": 0.004572435642967903,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.010532531863248424,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00611146550701402,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 55,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.008109685498638603,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0005083963841841785,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.00924344756466964,
+          "glassSkipped": []
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.005442651408000496,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 56,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "sapphire_seating_gasket",
+          "targetDistance": 0.00894566700428903,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0004410078628438924,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "movement_bridge_main",
+          "targetDistance": 7.028717491335164e-05,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.004916135739552187,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 57,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "bezel_polished_inner_chamfer",
+          "targetDistance": 0.009228824767669465,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00039210249951234904,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "movement_bridge_main",
+          "targetDistance": 6.939864404084685e-05,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.004503278800876267,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 58,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.008048005402802058,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.000355536764810828,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "movement_bridge_main",
+          "targetDistance": 7.65875806855018e-05,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.004177547347440152,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 59,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.0072481851154562816,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00032765302399178633,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "movement_bridge_main",
+          "targetDistance": 8.711715610096595e-05,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003916979931719696,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 60,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "bezel_outer",
+          "targetDistance": 0.0066322362067760465,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00030614414457908905,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_hairspring",
+          "targetDistance": 0.0008622404287319827,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003710722531043698,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 61,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0036641456734218514,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002895787983635363,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_hairspring",
+          "targetDistance": 0.0008768779123150733,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0035488868423451557,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 62,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003545327593571421,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002769076542083122,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_recess",
+          "targetDistance": 0.0026570405558088723,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0034230321759372126,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 63,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0033448360808427755,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002674691689543118,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_recess",
+          "targetDistance": 0.002571355091712845,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.00332866544147462,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 64,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0032364688694974724,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002607954170719006,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_recess",
+          "targetDistance": 0.0025120617591508822,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003262921968763318,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 65,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0031713300242718766,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00025661017481024955,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_recess",
+          "targetDistance": 0.0024763514377175917,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0032232215115530075,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 66,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003130905866896702,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00025468569204263277,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_recess",
+          "targetDistance": 0.002462573359340772,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0032080006925890464,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 67,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003114226434045871,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.00025497672370200687,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_recess",
+          "targetDistance": 0.0024700056128396336,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003209422161629993,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 68,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.0031212050807328203,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002574793812367916,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_hairspring",
+          "targetDistance": 0.0007849630236991513,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0032305602701623755,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 69,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003152427796247058,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002623091626690532,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_shock_spring",
+          "targetDistance": 0.0002253232073398599,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003276543877022874,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 70,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003232656370233637,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002696778510181359,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_shock_spring",
+          "targetDistance": 0.00023203556922887984,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.0033503383210245147,
+          "glassSkipped": []
+        }
+      ]
+    },
+    {
+      "frame": 71,
+      "frontVisible": true,
+      "hits": [
+        {
+          "object": "crown_main",
+          "targetDistance": 0.003379348480970407,
+          "glassSkipped": []
+        },
+        {
+          "object": "dial_base",
+          "targetDistance": 0.0002799188393458936,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "balance_shock_spring",
+          "targetDistance": 0.0002371897190471943,
+          "glassSkipped": [
+            "crystal_sapphire",
+            "crystal_sapphire"
+          ]
+        },
+        {
+          "object": "strap_lower",
+          "targetDistance": 0.003451523525324742,
+          "glassSkipped": []
+        }
+      ]
+    }
+  ]
+}

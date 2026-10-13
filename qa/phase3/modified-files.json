@@ -1,0 +1,43 @@
+{
+  "sourceFiles": [
+    "D:\\VYREN\\06_WEBSITE\\src\\app\\globals.css",
+    "D:\\VYREN\\06_WEBSITE\\src\\components\\cycles-surface.tsx",
+    "D:\\VYREN\\06_WEBSITE\\src\\components\\landing.tsx",
+    "D:\\VYREN\\06_WEBSITE\\src\\components\\motion.ts",
+    "D:\\VYREN\\06_WEBSITE\\src\\components\\signature-experiences.tsx",
+    "D:\\VYREN\\06_WEBSITE\\src\\components\\studio-hotspots.tsx",
+    "D:\\VYREN\\06_WEBSITE\\src\\components\\studio-viewer.tsx",
+    "D:\\VYREN\\06_WEBSITE\\src\\lib\\cycles-frame-cache.ts",
+    "D:\\VYREN\\06_WEBSITE\\src\\lib\\cycles-sequence.ts",
+    "D:\\VYREN\\06_WEBSITE\\src\\lib\\experience-state.ts",
+    "D:\\VYREN\\06_WEBSITE\\src\\lib\\watch-engine.ts"
+  ],
+  "otherChanges": [
+    "package.json",
+    "playwright.phase3.config.ts",
+    "scripts/pack-phase3.py",
+    "scripts/phase3-baseline.mjs",
+    "scripts/phase3-fidelity.py",
+    "scripts/phase3-measure.mjs",
+    "scripts/phase3-record.mjs",
+    "scripts/phase3-details-qa.mjs",
+    "scripts/prepare-phase3-regressions.py",
+    "scripts/report-phase3.py",
+    "qa/phase3/tests",
+    "public/assets/studio-cycles",
+    "public/assets/phase3-signatures",
+    "scripts/phase3-qa-contacts.py",
+    "scripts/verify-phase3.py",
+    "PHASE3_IMMERSIVE_REPORT.md",
+    "PHASE3_STUDIO_VIEWER.md",
+    "PHASE3_FEATURES.md",
+    "PHASE3_PERFORMANCE.md",
+    "PHASE3_VISUAL_QA.md"
+  ],
+  "blenderScripts": [
+    "D:\\VYREN\\02_BLENDER\\scripts\\inspect_phase3_studio.py",
+    "D:\\VYREN\\02_BLENDER\\scripts\\render_phase3_studio.py",
+    "D:\\VYREN\\02_BLENDER\\scripts\\export_phase3_blueprint.py",
+    "D:\\VYREN\\02_BLENDER\\scripts\\export_phase3_hotspots.py"
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "method": 4,
+    "quality": 90,
+    "seconds": 0.3020563999998558,
+    "bytes": 58672,
+    "meanCompositedRgbError": [
+      0.2504171875,
+      0.2126921875,
+      0.27072083333333335
+    ],
+    "alphaUnchanged": true
+  },
+  {
+    "method": 6,
+    "quality": 90,
+    "seconds": 2.587736199999199,
+    "bytes": 57126,
+    "meanCompositedRgbError": [
+      0.252284375,
+      0.21537760416666665,
+      0.2724234375
+    ],
+    "alphaUnchanged": true
+  }
+]

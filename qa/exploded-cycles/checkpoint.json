@@ -1,0 +1,86 @@
+{
+  "path": "D:\\VYREN\\08_BACKUPS\\EXPLODED_CYCLES_ENTRY_20261010_232258",
+  "verifiedFiles": 74,
+  "protectedSources": [
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Hero\\vyren_hero_transparent.png",
+      "sha256": "3162a03cc308b093af51b82fb2c637944ddd46b10692a75c0cbee8eebfb2ca60",
+      "bytes": 1534182
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Hero\\vyren_hero_dark.png",
+      "sha256": "84da5e8ac3cbaa65e3ed07a2eeffa3cfe2a746393b018292ebc7f72a0807e505",
+      "bytes": 2990472
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Hero\\vyren_hero_alternative.png",
+      "sha256": "17077532ba9328801bafa2a1bcc0a1b9369db6af3e0a2ba523f8cfd2cfd904c1",
+      "bytes": 2974379
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Views\\vyren_front.png",
+      "sha256": "0a4fc049451b5bd98a36eb174249dd6ba5e261ae17f1e92f27dc7a0354ad83bd",
+      "bytes": 2791580
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Views\\vyren_rear.png",
+      "sha256": "6da17d9407ff147d9a34e4513bfbbce3c5b4684074827a30ebe760242c4e1a2a",
+      "bytes": 2781559
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_case_detail.png",
+      "sha256": "98fea1e926f1336eab1aa87a5ba0dd2b8492e30e5b23718c7aac3347f08fffe9",
+      "bytes": 2286040
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_crown_detail.png",
+      "sha256": "6e0cbf0b977c5ac31859a977a994444efc02f366e2eaf65f9a635a4ef446556a",
+      "bytes": 2225957
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_dial_macro.png",
+      "sha256": "22b3673463b118a7e0e77295e28065947c17f124e276583c3571298eda41a226",
+      "bytes": 3337665
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_movement_macro.png",
+      "sha256": "658eaa4569eaedd64e8a15f37e14c67467017b70a68532dd0fe300e45d325e60",
+      "bytes": 3152312
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_strap_connection.png",
+      "sha256": "b61b22c143ae3db3cbd38ebfc304aaa4ae601942f37ad8343c9453a010c01fe3",
+      "bytes": 2031151
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Macro\\vyren_rear_macro.png",
+      "sha256": "aa380aaecf4715494487bb33c5ef781a2f8c1b4b685d62f0946eef1428c9e079",
+      "bytes": 3226438
+    },
+    {
+      "path": "D:\\VYREN\\04_RENDER_OUTPUT\\Exploded_View\\vyren_exploded.png",
+      "sha256": "2b485560f12933d4ab8abbe65378285f035609a4ae6e441664b8f4b5957ec619",
+      "bytes": 3325293
+    },
+    {
+      "path": "D:\\VYREN\\05_WEB_EXPORT\\GLB\\vyren_noctis_01.glb",
+      "sha256": "ecdc8c27a55b21c0713e08f6fd5760bbbcf7301d3b257b56db94e26349cb7409",
+      "bytes": 15723748
+    },
+    {
+      "path": "D:\\VYREN\\05_WEB_EXPORT\\assembly_transforms.json",
+      "sha256": "d7f247a170a2ff4c2083bc56fa8e40616a1632dc9f67bced178f52999858405d",
+      "bytes": 4055
+    },
+    {
+      "path": "D:\\VYREN\\02_BLENDER\\Projects\\VYREN_NOCTIS_01_MASTER.blend",
+      "sha256": "ef5d3a23702617e29040e9c535f9cc9fbab31aff5ef8cff00a174b61bd046dcb",
+      "bytes": 2122051
+    },
+    {
+      "path": "D:\\VYREN\\02_BLENDER\\Projects\\VYREN_NOCTIS_01_WEB.blend",
+      "sha256": "336083435641d089507e92be5ca33bbb8e31340341a59db4c3bb0706bc6f5b9f",
+      "bytes": 10474215
+    }
+  ]
+}

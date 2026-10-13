@@ -1,0 +1,39 @@
+{
+  "measuredFromNavigationStartMs": {
+    "studioReady": 19425.400000000373,
+    "firstRenderedFrame": 19425.400000000373
+  },
+  "resources": [
+    {
+      "url": "/assets/vyren-noctis-01.glb",
+      "transferSize": 8052445,
+      "encodedBodySize": 8052145,
+      "decodedBodySize": 15723748,
+      "duration": 16493.599999999627,
+      "startTime": 2360.5,
+      "responseEnd": 18854.099999999627
+    }
+  ],
+  "viewport": [
+    390,
+    844
+  ],
+  "devicePixelRatio": 2,
+  "dpr": 1,
+  "scope": "Cold 4 Mbps / 120 ms CDP network emulation in desktop Edge, mobile 390×844 DPR 2. Ready and first render observed every 20 ms, no fixed photography delays included.",
+  "responseHeaders": [
+    {
+      "transfer-encoding": "chunked",
+      "cache-control": "public, max-age=31536000, immutable",
+      "content-encoding": "gzip",
+      "etag": "W/\"efece4-1a126a1d023\"",
+      "connection": "keep-alive",
+      "accept-ranges": "bytes",
+      "keep-alive": "timeout=5",
+      "date": "Sat, 10 Oct 2026 22:56:43 GMT",
+      "last-modified": "Sat, 10 Oct 2026 16:25:01 GMT",
+      "content-type": "model/gltf-binary",
+      "vary": "Accept-Encoding"
+    }
+  ]
+}

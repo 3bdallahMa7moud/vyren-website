@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./qa/section-seven-fixes/regression-tests',timeout:180000,workers:1,reporter:[['list'],['json',{outputFile:'qa/section-seven-fixes/regression-results/results.json'}]],outputDir:'qa/section-seven-fixes/regression-results',webServer:{command:'npm run start -- --port 3001',url:'http://127.0.0.1:3001',reuseExistingServer:true,timeout:120000},use:{baseURL:'http://127.0.0.1:3001',channel:'msedge',headless:true,viewport:{width:1440,height:1000}}});

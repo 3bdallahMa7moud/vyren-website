@@ -1,0 +1,55 @@
+{
+  "tests": {
+    "verifiedChecks": 39,
+    "initialRun": {
+      "startTime": "2026-10-10T23:26:52.718Z",
+      "duration": 634523.328,
+      "expected": 37,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "rerun": {
+      "startTime": "2026-10-10T23:39:23.986Z",
+      "duration": 19744.488,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "rerunTitles": [
+      "authentic Hero orbit follows the poster once and skips mobile, reduced motion and deep links",
+      "Save-Data uses a smaller frame set and reduced motion has explicit static controls"
+    ],
+    "unresolved": [],
+    "note": "Two legacy cases sought the viewer immediately after a motion-preference layout rebuild. QA now waits for GSAP setup and aligns the visible target before awaiting lazy assets. All application source outside the intended viewer scope stays unchanged.",
+    "reports": [
+      "all-results/results.json",
+      "regression-results/results.json"
+    ]
+  },
+  "optimizedPayloadReductionPercent": 47.41335383304697,
+  "firstFrameImprovementPercent": 33.591586273644914,
+  "beforeFirstFrameMs": 19425.400000000373,
+  "afterFirstFrameMs": 12900.099999999627,
+  "proof": {
+    "checked": 288,
+    "changes": [
+      "D:\\VYREN\\06_WEBSITE\\src\\app\\globals.css",
+      "D:\\VYREN\\06_WEBSITE\\src\\components\\landing.tsx",
+      "D:\\VYREN\\06_WEBSITE\\src\\components\\product-stage.tsx",
+      "D:\\VYREN\\06_WEBSITE\\src\\lib\\watch-engine.ts"
+    ],
+    "unexpected": [],
+    "protectedAssetsUnchanged": true,
+    "landingOutsideViewerIdentical": true
+  },
+  "poster": {
+    "meanAbsoluteChannelDifference": 1.8535174029451138,
+    "maximumAllowed": 3,
+    "canvas": [
+      390,
+      432.46875
+    ]
+  }
+}

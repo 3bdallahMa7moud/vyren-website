@@ -1,0 +1,1092 @@
+{
+  "resolution": [
+    1600,
+    1200
+  ],
+  "alphaThreshold": 16,
+  "connectivity": 4,
+  "ignoreAreaAtMost": 24,
+  "frames": [
+    {
+      "frame": 0,
+      "componentsAbove24Pixels": [
+        {
+          "area": 258287,
+          "bbox": [
+            508,
+            312,
+            1065,
+            978
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 1,
+      "componentsAbove24Pixels": [
+        {
+          "area": 262380,
+          "bbox": [
+            509,
+            312,
+            1070,
+            984
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 2,
+      "componentsAbove24Pixels": [
+        {
+          "area": 261885,
+          "bbox": [
+            509,
+            314,
+            1076,
+            989
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 3,
+      "componentsAbove24Pixels": [
+        {
+          "area": 257699,
+          "bbox": [
+            507,
+            315,
+            1085,
+            992
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 4,
+      "componentsAbove24Pixels": [
+        {
+          "area": 250984,
+          "bbox": [
+            505,
+            317,
+            1095,
+            995
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 5,
+      "componentsAbove24Pixels": [
+        {
+          "area": 241554,
+          "bbox": [
+            502,
+            318,
+            1105,
+            995
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 6,
+      "componentsAbove24Pixels": [
+        {
+          "area": 229852,
+          "bbox": [
+            500,
+            318,
+            1116,
+            995
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 7,
+      "componentsAbove24Pixels": [
+        {
+          "area": 217195,
+          "bbox": [
+            499,
+            317,
+            1127,
+            993
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 8,
+      "componentsAbove24Pixels": [
+        {
+          "area": 204017,
+          "bbox": [
+            498,
+            316,
+            1138,
+            990
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 9,
+      "componentsAbove24Pixels": [
+        {
+          "area": 190970,
+          "bbox": [
+            497,
+            315,
+            1148,
+            991
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 10,
+      "componentsAbove24Pixels": [
+        {
+          "area": 178520,
+          "bbox": [
+            498,
+            314,
+            1158,
+            993
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 11,
+      "componentsAbove24Pixels": [
+        {
+          "area": 166974,
+          "bbox": [
+            499,
+            312,
+            1167,
+            995
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 12,
+      "componentsAbove24Pixels": [
+        {
+          "area": 161933,
+          "bbox": [
+            501,
+            312,
+            1175,
+            995
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 13,
+      "componentsAbove24Pixels": [
+        {
+          "area": 167628,
+          "bbox": [
+            504,
+            312,
+            1181,
+            994
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 14,
+      "componentsAbove24Pixels": [
+        {
+          "area": 175195,
+          "bbox": [
+            507,
+            313,
+            1186,
+            992
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 15,
+      "componentsAbove24Pixels": [
+        {
+          "area": 185998,
+          "bbox": [
+            511,
+            315,
+            1189,
+            988
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 16,
+      "componentsAbove24Pixels": [
+        {
+          "area": 197597,
+          "bbox": [
+            512,
+            318,
+            1191,
+            983
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 17,
+      "componentsAbove24Pixels": [
+        {
+          "area": 210059,
+          "bbox": [
+            512,
+            322,
+            1190,
+            976
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 18,
+      "componentsAbove24Pixels": [
+        {
+          "area": 222983,
+          "bbox": [
+            512,
+            325,
+            1188,
+            968
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 19,
+      "componentsAbove24Pixels": [
+        {
+          "area": 235939,
+          "bbox": [
+            510,
+            328,
+            1185,
+            959
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 20,
+      "componentsAbove24Pixels": [
+        {
+          "area": 248409,
+          "bbox": [
+            506,
+            332,
+            1186,
+            950
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 21,
+      "componentsAbove24Pixels": [
+        {
+          "area": 260048,
+          "bbox": [
+            503,
+            335,
+            1189,
+            940
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 22,
+      "componentsAbove24Pixels": [
+        {
+          "area": 270132,
+          "bbox": [
+            500,
+            338,
+            1191,
+            930
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 23,
+      "componentsAbove24Pixels": [
+        {
+          "area": 277801,
+          "bbox": [
+            499,
+            338,
+            1190,
+            920
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 24,
+      "componentsAbove24Pixels": [
+        {
+          "area": 279556,
+          "bbox": [
+            498,
+            334,
+            1188,
+            910
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 25,
+      "componentsAbove24Pixels": [
+        {
+          "area": 275251,
+          "bbox": [
+            498,
+            326,
+            1184,
+            902
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 26,
+      "componentsAbove24Pixels": [
+        {
+          "area": 262932,
+          "bbox": [
+            498,
+            317,
+            1179,
+            894
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 27,
+      "componentsAbove24Pixels": [
+        {
+          "area": 243606,
+          "bbox": [
+            499,
+            307,
+            1172,
+            889
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 28,
+      "componentsAbove24Pixels": [
+        {
+          "area": 222347,
+          "bbox": [
+            501,
+            295,
+            1163,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 29,
+      "componentsAbove24Pixels": [
+        {
+          "area": 205445,
+          "bbox": [
+            503,
+            283,
+            1153,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 30,
+      "componentsAbove24Pixels": [
+        {
+          "area": 194108,
+          "bbox": [
+            505,
+            271,
+            1142,
+            890
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 31,
+      "componentsAbove24Pixels": [
+        {
+          "area": 196548,
+          "bbox": [
+            507,
+            259,
+            1130,
+            892
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 32,
+      "componentsAbove24Pixels": [
+        {
+          "area": 209517,
+          "bbox": [
+            509,
+            248,
+            1118,
+            895
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 33,
+      "componentsAbove24Pixels": [
+        {
+          "area": 227214,
+          "bbox": [
+            509,
+            238,
+            1106,
+            897
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 34,
+      "componentsAbove24Pixels": [
+        {
+          "area": 246521,
+          "bbox": [
+            507,
+            229,
+            1095,
+            899
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 35,
+      "componentsAbove24Pixels": [
+        {
+          "area": 264762,
+          "bbox": [
+            502,
+            222,
+            1085,
+            900
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 36,
+      "componentsAbove24Pixels": [
+        {
+          "area": 274973,
+          "bbox": [
+            495,
+            216,
+            1076,
+            901
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 37,
+      "componentsAbove24Pixels": [
+        {
+          "area": 277782,
+          "bbox": [
+            486,
+            212,
+            1069,
+            900
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 38,
+      "componentsAbove24Pixels": [
+        {
+          "area": 275500,
+          "bbox": [
+            477,
+            210,
+            1065,
+            899
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 39,
+      "componentsAbove24Pixels": [
+        {
+          "area": 267642,
+          "bbox": [
+            467,
+            210,
+            1065,
+            898
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 40,
+      "componentsAbove24Pixels": [
+        {
+          "area": 256994,
+          "bbox": [
+            457,
+            212,
+            1068,
+            895
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 41,
+      "componentsAbove24Pixels": [
+        {
+          "area": 245013,
+          "bbox": [
+            447,
+            215,
+            1071,
+            892
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 42,
+      "componentsAbove24Pixels": [
+        {
+          "area": 232260,
+          "bbox": [
+            438,
+            215,
+            1074,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 43,
+      "componentsAbove24Pixels": [
+        {
+          "area": 219264,
+          "bbox": [
+            430,
+            212,
+            1078,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 44,
+      "componentsAbove24Pixels": [
+        {
+          "area": 206403,
+          "bbox": [
+            422,
+            210,
+            1081,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 45,
+      "componentsAbove24Pixels": [
+        {
+          "area": 194355,
+          "bbox": [
+            416,
+            210,
+            1083,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 46,
+      "componentsAbove24Pixels": [
+        {
+          "area": 182963,
+          "bbox": [
+            411,
+            212,
+            1085,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 47,
+      "componentsAbove24Pixels": [
+        {
+          "area": 172869,
+          "bbox": [
+            407,
+            215,
+            1087,
+            891
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 48,
+      "componentsAbove24Pixels": [
+        {
+          "area": 165976,
+          "bbox": [
+            405,
+            220,
+            1088,
+            895
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 49,
+      "componentsAbove24Pixels": [
+        {
+          "area": 161746,
+          "bbox": [
+            404,
+            227,
+            1088,
+            897
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 50,
+      "componentsAbove24Pixels": [
+        {
+          "area": 169909,
+          "bbox": [
+            405,
+            235,
+            1088,
+            899
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 51,
+      "componentsAbove24Pixels": [
+        {
+          "area": 181740,
+          "bbox": [
+            407,
+            244,
+            1087,
+            900
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 52,
+      "componentsAbove24Pixels": [
+        {
+          "area": 194342,
+          "bbox": [
+            409,
+            254,
+            1085,
+            901
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 53,
+      "componentsAbove24Pixels": [
+        {
+          "area": 207353,
+          "bbox": [
+            409,
+            265,
+            1084,
+            900
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 54,
+      "componentsAbove24Pixels": [
+        {
+          "area": 220129,
+          "bbox": [
+            406,
+            276,
+            1083,
+            899
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 55,
+      "componentsAbove24Pixels": [
+        {
+          "area": 232204,
+          "bbox": [
+            405,
+            287,
+            1083,
+            897
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 56,
+      "componentsAbove24Pixels": [
+        {
+          "area": 243259,
+          "bbox": [
+            404,
+            298,
+            1083,
+            895
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 57,
+      "componentsAbove24Pixels": [
+        {
+          "area": 252793,
+          "bbox": [
+            405,
+            309,
+            1084,
+            893
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 58,
+      "componentsAbove24Pixels": [
+        {
+          "area": 259925,
+          "bbox": [
+            408,
+            319,
+            1085,
+            890
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 59,
+      "componentsAbove24Pixels": [
+        {
+          "area": 263622,
+          "bbox": [
+            411,
+            327,
+            1087,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 60,
+      "componentsAbove24Pixels": [
+        {
+          "area": 263277,
+          "bbox": [
+            416,
+            334,
+            1088,
+            888
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 61,
+      "componentsAbove24Pixels": [
+        {
+          "area": 257994,
+          "bbox": [
+            422,
+            338,
+            1088,
+            889
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 62,
+      "componentsAbove24Pixels": [
+        {
+          "area": 244597,
+          "bbox": [
+            429,
+            338,
+            1088,
+            894
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 63,
+      "componentsAbove24Pixels": [
+        {
+          "area": 229876,
+          "bbox": [
+            437,
+            335,
+            1087,
+            900
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 64,
+      "componentsAbove24Pixels": [
+        {
+          "area": 219677,
+          "bbox": [
+            445,
+            332,
+            1085,
+            908
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 65,
+      "componentsAbove24Pixels": [
+        {
+          "area": 211897,
+          "bbox": [
+            454,
+            328,
+            1083,
+            917
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 66,
+      "componentsAbove24Pixels": [
+        {
+          "area": 207026,
+          "bbox": [
+            463,
+            324,
+            1081,
+            926
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 67,
+      "componentsAbove24Pixels": [
+        {
+          "area": 207504,
+          "bbox": [
+            472,
+            321,
+            1077,
+            935
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 68,
+      "componentsAbove24Pixels": [
+        {
+          "area": 214558,
+          "bbox": [
+            481,
+            318,
+            1074,
+            945
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 69,
+      "componentsAbove24Pixels": [
+        {
+          "area": 223432,
+          "bbox": [
+            490,
+            314,
+            1070,
+            954
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 70,
+      "componentsAbove24Pixels": [
+        {
+          "area": 234559,
+          "bbox": [
+            497,
+            312,
+            1067,
+            962
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    },
+    {
+      "frame": 71,
+      "componentsAbove24Pixels": [
+        {
+          "area": 248435,
+          "bbox": [
+            504,
+            312,
+            1065,
+            970
+          ]
+        }
+      ],
+      "smallNoisePixels": 0
+    }
+  ],
+  "disconnectedFrames": []
+}

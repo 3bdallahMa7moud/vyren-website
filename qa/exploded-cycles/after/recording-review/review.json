@@ -1,0 +1,6 @@
+{
+  "durationSeconds": 28,
+  "frames": 18,
+  "source": "Decoded actual browser recording, sampled with paused HTML video seeking in Edge. Visual review is separate from these metrics.",
+  "visualReview": "Accepted after inspecting the decoded 18-frame contact sheet of the final actual browser recording."
+}
