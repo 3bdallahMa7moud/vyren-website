@@ -1,6 +1,6 @@
 import { CriticalFrameStream } from './critical-frame-stream';
 import { deviceStreamProfile } from './frame-stream-policy';
-import type { FramePreviewSpec } from './frame-preview';
+import type { FrameBundleSpec } from './frame-bundle-store';
 
 /** Canvas adapter for the closing film; other studio surfaces keep their controls. */
 export class CriticalFrameSurface {
@@ -24,12 +24,12 @@ export class CriticalFrameSurface {
   private resize: ResizeObserver;
   private context: CanvasRenderingContext2D;
   constructor(private element: HTMLDivElement, private output: HTMLCanvasElement, private options: {
-    frame: number; count: number; path: string; prefix: string; preview: FramePreviewSpec;
+    frame: number; count: number; path: string; prefix: string; bundle: FrameBundleSpec;
     fit?: 'cover' | 'contain'; onPresent: (index: number) => void;
   }) {
     const context = output.getContext('2d');
     if (!context) throw new Error('Canvas presentation is unavailable');
-    this.context = context; this.target = options.frame; this.stream = this.createStream(); element.dataset.desiredFrame=String(Math.round(options.frame));
+    this.context = context;context.imageSmoothingEnabled=true;context.imageSmoothingQuality='high'; this.target = options.frame; this.stream = this.createStream(); element.dataset.desiredFrame=String(Math.round(options.frame));
     this.preload = new IntersectionObserver(entries => {
       this.warm = entries.some(entry => entry.isIntersecting);
       this.stream.setWarm((this.warm || this.active) && !document.hidden);
@@ -45,7 +45,7 @@ export class CriticalFrameSurface {
   }
   private createStream() {
     const urls = Array.from({ length: this.options.count }, (_, index) => `${this.options.path}/${this.mobile ? 'mobile' : 'desktop'}/${this.options.prefix}${String(index).padStart(3, '0')}.webp`);
-    const stream = new CriticalFrameStream(urls, this.options.preview.variants[this.mobile ? 'mobile' : 'desktop'], deviceStreamProfile(this.mobile), this.update);
+    const stream = new CriticalFrameStream(urls, this.options.bundle.variants[this.mobile ? 'mobile' : 'desktop'], deviceStreamProfile(this.mobile), this.update);
     stream.setTarget(this.target); return stream;
   }
   private selectVariant() {
@@ -70,18 +70,18 @@ export class CriticalFrameSurface {
     if (!w || !h || (this.displayed === frame.index && this.fullResolution === frame.fullResolution && this.lastBitmap === frame.bitmap && w === this.lastWidth && h === this.lastHeight)) return;
     const started = performance.now();
     if (this.output.width !== w || this.output.height !== h) { this.output.width = w; this.output.height = h; }
+    this.context.imageSmoothingEnabled=true;this.context.imageSmoothingQuality='high';
     this.context.clearRect(0, 0, w, h);
     const fit = this.options.fit === 'cover' ? Math.max : Math.min, scale = fit(w / frame.width, h / frame.height);
     const width = frame.width * scale, height = frame.height * scale, x = (w - width) / 2, y = (h - height) / 2;
-    if (frame.crop) { const c = frame.crop; this.context.drawImage(frame.bitmap, c.x, c.y, c.width, c.height, x, y, width, height); this.previewDraws++; }
-    else this.context.drawImage(frame.bitmap, x, y, width, height);
+    this.context.drawImage(frame.bitmap, x, y, width, height);
     this.displayed = frame.index; this.fullResolution = frame.fullResolution; this.lastBitmap = frame.bitmap; this.lastWidth = w; this.lastHeight = h;
     this.element.dataset.ready = 'true'; this.element.dataset.displayedFrame = String(frame.index); this.element.dataset.fullResolution = String(frame.fullResolution);
     this.draws++; this.drawMs += performance.now() - started; this.options.onPresent(frame.index);
   };
   diagnostics() {
     const state = this.stream.diagnostics();
-    return { ...state, displayedFrame: this.displayed, fullResolution: this.fullResolution && this.displayed === state.desiredFrame, active: this.active, variant: this.mobile ? 'mobile' : 'desktop', draws: this.draws, previewDraws: this.previewDraws, atlasBytes: state.previewBytes, averageDrawMs: this.drawMs / Math.max(1, this.draws) };
+    return { ...state, displayedFrame: this.displayed, fullResolution: this.fullResolution && this.displayed === state.desiredFrame, active: this.active, variant: this.mobile ? 'mobile' : 'desktop', draws: this.draws, previewDraws: this.previewDraws, atlasBytes: 0, averageDrawMs: this.drawMs / Math.max(1, this.draws) };
   }
   dispose() {
     this.disposed = true; cancelAnimationFrame(this.raf); this.stream.dispose();

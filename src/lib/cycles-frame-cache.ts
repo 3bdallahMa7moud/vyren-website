@@ -11,7 +11,7 @@ export class CyclesFrameCache {
   private generation = 0;
   private retryTimer?: ReturnType<typeof setTimeout>;
   downloadedBytes = 0; fetches = 0; failures = 0; aborted = 0; peakBytes = 0; peakFrames = 0;
-  constructor(readonly limit: number, private concurrency: number, private changed: () => void) {}
+  constructor(readonly limit: number, private concurrency: number, private changed: () => void, private loadBlob?: (url: string, signal: AbortSignal) => Promise<{ blob: Blob; networkBytes: number }>) {}
   request(urls: string[]) {
     if (this.disposed) return;
     this.wanted = [...new Set(urls)];
@@ -28,9 +28,13 @@ export class CyclesFrameCache {
       this.pending.set(url, controller); this.fetches++;
       void (async () => {
         try {
-          const response = await fetch(url, { signal: controller.signal, cache: 'force-cache' });
-          if (!response.ok) throw new Error(`Cycles image ${response.status}`);
-          const blob = await response.blob(); this.downloadedBytes += blob.size;
+          let blob: Blob;
+          if (this.loadBlob) { const result = await this.loadBlob(url, controller.signal); blob = result.blob; this.downloadedBytes += result.networkBytes; }
+          else {
+            const response = await fetch(url, { signal: controller.signal, cache: 'force-cache' });
+            if (!response.ok) throw new Error(`Cycles image ${response.status}`);
+            blob = await response.blob(); this.downloadedBytes += blob.size;
+          }
           const bitmap = await createImageBitmap(blob);
           if (this.disposed || controller.signal.aborted || generation !== this.generation) { bitmap.close(); return; }
           this.entries.set(url, { bitmap, used: performance.now(), bytes: bitmap.width * bitmap.height * 4 });

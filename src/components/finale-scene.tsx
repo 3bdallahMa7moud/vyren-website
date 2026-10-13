@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { CyclesSurface, type SurfaceDiagnostics } from './cycles-surface';
 import { Media } from './media';
-import { finalePreview } from '@/lib/frame-previews';
+import { finaleBundle } from '@/lib/frame-bundles';
 
 gsap.registerPlugin(ScrollTrigger);
 const assetPath = '/assets/finale-reveal-v1';
@@ -73,7 +73,7 @@ export function FinaleScene() {
         <div className="final-product">
           <Media name="finale-reveal-v1/poster-complete" className="final-poster-complete" alt="The complete VYREN NOCTIS 01 under studio lighting" sizes="(max-width:768px) 90vw, 640px" />
           <Media name="finale-reveal-v1/poster-rim" className="final-poster-rim" alt="The rim and crown of the NOCTIS 01 emerge from darkness" sizes="(max-width:768px) 90vw, 640px" />
-          <CyclesSurface frame={frame} count={count} path={assetPath} prefix="reveal-" fit="contain" preview={finalePreview} label="The VYREN NOCTIS 01 turns slowly as studio lighting reveals its dial, crown and complete strap" onPresent={presented} diagnostics={read => { if (read) window.__VYREN_FINALE = read; else delete window.__VYREN_FINALE; }} />
+          <CyclesSurface frame={frame} count={count} path={assetPath} prefix="reveal-" fit="contain" bundle={finaleBundle} label="The VYREN NOCTIS 01 turns slowly as studio lighting reveals its dial, crown and complete strap" onPresent={presented} diagnostics={read => { if (read) window.__VYREN_FINALE = read; else delete window.__VYREN_FINALE; }} />
         </div>
         <div className="final-copy" data-copy-waiting={copyWaiting} inert={copyWaiting} aria-hidden={copyWaiting || undefined} style={copyWaiting ? { opacity: 0 } : undefined}>
           <h2 id="final-title"><span>Own the</span> <em>moment.</em></h2>

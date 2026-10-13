@@ -1,8 +1,8 @@
 import { experience } from './experience-state';
 import { CriticalFrameStream } from './critical-frame-stream';
-import { assemblyPreview } from './frame-previews';
+import { assemblyBundle } from './frame-bundles';
 import { deviceStreamProfile } from './frame-stream-policy';
-import type { FilmFrame } from './frame-preview';
+import type { FilmFrame } from './film-frame';
 
 type Frame = { progress:number; factors:Record<string,number>; anchors:Record<string,[number,number]>; restMatrixDelta:number|null };
 type Variant = { width:number; height:number; crop:[number,number,number,number]; limit:number; urls:string[] };
@@ -44,7 +44,7 @@ export class CyclesSequence {
   constructor(private slot:HTMLDivElement,private canvas:HTMLCanvasElement) {
     const context=canvas.getContext('2d',{alpha:true});
     if(!context)throw new Error('Canvas presentation is unavailable');
-    this.context=context;
+    this.context=context;context.imageSmoothingEnabled=true;context.imageSmoothingQuality='high';
     const section=slot.closest('.assembly')!;
     this.progressElement=section.querySelector<HTMLElement>('.assembly-progress span');
     this.caption=section.querySelector<HTMLElement>('.assembly-step');
@@ -72,7 +72,7 @@ export class CyclesSequence {
     const mobile=innerWidth<=768;
     if(this.variant&&mobile===this.mobile)return;
     this.stream?.dispose();this.mobile=mobile;this.variant=this.manifest!.variants[mobile?'mobile':'desktop'];this.displayed=-1;this.lastBitmap=undefined;this.resizePending=true;
-    this.stream=new CriticalFrameStream(this.variant.urls,assemblyPreview.variants[mobile?'mobile':'desktop'],deviceStreamProfile(mobile),()=>{if(this.active)this.startLoop();});
+    this.stream=new CriticalFrameStream(this.variant.urls,assemblyBundle.variants[mobile?'mobile':'desktop'],deviceStreamProfile(mobile),()=>{if(this.active)this.startLoop();});
     this.stream.setTarget(this.desired);this.stream.setWarm((this.warming||this.active)&&!document.hidden);
   }
   private updateTarget() {
@@ -92,7 +92,7 @@ export class CyclesSequence {
         const held=document.createElement('canvas');held.width=this.canvas.width;held.height=this.canvas.height;held.getContext('2d')?.drawImage(this.canvas,0,0);
         this.width=this.slot.clientWidth;this.height=this.slot.clientHeight;
         const scale=Math.min(this.width/this.variant!.width,this.height/this.variant!.height);const dpr=Math.min(devicePixelRatio,1.5,1/scale);
-        this.canvas.width=Math.round(this.width*dpr);this.canvas.height=Math.round(this.height*dpr);this.context.setTransform(dpr,0,0,dpr,0,0);
+        this.canvas.width=Math.round(this.width*dpr);this.canvas.height=Math.round(this.height*dpr);this.context.setTransform(dpr,0,0,dpr,0,0);this.context.imageSmoothingEnabled=true;this.context.imageSmoothingQuality='high';
         const heldScale=Math.min(this.width/held.width,this.height/held.height);this.context.drawImage(held,(this.width-held.width*heldScale)/2,(this.height-held.height*heldScale)/2,held.width*heldScale,held.height*heldScale);
         this.resizePending=false;this.displayed=-1;
       }
@@ -109,8 +109,7 @@ export class CyclesSequence {
   private draw(frame:FilmFrame) {
     const start=performance.now();const scale=Math.min(this.width/frame.width,this.height/frame.height);const w=frame.width*scale,h=frame.height*scale,x=(this.width-w)/2,y=(this.height-h)/2;
     this.context.clearRect(0,0,this.width,this.height);
-    if(frame.crop){const c=frame.crop;this.context.drawImage(frame.bitmap,c.x,c.y,c.width,c.height,x,y,w,h);this.previewDraws++;}
-    else this.context.drawImage(frame.bitmap,x,y,w,h);
+    this.context.drawImage(frame.bitmap,x,y,w,h);
     this.draws++;this.positionLabels(frame.index);this.renderTimes.push(performance.now()-start);if(this.renderTimes.length>180)this.renderTimes.shift();
   }
   private positionLabels(index:number) {
