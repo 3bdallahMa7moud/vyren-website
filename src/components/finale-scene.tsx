@@ -32,7 +32,7 @@ export function FinaleScene() {
     let observer: IntersectionObserver | undefined;
     const observe = () => {
       observer?.disconnect();
-      const clearance = Math.ceil(navigation.getBoundingClientRect().height) + 4;
+      const clearance = Math.ceil(navigation.getBoundingClientRect().height);
       observer = new IntersectionObserver(([entry]) => {
         setToplineVisible(entry.isIntersecting && entry.intersectionRatio >= .999);
       }, { rootMargin: `-${clearance}px 0px 0px 0px`, threshold: 1 });
